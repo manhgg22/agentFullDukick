@@ -1,0 +1,10 @@
+﻿discord:
+  require_mention: true        # Chỉ trả lời khi bị @tag
+  auto_thread: false           # KHÔNG tạo thread mới
+  thread_require_mention: true # Trong thread cũng phải @tag
+  history_backfill: true       # Đọc lịch sử kênh khi được tag
+
+hooks:
+  pre_gateway_dispatch:
+    - command: "C:/DuKickAgent/venv/Scripts/python.exe C:/DuKickAgent/save_to_obsidian.py"
+      timeout: 5

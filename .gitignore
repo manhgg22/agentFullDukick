@@ -1,0 +1,36 @@
+# Python venv
+venv/
+
+# Cache & logs
+*/cache/
+*/audio_cache/
+*/image_cache/
+*/logs/
+cache/
+logs/
+
+# Database files (runtime state)
+*.db
+*.db-shm
+*.db-wal
+
+# Lock files
+*.lock
+*.pid
+
+# Sessions (private conversation data)
+*/sessions/
+*/pairing/
+
+# Sensitive env files (chứa token/key)
+*/.env
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# OS files
+.DS_Store
+Thumbs.db
