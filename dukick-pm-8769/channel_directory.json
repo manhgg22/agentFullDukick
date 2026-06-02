@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-02T14:36:33.510136",
+  "updated_at": "2026-06-02T14:57:37.066533",
   "platforms": {
     "discord": [
       {
@@ -217,6 +217,12 @@
         "name": "ai-development",
         "guild": "🔥 DUKICK",
         "type": "channel"
+      },
+      {
+        "id": "1093083512837521448",
+        "name": "🔥 DUKICK / #pm",
+        "type": "group",
+        "thread_id": null
       }
     ],
     "telegram": [],
