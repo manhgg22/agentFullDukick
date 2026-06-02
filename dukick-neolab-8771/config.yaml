@@ -1,4 +1,8 @@
-﻿discord:
+model:
+  provider: openai-api
+  name: kimi-k2.6
+
+discord:
   require_mention: true
   auto_thread: false
   thread_require_mention: true

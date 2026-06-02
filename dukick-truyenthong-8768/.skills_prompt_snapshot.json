@@ -1,0 +1,783 @@
+{
+  "version": 1,
+  "manifest": {
+    "agent-introspection-debugging\\SKILL.md": [
+      1780372040060313700,
+      5669
+    ],
+    "agent-sort\\SKILL.md": [
+      1780372040062304800,
+      6112
+    ],
+    "api-design\\SKILL.md": [
+      1780372040064310500,
+      13620
+    ],
+    "article-writing\\SKILL.md": [
+      1780372040065304700,
+      2980
+    ],
+    "backend-patterns\\SKILL.md": [
+      1780372040067306100,
+      14422
+    ],
+    "brand-voice\\SKILL.md": [
+      1780372040069320000,
+      3720
+    ],
+    "bun-runtime\\SKILL.md": [
+      1780372040071308500,
+      2667
+    ],
+    "coding-standards\\SKILL.md": [
+      1780372040073305600,
+      13233
+    ],
+    "content-engine\\SKILL.md": [
+      1780372040074306000,
+      4476
+    ],
+    "crosspost\\SKILL.md": [
+      1780372040076303800,
+      3533
+    ],
+    "deep-research\\SKILL.md": [
+      1780372040077304400,
+      4724
+    ],
+    "defuddle\\SKILL.md": [
+      1780135643836638100,
+      1128
+    ],
+    "dmux-workflows\\SKILL.md": [
+      1780372040079303800,
+      4849
+    ],
+    "documentation-lookup\\SKILL.md": [
+      1780372040081309000,
+      4977
+    ],
+    "e2e-testing\\SKILL.md": [
+      1780372040082303600,
+      8378
+    ],
+    "eval-harness\\SKILL.md": [
+      1780372040084304900,
+      5746
+    ],
+    "everything-claude-code\\SKILL.md": [
+      1780372040085303700,
+      11778
+    ],
+    "exa-search\\SKILL.md": [
+      1780372040087303400,
+      4972
+    ],
+    "fal-ai-media\\SKILL.md": [
+      1780372040088304700,
+      7120
+    ],
+    "frontend-patterns\\SKILL.md": [
+      1780372040090304200,
+      16046
+    ],
+    "frontend-slides\\SKILL.md": [
+      1780372040091304400,
+      6729
+    ],
+    "investor-materials\\SKILL.md": [
+      1780372040094307100,
+      2806
+    ],
+    "investor-outreach\\SKILL.md": [
+      1780372040095307900,
+      2721
+    ],
+    "json-canvas\\SKILL.md": [
+      1780135643832670000,
+      7629
+    ],
+    "market-research\\SKILL.md": [
+      1780372040097304400,
+      2288
+    ],
+    "mcp-server-patterns\\SKILL.md": [
+      1780372040098304800,
+      3921
+    ],
+    "mle-workflow\\SKILL.md": [
+      1780372040100302900,
+      22810
+    ],
+    "nextjs-turbopack\\SKILL.md": [
+      1780372040101305500,
+      2193
+    ],
+    "obsidian-bases\\SKILL.md": [
+      1780135643830684100,
+      12908
+    ],
+    "obsidian-cli\\SKILL.md": [
+      1780135643834670800,
+      3188
+    ],
+    "obsidian-markdown\\SKILL.md": [
+      1780135643828667500,
+      5372
+    ],
+    "product-capability\\SKILL.md": [
+      1780372040103305300,
+      4552
+    ],
+    "security-review\\SKILL.md": [
+      1780372040104304100,
+      12716
+    ],
+    "strategic-compact\\SKILL.md": [
+      1780372040106302900,
+      4133
+    ],
+    "tdd-workflow\\SKILL.md": [
+      1780372040108302500,
+      10184
+    ],
+    "verification-loop\\SKILL.md": [
+      1780372040109302500,
+      2604
+    ],
+    "video-editing\\SKILL.md": [
+      1780372040111304700,
+      9986
+    ],
+    "x-api\\SKILL.md": [
+      1780372040112303400,
+      6675
+    ],
+    "apple\\DESCRIPTION.md": [
+      1780132277138075400,
+      137
+    ],
+    "autonomous-ai-agents\\DESCRIPTION.md": [
+      1780132277143081400,
+      211
+    ],
+    "creative\\DESCRIPTION.md": [
+      1780132277149080900,
+      116
+    ],
+    "data-science\\DESCRIPTION.md": [
+      1780132277339808600,
+      137
+    ],
+    "diagramming\\DESCRIPTION.md": [
+      1780132277343775700,
+      159
+    ],
+    "domain\\DESCRIPTION.md": [
+      1780132277347807200,
+      1142
+    ],
+    "email\\DESCRIPTION.md": [
+      1780132277347807200,
+      101
+    ],
+    "gaming\\DESCRIPTION.md": [
+      1780132277351807300,
+      129
+    ],
+    "gifs\\DESCRIPTION.md": [
+      1780132277353808300,
+      109
+    ],
+    "github\\DESCRIPTION.md": [
+      1780132277354807000,
+      167
+    ],
+    "inference-sh\\DESCRIPTION.md": [
+      1780132277370804300,
+      706
+    ],
+    "mcp\\DESCRIPTION.md": [
+      1780132277370804300,
+      216
+    ],
+    "media\\DESCRIPTION.md": [
+      1780132277372802400,
+      139
+    ],
+    "mlops\\DESCRIPTION.md": [
+      1780132277379814300,
+      162
+    ],
+    "mlops\\evaluation\\DESCRIPTION.md": [
+      1780132277380804700,
+      126
+    ],
+    "mlops\\inference\\DESCRIPTION.md": [
+      1780132277389806000,
+      161
+    ],
+    "mlops\\models\\DESCRIPTION.md": [
+      1780132277402776200,
+      253
+    ],
+    "mlops\\research\\DESCRIPTION.md": [
+      1780132277407807600,
+      113
+    ],
+    "mlops\\training\\DESCRIPTION.md": [
+      1780132277411837800,
+      150
+    ],
+    "mlops\\vector-databases\\DESCRIPTION.md": [
+      1780132277412819500,
+      125
+    ],
+    "note-taking\\DESCRIPTION.md": [
+      1780132277413815000,
+      146
+    ],
+    "productivity\\DESCRIPTION.md": [
+      1780132277414807700,
+      114
+    ],
+    "productivity\\ocr-and-documents\\DESCRIPTION.md": [
+      1780132277427806900,
+      147
+    ],
+    "research\\DESCRIPTION.md": [
+      1780132277470803500,
+      179
+    ],
+    "smart-home\\DESCRIPTION.md": [
+      1780132277532813600,
+      123
+    ],
+    "social-media\\DESCRIPTION.md": [
+      1780132277534806500,
+      151
+    ]
+  },
+  "skills": [
+    {
+      "skill_name": "agent-introspection-debugging",
+      "category": "agent-introspection-debugging",
+      "frontmatter_name": "agent-introspection-debugging",
+      "description": "Structured self-debugging workflow for AI agent failures ...",
+      "platforms": [],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    },
+    {
+      "skill_name": "agent-sort",
+      "category": "agent-sort",
+      "frontmatter_name": "agent-sort",
+      "description": "Build an evidence-backed ECC install plan for a specific ...",
+      "platforms": [],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    },
+    {
+      "skill_name": "api-design",
+      "category": "api-design",
+      "frontmatter_name": "api-design",
+      "description": "REST API design patterns including resource naming, statu...",
+      "platforms": [],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    },
+    {
+      "skill_name": "article-writing",
+      "category": "article-writing",
+      "frontmatter_name": "article-writing",
+      "description": "Write articles, guides, blog posts, tutorials, newsletter...",
+      "platforms": [],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    },
+    {
+      "skill_name": "backend-patterns",
+      "category": "backend-patterns",
+      "frontmatter_name": "backend-patterns",
+      "description": "Backend architecture patterns, API design, database optim...",
+      "platforms": [],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    },
+    {
+      "skill_name": "brand-voice",
+      "category": "brand-voice",
+      "frontmatter_name": "brand-voice",
+      "description": "Build a source-derived writing style profile from real po...",
+      "platforms": [],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    },
+    {
+      "skill_name": "bun-runtime",
+      "category": "bun-runtime",
+      "frontmatter_name": "bun-runtime",
+      "description": "Bun as runtime, package manager, bundler, and test runner...",
+      "platforms": [],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    },
+    {
+      "skill_name": "coding-standards",
+      "category": "coding-standards",
+      "frontmatter_name": "coding-standards",
+      "description": "Baseline cross-project coding conventions for naming, rea...",
+      "platforms": [],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    },
+    {
+      "skill_name": "content-engine",
+      "category": "content-engine",
+      "frontmatter_name": "content-engine",
+      "description": "Create platform-native content systems for X, LinkedIn, T...",
+      "platforms": [],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    },
+    {
+      "skill_name": "crosspost",
+      "category": "crosspost",
+      "frontmatter_name": "crosspost",
+      "description": "Multi-platform content distribution across X, LinkedIn, T...",
+      "platforms": [],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    },
+    {
+      "skill_name": "deep-research",
+      "category": "deep-research",
+      "frontmatter_name": "deep-research",
+      "description": "Multi-source deep research using firecrawl and exa MCPs. ...",
+      "platforms": [],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    },
+    {
+      "skill_name": "defuddle",
+      "category": "defuddle",
+      "frontmatter_name": "defuddle",
+      "description": "",
+      "platforms": [],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    },
+    {
+      "skill_name": "dmux-workflows",
+      "category": "dmux-workflows",
+      "frontmatter_name": "dmux-workflows",
+      "description": "Multi-agent orchestration using dmux (tmux pane manager f...",
+      "platforms": [],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    },
+    {
+      "skill_name": "documentation-lookup",
+      "category": "documentation-lookup",
+      "frontmatter_name": "documentation-lookup",
+      "description": "Use up-to-date library and framework docs via Context7 MC...",
+      "platforms": [],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    },
+    {
+      "skill_name": "e2e-testing",
+      "category": "e2e-testing",
+      "frontmatter_name": "e2e-testing",
+      "description": "Playwright E2E testing patterns, Page Object Model, confi...",
+      "platforms": [],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    },
+    {
+      "skill_name": "eval-harness",
+      "category": "eval-harness",
+      "frontmatter_name": "eval-harness",
+      "description": "Formal evaluation framework for Claude Code sessions impl...",
+      "platforms": [],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    },
+    {
+      "skill_name": "everything-claude-code",
+      "category": "everything-claude-code",
+      "frontmatter_name": "everything-claude-code",
+      "description": "Development conventions and patterns for everything-claud...",
+      "platforms": [],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    },
+    {
+      "skill_name": "exa-search",
+      "category": "exa-search",
+      "frontmatter_name": "exa-search",
+      "description": "Neural search via Exa MCP for web, code, and company rese...",
+      "platforms": [],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    },
+    {
+      "skill_name": "fal-ai-media",
+      "category": "fal-ai-media",
+      "frontmatter_name": "fal-ai-media",
+      "description": "Unified media generation via fal.ai MCP — image, video, a...",
+      "platforms": [],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    },
+    {
+      "skill_name": "frontend-patterns",
+      "category": "frontend-patterns",
+      "frontmatter_name": "frontend-patterns",
+      "description": "Frontend development patterns for React, Next.js, state m...",
+      "platforms": [],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    },
+    {
+      "skill_name": "frontend-slides",
+      "category": "frontend-slides",
+      "frontmatter_name": "frontend-slides",
+      "description": "Create stunning, animation-rich HTML presentations from s...",
+      "platforms": [],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    },
+    {
+      "skill_name": "investor-materials",
+      "category": "investor-materials",
+      "frontmatter_name": "investor-materials",
+      "description": "Create and update pitch decks, one-pagers, investor memos...",
+      "platforms": [],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    },
+    {
+      "skill_name": "investor-outreach",
+      "category": "investor-outreach",
+      "frontmatter_name": "investor-outreach",
+      "description": "Draft cold emails, warm intro blurbs, follow-ups, update ...",
+      "platforms": [],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    },
+    {
+      "skill_name": "json-canvas",
+      "category": "json-canvas",
+      "frontmatter_name": "json-canvas",
+      "description": "",
+      "platforms": [],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    },
+    {
+      "skill_name": "market-research",
+      "category": "market-research",
+      "frontmatter_name": "market-research",
+      "description": "Conduct market research, competitive analysis, investor d...",
+      "platforms": [],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    },
+    {
+      "skill_name": "mcp-server-patterns",
+      "category": "mcp-server-patterns",
+      "frontmatter_name": "mcp-server-patterns",
+      "description": "Build MCP servers with Node/TypeScript SDK — tools, resou...",
+      "platforms": [],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    },
+    {
+      "skill_name": "mle-workflow",
+      "category": "mle-workflow",
+      "frontmatter_name": "mle-workflow",
+      "description": "Production machine-learning engineering workflow for data...",
+      "platforms": [],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    },
+    {
+      "skill_name": "nextjs-turbopack",
+      "category": "nextjs-turbopack",
+      "frontmatter_name": "nextjs-turbopack",
+      "description": "Next.js 16+ and Turbopack — incremental bundling, FS cach...",
+      "platforms": [],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    },
+    {
+      "skill_name": "obsidian-bases",
+      "category": "obsidian-bases",
+      "frontmatter_name": "obsidian-bases",
+      "description": "",
+      "platforms": [],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    },
+    {
+      "skill_name": "obsidian-cli",
+      "category": "obsidian-cli",
+      "frontmatter_name": "obsidian-cli",
+      "description": "",
+      "platforms": [],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    },
+    {
+      "skill_name": "obsidian-markdown",
+      "category": "obsidian-markdown",
+      "frontmatter_name": "obsidian-markdown",
+      "description": "",
+      "platforms": [],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    },
+    {
+      "skill_name": "product-capability",
+      "category": "product-capability",
+      "frontmatter_name": "product-capability",
+      "description": "Translate PRD intent, roadmap asks, or product discussion...",
+      "platforms": [],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    },
+    {
+      "skill_name": "security-review",
+      "category": "security-review",
+      "frontmatter_name": "security-review",
+      "description": "Use this skill when adding authentication, handling user ...",
+      "platforms": [],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    },
+    {
+      "skill_name": "strategic-compact",
+      "category": "strategic-compact",
+      "frontmatter_name": "strategic-compact",
+      "description": "Suggests manual context compaction at logical intervals t...",
+      "platforms": [],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    },
+    {
+      "skill_name": "tdd-workflow",
+      "category": "tdd-workflow",
+      "frontmatter_name": "tdd-workflow",
+      "description": "Use this skill when writing new features, fixing bugs, or...",
+      "platforms": [],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    },
+    {
+      "skill_name": "verification-loop",
+      "category": "verification-loop",
+      "frontmatter_name": "verification-loop",
+      "description": "A comprehensive verification system for Claude Code sessi...",
+      "platforms": [],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    },
+    {
+      "skill_name": "video-editing",
+      "category": "video-editing",
+      "frontmatter_name": "video-editing",
+      "description": "AI-assisted video editing workflows for cutting, structur...",
+      "platforms": [],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    },
+    {
+      "skill_name": "x-api",
+      "category": "x-api",
+      "frontmatter_name": "x-api",
+      "description": "X/Twitter API integration for posting tweets, threads, re...",
+      "platforms": [],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    }
+  ],
+  "category_descriptions": {
+    "autonomous-ai-agents": "Skills for spawning and orchestrating autonomous AI coding agents and multi-agent workflows — running independent agent processes, delegating tasks, and coordinating parallel workstreams.",
+    "creative": "Creative content generation — ASCII art, hand-drawn style diagrams, and visual design tools.",
+    "data-science": "Skills for data science workflows — interactive exploration, Jupyter notebooks, data analysis, and visualization.",
+    "diagramming": "Diagram creation skills for generating visual diagrams, flowcharts, architecture diagrams, and illustrations using tools like Excalidraw.",
+    "domain": "Passive domain reconnaissance using Python stdlib. Use this skill for subdomain discovery, SSL certificate inspection, WHOIS lookups, DNS records, domain availability checks, and bulk multi-domain analysis. No API keys required. Triggers on requests like \"find subdomains\", \"check ssl cert\", \"whois lookup\", \"is this domain available\", \"bulk check these domains\".",
+    "email": "Skills for sending, receiving, searching, and managing email from the terminal.",
+    "gaming": "Skills for setting up, configuring, and managing game servers, modpacks, and gaming-related infrastructure.",
+    "gifs": "Skills for searching, downloading, and working with GIFs and short-form animated media.",
+    "github": "GitHub workflow skills for managing repositories, pull requests, code reviews, issues, and CI/CD pipelines using the gh CLI and git via terminal.",
+    "mcp": "Skills for working with MCP (Model Context Protocol) servers, tools, and integrations. Documents the built-in native MCP client — configure servers in config.yaml for automatic tool discovery.",
+    "media": "Skills for working with media content — YouTube transcripts, GIF search, music generation, and audio visualization.",
+    "mlops": "Knowledge and Tools for Machine Learning Operations - tools and frameworks for training, fine-tuning, deploying, and optimizing ML/AI models",
+    "mlops/evaluation": "Model evaluation benchmarks, experiment tracking, data curation, tokenizers, and interpretability tools.",
+    "mlops/inference": "Model serving, quantization (GGUF/GPTQ), structured output, inference optimization, and model surgery tools for deploying and running LLMs.",
+    "mlops/models": "Specific model architectures and tools — image segmentation (Segment Anything / SAM) and audio generation (AudioCraft / MusicGen). Additional model skills (CLIP, Stable Diffusion, Whisper, LLaVA) are available as optional skills.",
+    "mlops/research": "ML research frameworks for building and optimizing AI systems with declarative programming.",
+    "mlops/training": "Fine-tuning, RLHF/DPO/GRPO training, distributed training frameworks, and optimization tools for training LLMs and other models.",
+    "mlops/vector-databases": "Vector similarity search and embedding databases for RAG, semantic search, and AI application backends.",
+    "note-taking": "Note taking skills, to save information, assist with research, and collab on multi-session planning and information sharing.",
+    "productivity": "Skills for document creation, presentations, spreadsheets, and other productivity workflows.",
+    "productivity/ocr-and-documents": "Skills for extracting text from PDFs, scanned documents, images, and other file formats using OCR and document parsing tools.",
+    "research": "Skills for academic research, paper discovery, literature review, domain reconnaissance, market data, content monitoring, and scientific knowledge retrieval.",
+    "smart-home": "Skills for controlling smart home devices — lights, switches, sensors, and home automation systems.",
+    "social-media": "Skills for interacting with social platforms and social-media workflows — posting, reading, monitoring, and account operations."
+  }
+}
