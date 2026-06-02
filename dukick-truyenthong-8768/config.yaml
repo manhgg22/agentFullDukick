@@ -1,8 +1,8 @@
 ﻿discord:
-  require_mention: true        # Chỉ trả lời khi bị @tag
-  auto_thread: false           # KHÔNG tạo thread mới
-  thread_require_mention: true # Trong thread cũng phải @tag
-  history_backfill: true       # Đọc lịch sử kênh khi được tag
+  require_mention: true
+  auto_thread: false
+  thread_require_mention: true
+  history_backfill: true
 
 hooks:
   pre_gateway_dispatch:

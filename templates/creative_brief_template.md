@@ -1,0 +1,15 @@
+﻿# Creative Brief: {TÊN JOB}
+- Khách hàng:
+- Mục tiêu truyền thông:
+- Key message:
+- Tone & mood:
+- Đối tượng xem:
+- Nền tảng: TVC/Social/Event/OOH
+- Format đầu ra:
+- Thời lượng:
+- Reference thích:
+- Reference không thích:
+- Deadline concept:
+- Deadline bản nháp:
+- Người duyệt:
+- Người thực hiện:

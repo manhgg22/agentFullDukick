@@ -1,0 +1,14 @@
+﻿# Lead: {TÊN CÔNG TY}
+- Ngành hàng:
+- Người liên hệ:
+- Chức vụ:
+- Nguồn lead:
+- Nhu cầu:
+- Budget dự kiến:
+- Timeline mong muốn:
+- Mức độ nóng: Hot/Warm/Cold
+- Đã làm việc chưa: Có/Không
+- Portfolio phù hợp:
+- Next step:
+- Ngày follow-up:
+- Trạng thái pipeline: Lead mới

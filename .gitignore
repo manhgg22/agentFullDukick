@@ -34,3 +34,10 @@ __pycache__/
 # OS files
 .DS_Store
 Thumbs.db
+
+# Hermes runtime state
+**/gateway_state.json
+**/channel_directory.json
+**/gateway.lock
+**/gateway.pid
+**/kanban.db.init.lock

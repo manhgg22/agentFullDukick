@@ -1,0 +1,16 @@
+﻿# Job: {TÊN JOB}
+- Mã job:
+- Khách hàng:
+- Account phụ trách:
+- Sales liên quan:
+- Creative liên quan:
+- Director:
+- Finance phụ trách:
+- Ngày bắt đầu:
+- Deadline khách hàng:
+- Deadline nội bộ:
+- Budget tổng:
+- Deliverables:
+- Mức ưu tiên: Cao/Trung/Thấp
+- Trạng thái: Chưa bắt đầu
+- Rủi ro ban đầu:

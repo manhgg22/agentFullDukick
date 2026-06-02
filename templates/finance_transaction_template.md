@@ -1,0 +1,13 @@
+﻿# Khoản {Thu/Chi}: {MÔ TẢ}
+- Thuộc job:
+- Loại: Thu/Chi
+- Số tiền:
+- Người đề xuất:
+- Người duyệt:
+- Ngày phát sinh:
+- Deadline thanh toán:
+- Người nhận/trả:
+- Có chứng từ: Có/Không
+- File chứng từ:
+- Lý do:
+- Trạng thái: Chờ duyệt
