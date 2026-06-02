@@ -1,0 +1,85 @@
+---
+id: dukick-never-commit-env
+trigger: "when committing or staging files in DuKick project"
+confidence: 0.99
+domain: security
+source: dukick-project
+---
+
+# Never Commit .env Files
+
+## Action
+Always check that `.env` files are excluded before committing. These contain Discord bot tokens.
+
+## Evidence
+- Each agent folder has a `.env` with `DISCORD_BOT_TOKEN`
+- `.gitignore` excludes `*/.env` and `.env`
+
+---
+id: dukick-agent-isolation
+trigger: "when editing a Hermes agent's config or SOUL.md"
+confidence: 0.95
+domain: architecture
+source: dukick-project
+---
+
+# Agent Isolation Rule
+
+## Action
+Changes to one agent (SOUL.md, config.yaml, .env) must NOT be copied to other agents without explicit request. Each agent has a distinct role.
+
+## Evidence
+- 5 agents serve different departments: tong, truyenthong, pm, pmcreative, neolab
+- dukick-tong is coordinator — its SOUL.md includes all vault paths
+
+---
+id: dukick-tong-starts-last
+trigger: "when starting or deploying Hermes agents"
+confidence: 0.9
+domain: deployment
+source: dukick-project
+---
+
+# Start dukick-tong Last
+
+## Action
+Always start dukick-tong-8767 AFTER all other agents are running. It is the coordinator.
+
+## Evidence
+- dukick-tong reads all 4 other vaults — they must exist and be populated first
+- Start order: truyenthong → pm → pmcreative → neolab → tong
+
+---
+id: dukick-python-encoding
+trigger: "when writing Python code that reads or writes files in DuKick project"
+confidence: 0.97
+domain: code-style
+source: dukick-project
+---
+
+# Always Specify UTF-8 Encoding
+
+## Action
+Always use `encoding="utf-8"` in `open()` calls. Windows default encoding causes issues with Vietnamese text.
+
+## Evidence
+- Obsidian vault contains Vietnamese content
+- Discord messages may contain Vietnamese characters
+- `save_to_obsidian.py` uses utf-8 throughout
+
+---
+id: dukick-hook-exit-clean
+trigger: "when writing or editing a pre_gateway_dispatch hook script"
+confidence: 0.95
+domain: code-style
+source: dukick-project
+---
+
+# Hook Scripts Must Exit Cleanly
+
+## Action
+Hook scripts must always exit with `sys.exit(0)` on error, and return `{"action": "allow"}` on success. Never raise unhandled exceptions — this would block the Discord bot.
+
+## Evidence
+- `save_to_obsidian.py` pattern: parse → process → print allow → exit 0
+- Hook timeout is 5 seconds — no heavy operations allowed

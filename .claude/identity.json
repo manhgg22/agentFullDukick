@@ -1,14 +1,20 @@
 {
   "version": "2.0",
+  "project": "DuKick Agent System",
   "technicalLevel": "technical",
   "preferredStyle": {
     "verbosity": "minimal",
     "codeComments": true,
-    "explanations": true
+    "explanations": true,
+    "language": "vietnamese"
   },
-  "domains": [
-    "javascript"
-  ],
-  "suggestedBy": "ecc-tools-repo-analysis",
-  "createdAt": "2026-03-20T12:07:57.119Z"
+  "domains": ["python", "discord-bots", "obsidian", "yaml", "markdown"],
+  "stack": {
+    "agents": "hermes_cli (Nous Research)",
+    "discord": "hermes gateway",
+    "notes": "Obsidian vault",
+    "coding": "ECC + Claude Code",
+    "python": "3.x with venv at C:/DuKickAgent/venv"
+  },
+  "createdAt": "2026-06-02"
 }
