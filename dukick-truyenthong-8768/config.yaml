@@ -1,6 +1,4 @@
-model:
-  provider: openai-api
-  name: kimi-k2.6
+model: kimi-k2.6
 discord:
   require_mention: true
   auto_thread: false
@@ -12,3 +10,4 @@ hooks:
     timeout: 5
 streaming: false
 max_tokens: 4000
+provider: openai-api
