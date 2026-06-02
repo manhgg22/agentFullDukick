@@ -1,8 +1,225 @@
 {
-  "updated_at": "2026-05-30T16:55:40.643002",
+  "updated_at": "2026-06-02T14:36:33.441595",
   "platforms": {
+    "discord": [
+      {
+        "id": "1441264760321474814",
+        "name": "hr-admin-hương",
+        "guild": "🔥 DUKICK",
+        "type": "channel"
+      },
+      {
+        "id": "1092673756457074763",
+        "name": "dukick-update",
+        "guild": "🔥 DUKICK",
+        "type": "channel"
+      },
+      {
+        "id": "1507218623742083142",
+        "name": "truyền-thông",
+        "guild": "🔥 DUKICK",
+        "type": "channel"
+      },
+      {
+        "id": "1093079987998949426",
+        "name": "dukick-funny",
+        "guild": "🔥 DUKICK",
+        "type": "channel"
+      },
+      {
+        "id": "1501519731927285860",
+        "name": "🤖hermes-debug-fix",
+        "guild": "🔥 DUKICK",
+        "type": "channel"
+      },
+      {
+        "id": "1093084204503420938",
+        "name": "tài-chính",
+        "guild": "🔥 DUKICK",
+        "type": "channel"
+      },
+      {
+        "id": "1093083512837521448",
+        "name": "pm",
+        "guild": "🔥 DUKICK",
+        "type": "channel"
+      },
+      {
+        "id": "1093084443356442664",
+        "name": "pm-kế-toán-hr",
+        "guild": "🔥 DUKICK",
+        "type": "channel"
+      },
+      {
+        "id": "1093105801192820796",
+        "name": "pm-hr",
+        "guild": "🔥 DUKICK",
+        "type": "channel"
+      },
+      {
+        "id": "1457650816914559128",
+        "name": "pm-creative",
+        "guild": "🔥 DUKICK",
+        "type": "channel"
+      },
+      {
+        "id": "1508691096312479835",
+        "name": "ai-film",
+        "guild": "🔥 DUKICK",
+        "type": "channel"
+      },
+      {
+        "id": "1508691372541214865",
+        "name": "ai-marcom-media",
+        "guild": "🔥 DUKICK",
+        "type": "channel"
+      },
+      {
+        "id": "1469247793037316107",
+        "name": "🧬neolab",
+        "guild": "🔥 DUKICK",
+        "type": "channel"
+      },
+      {
+        "id": "1164434172677468200",
+        "name": "ai-art",
+        "guild": "🔥 DUKICK",
+        "type": "channel"
+      },
+      {
+        "id": "1139481538963193896",
+        "name": "dukick-học-tập",
+        "guild": "🔥 DUKICK",
+        "type": "channel"
+      },
+      {
+        "id": "1093080663042818068",
+        "name": "hr-kế-toán",
+        "guild": "🔥 DUKICK",
+        "type": "channel"
+      },
+      {
+        "id": "1384029967310000158",
+        "name": "hr-admin-đông-anh",
+        "guild": "🔥 DUKICK",
+        "type": "channel"
+      },
+      {
+        "id": "1092674586639859732",
+        "name": "hr-admin",
+        "guild": "🔥 DUKICK",
+        "type": "channel"
+      },
+      {
+        "id": "1120615982654836847",
+        "name": "marketing",
+        "guild": "🔥 DUKICK",
+        "type": "channel"
+      },
+      {
+        "id": "1093085150167978014",
+        "name": "pm-mkt",
+        "guild": "🔥 DUKICK",
+        "type": "channel"
+      },
+      {
+        "id": "1145917638493618186",
+        "name": "creative",
+        "guild": "🔥 DUKICK",
+        "type": "channel"
+      },
+      {
+        "id": "1093083019541221396",
+        "name": "sản-xuất-only-producer",
+        "guild": "🔥 DUKICK",
+        "type": "channel"
+      },
+      {
+        "id": "1093085897462906912",
+        "name": "sản-phẩm-fullteam",
+        "guild": "🔥 DUKICK",
+        "type": "channel"
+      },
+      {
+        "id": "1093084694272282674",
+        "name": "sản-xuất-kế-toán",
+        "guild": "🔥 DUKICK",
+        "type": "channel"
+      },
+      {
+        "id": "1133688843153965086",
+        "name": "lịch-anh-chị",
+        "guild": "🔥 DUKICK",
+        "type": "channel"
+      },
+      {
+        "id": "1093087976310984764",
+        "name": "quay-và-post",
+        "guild": "🔥 DUKICK",
+        "type": "channel"
+      },
+      {
+        "id": "1184331943660228689",
+        "name": "hr-sản-xuất",
+        "guild": "🔥 DUKICK",
+        "type": "channel"
+      },
+      {
+        "id": "1103896581318660126",
+        "name": "cơm-các-loại",
+        "guild": "🔥 DUKICK",
+        "type": "channel"
+      },
+      {
+        "id": "1163342305269383198",
+        "name": "quản-lý-cấp-trung",
+        "guild": "🔥 DUKICK",
+        "type": "channel"
+      },
+      {
+        "id": "1093088173199999028",
+        "name": "pm-creative-cũ",
+        "guild": "🔥 DUKICK",
+        "type": "channel"
+      },
+      {
+        "id": "1197756312226893964",
+        "name": "sna-sx-supervisor",
+        "guild": "🔥 DUKICK",
+        "type": "channel"
+      },
+      {
+        "id": "1093085307219480596",
+        "name": "sx-quản-trị-team",
+        "guild": "🔥 DUKICK",
+        "type": "channel"
+      },
+      {
+        "id": "1211166126273339432",
+        "name": "mkt-quản-trị-team",
+        "guild": "🔥 DUKICK",
+        "type": "channel"
+      },
+      {
+        "id": "1093085424383172658",
+        "name": "sna-quản-trị-team",
+        "guild": "🔥 DUKICK",
+        "type": "channel"
+      },
+      {
+        "id": "1093081174244601897",
+        "name": "loop-studio",
+        "guild": "🔥 DUKICK",
+        "type": "channel"
+      },
+      {
+        "id": "1106787350727643217",
+        "name": "ai-development",
+        "guild": "🔥 DUKICK",
+        "type": "channel"
+      }
+    ],
     "telegram": [],
-    "discord": [],
     "whatsapp": [],
     "slack": [],
     "signal": [],
