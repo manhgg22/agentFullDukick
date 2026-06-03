@@ -1,1 +1,0 @@
-Anh đang dùng model **kimi-k2.6**, provider là **openai-api**.
