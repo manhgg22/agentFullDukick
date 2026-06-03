@@ -34,8 +34,8 @@ AGENTS = [
         "vault": r"C:\Users\Admin\Documents\Obsidian Vault\DuKick-PMCreative",
     },
     {
-        "name": "dukick-neolab-8771",
-        "env": r"C:\DuKickAgent\dukick-neolab-8771\.env",
+        "name": "dukick-ketoan-8771",
+        "env": r"C:\DuKickAgent\dukick-ketoan-8771\.env",
         "vault": r"C:\Users\Admin\Documents\Obsidian Vault\DuKick-NeoLab",
     },
 ]

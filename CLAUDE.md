@@ -17,7 +17,7 @@ C:\DuKickAgent\
 │   ├── dukick-truyenthong-8768/   ← Sales Agent
 │   ├── dukick-pm-8769/            ← Account Agent
 │   ├── dukick-pmcreative-8770/    ← Creative Agent
-│   └── dukick-neolab-8771/        ← Finance/Kế toán Agent
+│   └── dukick-ketoan-8771/        ← Finance/Kế toán Agent
 │
 ├── TẦNG 2 — ECC CODING TOOLS (cho developer)
 │   ├── .claude/                   ← Claude Code config
@@ -40,7 +40,7 @@ C:\DuKickAgent\
 | **dukick-pm** | 8769 | Account Agent | Quản trị dự án, timeline, push tiến độ |
 | **dukick-pmcreative** | 8770 | Creative Agent | Giám sát sáng tạo, reference, comment |
 | **dukick-truyenthong** | 8768 | Sales Agent | Lead, pipeline, pitching, handoff |
-| **dukick-neolab** | 8771 | Finance Agent | Thu chi, công nợ, quyết toán, báo cáo |
+| **dukick-ketoan** | 8771 | Finance Agent | Thu chi, công nợ, quyết toán, báo cáo |
 
 > Chi tiết role từng agent xem trong `SOUL.md` của agent đó.
 > Mỗi agent CHỈ đọc SOUL.md của mình — không truy cập dữ liệu bộ phận khác.
@@ -55,7 +55,7 @@ Sales (truyenthong) ──handoff brief──▶ Account (pm)
                               ┌─────────────┼─────────────┐
                               ▼             ▼             ▼
                         Creative       Finance       Tong (coordinator)
-                       (pmcreative)   (neolab)      ◀── đọc tất cả
+                       (pmcreative)   (ketoan)      ◀── đọc tất cả
 ```
 
 - **Sales → Account**: khi có brief/cơ hội chốt

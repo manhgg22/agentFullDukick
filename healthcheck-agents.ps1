@@ -11,7 +11,7 @@ $agents = @(
     "dukick-truyenthong-8768",
     "dukick-pm-8769",
     "dukick-pmcreative-8770",
-    "dukick-neolab-8771",
+    "dukick-ketoan-8771",
     "dukick-tong-8767"
 )
 
