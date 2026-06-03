@@ -18,9 +18,23 @@ Khi được yêu cầu tìm ref, research ý tưởng, hoặc phân tích creat
 | **Pinterest** | Mood board, visual direction, color palette |
 
 ### Cách sử dụng khi được hỏi về ref:
-1. Dùng `web_search` hoặc `browser` để tìm trên **Frameset** và **TVC Book** trước
-2. Tổng hợp 3-5 ref phù hợp với brief (Storyline / Tone&Mood / Thủ pháp)
-3. Trình bày ref kèm: tên brand, link, tại sao phù hợp với job này
+
+**Bước 1 — Tìm qua Google với site: operator** (tránh bị chặn):
+```
+site:frameset.app [keyword ngành/brand]
+site:tvcbook.com [keyword]
+site:vimeo.com [keyword] advertisement
+```
+
+**Bước 2 — Tìm trực tiếp trên YouTube** (ít bị chặn nhất):
+```
+[tên ngành] TVC [năm] Vietnam
+[brand] quảng cáo [tone]
+```
+
+**Bước 3 — Tổng hợp 3-5 ref** kèm: tên brand, link, lý do phù hợp
+
+**Nếu bị chặn:** Dùng `browser` tool với Playwright để render JS → bypass Cloudflare tốt hơn web_fetch thông thường
 
 ---
 

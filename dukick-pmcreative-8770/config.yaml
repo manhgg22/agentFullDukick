@@ -10,6 +10,9 @@ hooks:
   - command: C:/DuKickAgent/venv/Scripts/python.exe C:/DuKickAgent/save_to_obsidian.py
     timeout: 5
 streaming: false
+toolsets:
+  - browser
+  - web
 max_tokens: 4000
 display:
   tool_progress: false
