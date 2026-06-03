@@ -22,9 +22,9 @@ logs/
 */sessions/
 */pairing/
 
-# Sensitive env files (chứa token/key)
-*/.env
-.env
+# .env được commit vào repo private để dễ deploy sang máy khác
+# */.env
+# .env
 
 # Python cache
 __pycache__/
