@@ -22,9 +22,12 @@ logs/
 */sessions/
 */pairing/
 
-# .env được commit vào repo private để dễ deploy sang máy khác
-# */.env
-# .env
+# Secrets — KHÔNG commit
+*/.env
+.env
+hermes-global.env
+hermes-manh/.env
+hermes-chat/.env
 
 # Python cache
 __pycache__/
@@ -41,3 +44,6 @@ Thumbs.db
 **/gateway.lock
 **/gateway.pid
 **/kanban.db.init.lock
+
+# Local secrets file
+.secrets.env
