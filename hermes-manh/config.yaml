@@ -1,0 +1,7 @@
+model: kimi-k2.6
+provider: openai-api
+streaming: false
+max_tokens: 4000
+onboarding:
+  seen:
+    tool_progress_prompt: true

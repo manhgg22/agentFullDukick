@@ -11,3 +11,6 @@ hooks:
 streaming: false
 max_tokens: 4000
 provider: openai-api
+display:
+  tool_progress: false
+  show_tool_calls: false

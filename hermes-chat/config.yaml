@@ -1,0 +1,16 @@
+model: kimi-k2.6
+provider: openai-api
+discord:
+  require_mention: true
+  auto_thread: false
+  thread_require_mention: true
+  history_backfill: true
+hooks:
+  pre_gateway_dispatch:
+  - command: C:/DuKickAgent/venv/Scripts/python.exe C:/DuKickAgent/save_to_obsidian.py
+    timeout: 5
+streaming: false
+max_tokens: 4000
+onboarding:
+  seen:
+    tool_progress_prompt: true

@@ -1,0 +1,7 @@
+Tóm tắt các loại file trong D:\TrainSale:
+
+Loại	Đuôi	Nội dung
+Word	.docx	Credential, Elevator pitch, Kế hoạch kinh doanh, Email mẫu, List câu hỏi sale, Recap họp
+Excel	.xlsx	Training đầu vào, Set up phòng KD, Nguyên tắc Account, Training BĐS
+Video	.mov, .MOV	Sales training 2021-2023, Training ngành BĐS, Music
+Audio	.m4a	Quy trình sales, Account job quay

@@ -1,7 +1,13 @@
 {
-  "updated_at": "2026-06-03T09:36:27.886899",
+  "updated_at": "2026-06-03T14:28:36.744520",
   "platforms": {
     "discord": [
+      {
+        "id": "1511583768782311576",
+        "name": "agent-mẹ",
+        "guild": "🔥 DUKICK",
+        "type": "channel"
+      },
       {
         "id": "1441264760321474814",
         "name": "hr-admin-hương",

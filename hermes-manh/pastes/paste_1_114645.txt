@@ -1,0 +1,11 @@
+Loại	Đuôi	Nội dung
+Word	.docx	Credential, Elevator pitch, Kế hoạch kinh doanh, Email mẫu, List câu hỏi sale, Recap họp
+Excel	.xlsx	Training đầu vào, Set up phòng KD, Nguyên tắc Account, Training BĐS
+Video	.mov, .MOV	Sales training 2021-2023, Training ngành BĐS, Music
+Audio	.m4a	Quy trình sales, Account job quay
+Cấu trúc thư mục chính:
+
+�� Video - Audio training_/ — training Sales & Account (2021, 2022, 2023)
+�� Content cũ/ — email, mail client, câu hỏi sale
+�� Recap họp/ — slide training
+�� drive-download-*/ — file tải từ Google Drive hôm nay

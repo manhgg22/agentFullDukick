@@ -1,0 +1,32 @@
+───────────────────────────────────────
+● Em sẽ chạy batch-by-batch: mỗi lần transcribe 1 file, lưu checkpoint, rồi tiếp file tiếp theo. Cần khoảng 24 lần chạy. File nhỏ xong ngay, file lớn (>30 
+phút) em sẽ extract audio ra WAV trước rồi transcribe từng đoạn.
+────────────────────────────────────────
+  ┊ �� preparing execute_code…
+  ┊ �� exec      import os  0.2s
+  ┊ �� preparing terminal…
+  ┊ �� $         export PATH="/d/TrainSale/ffmpeg/ffmpeg-master-latest-win64-gpl/bin:$PATH" && /c/DuKickAgent/venv/Scripts/python.exe /d/TrainSale/transcribe_batch.py  0.1s
+  ┊ ⚙️ preparing process…
+  ┊ ⚙️  proc      poll proc_8d9a677  0.0s
+  ┊ �� preparing execute_code…
+  ┊ �� exec      import os, subprocess, time  18.5s
+  ┊ �� preparing execute_code…
+  ┊ �� exec      import os, subprocess, time  268.0s
+  ┊ �� preparing execute_code…
+  ┊ �� exec      import os, subprocess, time  300.0s [Script timed out after 300s and was killed.]
+  ┊ �� preparing execute_code…
+  ┊ �� exec      import subprocess, sys  45.0s
+  ┊ �� preparing execute_code…
+  ┊ �� exec      import os, subprocess, time, glob  300.1s [Script timed out after 300s and was killed.]
+  ┊ �� preparing execute_code…
+  �� import os, time from faster_whisper import WhisperModel # Test with tiny file first path = r"D:\TrainSale\Video - Audio training_\Sales & Account Basi
+c - 2022\Basic Sales 2\Quy trình sales 2.m4a" print("Loading faster-whisper medium (int8)...") model = WhisperModel("medium", device="cpu", compute_type="i
+nt8") print("Loaded.") print(f"Transcribing: {os.path.basename(path)}") start = time.time() segments, info = model.transcribe(path, language="vi", beam_siz
+e=5) text = " ".join([seg.text for seg in segments]) elapsed = time.time() - start print(f"\nDone in {elapsed:.1f}s") print(f"Transcript:\n{text}\n") # Now
+ test with larger file - Training nhanh mp4 wav wav_path = r"D:\TrainSale\audio_temp\Training nhanh về cách bắt đầu sales .wav" if os.path.exists(wav_path)
+: print(f"\nTranscribing WAV: {os.path.basename(wav_path)} ({os.path.getsize(wav_path)/1024/1024:.1f} MB)") start = time.time() segments, info = model.tran
+scribe(wav_path, language="vi", beam_size=5) text = " ".join([seg.text for seg in segments]) elapsed = time.time() - start print(f"\nDone in {elapsed:.1f}s
+") print(f"Preview: {text[:500]}...") out_path = r"D:\TrainSale\transcripts\Training nhanh về cách bắt đầu sales .txt" with open(out_path, "w", encoding="u
+tf-8") as f: f.write(text.strip() + "\n") print(f"Saved to {out_path}") else: print(f"WAV not found: {wav_path}")  (03m19s)
+ 
+ ⚕ kimi-k2.6 │ 30.8K/262.1K │ [█░░░░░░░░░] 12% │ 42m │ ⏱ 21m 57s 

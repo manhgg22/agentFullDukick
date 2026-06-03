@@ -1,7 +1,13 @@
 {
-  "updated_at": "2026-06-03T09:36:37.399599",
+  "updated_at": "2026-06-03T14:29:00.608779",
   "platforms": {
     "discord": [
+      {
+        "id": "1511583768782311576",
+        "name": "agent-mẹ",
+        "guild": "🔥 DUKICK",
+        "type": "channel"
+      },
       {
         "id": "1441264760321474814",
         "name": "hr-admin-hương",
@@ -217,6 +223,12 @@
         "name": "ai-development",
         "guild": "🔥 DUKICK",
         "type": "channel"
+      },
+      {
+        "id": "1511583768782311576",
+        "name": "🔥 DUKICK / #agent-mẹ",
+        "type": "group",
+        "thread_id": null
       }
     ],
     "telegram": [],

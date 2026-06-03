@@ -11,3 +11,9 @@ hooks:
     timeout: 5
 streaming: false
 max_tokens: 4000
+onboarding:
+  seen:
+    tool_progress_prompt: true
+display:
+  tool_progress: false
+  show_tool_calls: false

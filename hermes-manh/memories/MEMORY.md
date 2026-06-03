@@ -1,0 +1,1 @@
+User's Windows machine has 64-core Intel Xeon CPU (no GPU), 32GB RAM. For long-running transcription jobs (>5 min), prefers chunked batch processing with background worker and file logging rather than interactive single-run scripts. Faster-whisper (small/base int8) is the preferred engine for Vietnamese transcription on this CPU.
