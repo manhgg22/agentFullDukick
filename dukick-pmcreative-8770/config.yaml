@@ -11,9 +11,12 @@ hooks:
     timeout: 5
 streaming: false
 toolsets:
-  - browser
-  - web
+- browser
+- web
 max_tokens: 4000
 display:
   tool_progress: false
   show_tool_calls: false
+  platforms:
+    discord:
+      tool_progress: off

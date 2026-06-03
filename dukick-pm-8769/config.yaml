@@ -17,3 +17,6 @@ onboarding:
 display:
   tool_progress: false
   show_tool_calls: false
+  platforms:
+    discord:
+      tool_progress: off
