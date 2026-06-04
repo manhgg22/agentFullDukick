@@ -33,8 +33,23 @@ trigger:
   (c) Market norms if available
 - Quantify the gap. Flag "budget shock" when the gap exceeds roughly 3x.
 
-## 5. Multi-tier option packaging (mandatory when gap >3x)
-Never reject outright with a single high price. Design a pricing ladder:
+## 5. Budget gap triage — Go, Adjust, or No-Go
+Before packaging options, run a fast triage against four factors:
+
+| Factor | Red Flag | Impact |
+|--------|----------|--------|
+| **Budget gap** | Agency floor >25 % above client expectation | Win rate drops sharply |
+| **Selection criteria** | Client selects **solely on price** (no treatment/quality score) | Higher price almost always loses |
+| **Relationship** | No prior work or warm intro | No trust premium to offset price |
+| **Opportunity cost** | Tight team capacity or competing leads | Time spent here costs other wins |
+
+**Decision matrix:**
+- **0–1 red flags** → Proceed with multi-tier packaging (Step 5a).
+- **2 red flags** → Consider a slimmed-down single-option pitch or relationship-only touchpoint.
+- **3–4 red flags** → **Polite decline.** Do not burn team hours on a near-zero-win proposal.
+
+## 5a. Multi-tier option packaging (mandatory when gap >3x and proceeding)
+Design a pricing ladder:
 - **Tier 1 (Fit budget):** Minimal viable scope; acknowledge limits explicitly.
 - **Tier 2 (Mid):** Selective quality upgrades (e.g., better camera package, added voice-over).
 - **Tier 3 (Premium):** Full-scope standard production matching agency positioning.
@@ -63,9 +78,10 @@ Clearly state scope, timeline, and exclusions per tier.
 ## Pitfalls
 1. **Locked brief documents** — Do not abandon a brief just because Google Docs requires login. Use the jina.ai fallback.
 2. **Scraping JS-heavy sites** — Expect raw HTML noise; clean with regex rather than parsing frameworks. Do not attempt to render JavaScript.
-3. **Single-option rejection** — Never reply with only a high price when the client budget is low. Always present a ladder.
+3. **Single-option rejection** — Never reply with only a high price when the client budget is low. Always present a ladder **unless the triage flags clearly indicate a no-go**.
 4. **Missing internal benchmarks** — A proposal without anchors feels arbitrary and reduces Account credibility.
 5. **Assuming client sophistication** — Niche B2B clients often have zero production literacy; explain tiers in business terms, not technical jargon.
+6. **Price-only competitions with a large gap** — When a client selects purely on price and your floor is >25 % above the market band, the honest expected value of preparing a full proposal is near zero. A polite decline preserves team capacity and brand positioning.
 
 ## Evaluation checklist
 - [ ] Vault scanned for client history and budget anchors

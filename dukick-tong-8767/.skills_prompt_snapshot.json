@@ -146,12 +146,16 @@
       5372
     ],
     "operations\\dukick-vault-ops\\SKILL.md": [
-      1780548903879873000,
-      5537
+      1780549691075946900,
+      7359
     ],
     "operations\\leo-daily-sync\\SKILL.md": [
-      1780548929228069800,
-      4836
+      1780550628731918800,
+      7794
+    ],
+    "operations\\token-cost-signature\\SKILL.md": [
+      1780550937077186400,
+      1493
     ],
     "product-capability\\SKILL.md": [
       1780372040103305300,
@@ -794,6 +798,19 @@
       "category": "operations",
       "frontmatter_name": "leo-daily-sync",
       "description": "Workflow điều phối công việc cần chị Leo duyệt/xử lý qua ...",
+      "platforms": [],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    },
+    {
+      "skill_name": "token-cost-signature",
+      "category": "operations",
+      "frontmatter_name": "token-cost-signature",
+      "description": "Auto-append token usage estimate and cost to every agent ...",
       "platforms": [],
       "conditions": {
         "fallback_for_toolsets": [],

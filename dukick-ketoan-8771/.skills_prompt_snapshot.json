@@ -145,6 +145,10 @@
       1780372040103305300,
       4552
     ],
+    "production\\production-finance-ops\\SKILL.md": [
+      1780550216795878900,
+      5343
+    ],
     "remotion\\SKILL.md": [
       1780544129449842900,
       4411
@@ -756,6 +760,19 @@
       "category": "product-capability",
       "frontmatter_name": "product-capability",
       "description": "Translate PRD intent, roadmap asks, or product discussion...",
+      "platforms": [],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    },
+    {
+      "skill_name": "production-finance-ops",
+      "category": "production",
+      "frontmatter_name": "production-finance-ops",
+      "description": "Finance operations for DuKick Film — cronjob reminders, P...",
       "platforms": [],
       "conditions": {
         "fallback_for_toolsets": [],

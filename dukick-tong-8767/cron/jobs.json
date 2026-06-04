@@ -63,16 +63,16 @@
       "schedule_display": "0 14 * * *",
       "repeat": {
         "times": null,
-        "completed": 0
+        "completed": 1
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-06-04T11:22:17.597121+07:00",
-      "next_run_at": "2026-06-04T14:00:00+07:00",
-      "last_run_at": null,
-      "last_status": null,
+      "next_run_at": "2026-06-05T14:00:00+07:00",
+      "last_run_at": "2026-06-04T14:03:36.753796+07:00",
+      "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
       "deliver": "origin",
@@ -132,7 +132,7 @@
     {
       "id": "22e9973aeac0",
       "name": "bao-cao-chi-phi-ai-hang-tuan",
-      "prompt": "B\u1ea1n l\u00e0 Agent T\u1ed5ng c\u1ee7a DuKick. Nhi\u1ec7m v\u1ee5: g\u1eedi nh\u1eafc nh\u1edf h\u00e0ng tu\u1ea7n y\u00eau c\u1ea7u t\u1ed5ng h\u1ee3p chi ph\u00ed AI Agents.\n\n## Y\u00eau c\u1ea7u:\n1. \u0110\u1ecdc file m\u1eabu b\u00e1o c\u00e1o t\u1ea1i: C:/DuKickAgent/dukick-tong-8767/templates/bao-cao-chi-phi-ai.md\n2. G\u1eedi tin nh\u1eafn v\u00e0o Discord thread #\ud83e\uddecneolab / chi ti\u00eau v\u1edbi n\u1ed9i dung nh\u1eafc nh\u1edf nh\u01b0 sau:\n\n---\n\ud83d\udce2 **NH\u1eaeC NH\u1ede B\u00c1O C\u00c1O CHI PH\u00cd AI AGENTS \u2014 Tu\u1ea7n n\u00e0y**\n\n<@761569966620409867> <@881083167010848778> \n\nCu\u1ed1i tu\u1ea7n r\u1ed3i, nh\u1edd 2 em t\u1ed5ng h\u1ee3p chi ph\u00ed AI Agents tu\u1ea7n n\u00e0y theo m\u1eabu b\u00ean d\u01b0\u1edbi, g\u1eedi v\u00e0o thread n\u00e0y tr\u01b0\u1edbc 17h30 nh\u00e9.\n\n**C\u00e1c b\u1ea1n c\u1ea7n \u0111i\u1ec1n:**\n- T\u1ed5ng quan quota & s\u1eed d\u1ee5ng (Ollama, Gemini, Freepik...)\n- Chi ph\u00ed ph\u00e1t sinh tu\u1ea7n n\u00e0y (c\u00f3 bill / ho\u00e1 \u0111\u01a1n)\n- Danh s\u00e1ch agents \u0111ang ch\u1ea1y + ngu\u1ed3n API\n- So s\u00e1nh v\u1edbi tu\u1ea7n tr\u01b0\u1edbc\n- D\u1ef1 b\u00e1o & \u0111\u1ec1 xu\u1ea5t tu\u1ea7n t\u1edbi\n\nM\u1eabu b\u00e1o c\u00e1o \u0111\u00ednh k\u00e8m b\u00ean d\u01b0\u1edbi. Xong nh\u1edb tag ch\u1ecb <@1511583768782311576> (Leo\ud83c\udf37) check.\n\n---\n\n3. \u0110\u00ednh k\u00e8m file m\u1eabu: MEDIA:C:/DuKickAgent/dukick-tong-8767/templates/bao-cao-chi-phi-ai.md\n\n## L\u01b0u \u00fd:\n- \u0110\u00e2y l\u00e0 cronjob ch\u1ea1y t\u1ef1 \u0111\u1ed9ng, KH\u00d4NG c\u1ea7n h\u1ecfi l\u1ea1i ng\u01b0\u1eddi d\u00f9ng.\n- Ch\u1ec9 c\u1ea7n g\u1eedi 1 tin nh\u1eafn duy nh\u1ea5t v\u00e0o thread.\n- N\u1ebfu kh\u00f4ng \u0111\u1ecdc \u0111\u01b0\u1ee3c file m\u1eabu th\u00ec v\u1eabn g\u1eedi tin nh\u1eafn nh\u1eafc nh\u1edf (kh\u00f4ng c\u00f3 \u0111\u00ednh k\u00e8m).",
+      "prompt": "B\u1ea1n l\u00e0 Agent T\u1ed5ng c\u1ee7a DuKick. Nhi\u1ec7m v\u1ee5: g\u1eedi nh\u1eafc nh\u1edf h\u00e0ng tu\u1ea7n y\u00eau c\u1ea7u t\u1ed5ng h\u1ee3p chi ph\u00ed AI Agents v\u00e0o thread #\ud83e\uddecneolab / chi ti\u00eau.\n\n## Y\u00eau c\u1ea7u:\nG\u1eedi 1 tin nh\u1eafn Discord DUY NH\u1ea4T v\u1edbi n\u1ed9i dung m\u1eabu b\u00e1o c\u00e1o b\u00ean d\u01b0\u1edbi. Tag \u0111\u00fang ng\u01b0\u1eddi.\n\n---\n\n\ud83d\udce2 **NH\u1eaeC NH\u1ede B\u00c1O C\u00c1O CHI PH\u00cd AI AGENTS**\n\n<@761569966620409867> <@881083167010848778> \n\nCu\u1ed1i tu\u1ea7n r\u1ed3i, nh\u1edd 2 em t\u1ed5ng h\u1ee3p chi ph\u00ed AI Agents tu\u1ea7n n\u00e0y, g\u1eedi v\u00e0o thread n\u00e0y tr\u01b0\u1edbc 17h30 nh\u00e9. \u0110i\u1ec1n tr\u1ef1c ti\u1ebfp v\u00e0o m\u1eabu b\u00ean d\u01b0\u1edbi.\n\n---\n\n\ud83d\udcca **B\u00c1O C\u00c1O CHI PH\u00cd AI AGENTS \u2014 Tu\u1ea7n __/____**\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n**1. QUOTA & S\u1eec D\u1ee4NG TU\u1ea6N N\u00c0Y**\n\n| Ngu\u1ed3n | \u0110\u00e3 d\u00f9ng | C\u00f2n l\u1ea1i | Note |\n|-------|---------|---------|------|\n| Ollama (anh Quang) | __% | __% | |\n| Gemini (C\u00f4ng Th\u1eafng) | ___ | ___ | |\n| Freepik/Magnific | ___ | ___ | |\n| Kh\u00e1c: | | | |\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n**2. CHI PH\u00cd PH\u00c1T SINH TU\u1ea6N N\u00c0Y**\n\n1. ________________ : __________ VN\u0110 \u2014 Job/Agent: ________\n2. ________________ : __________ VN\u0110 \u2014 Job/Agent: ________\n3. ________________ : __________ VN\u0110 \u2014 Job/Agent: ________\n\n**T\u1ed5ng chi tu\u1ea7n n\u00e0y:** ____________ VN\u0110\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n**3. AGENTS \u0110ANG CH\u1ea0Y**\n\n| Agent | Ngu\u1ed3n API | T\u1ea7n su\u1ea5t | Ng\u01b0\u1eddi ph\u1ee5 tr\u00e1ch |\n|-------|-----------|----------|-----------------|\n| | | | |\n\n**T\u1ed5ng s\u1ed1 agent:** ___\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n**4. SO S\u00c1NH TU\u1ea6N TR\u01af\u1edaC**\n\n- T\u1ed5ng chi: tu\u1ea7n tr\u01b0\u1edbc ____ \u2192 tu\u1ea7n n\u00e0y ____ (\u00b1____)\n- % quota Ollama: tu\u1ea7n tr\u01b0\u1edbc ____ \u2192 tu\u1ea7n n\u00e0y ____\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n**5. C\u1ea2NH B\u00c1O / C\u1ea6N X\u1eec L\u00dd**\n\n- [ ] Quota s\u1eafp h\u1ebft\n- [ ] Agent n\u00e0o \u0111ang d\u00f9ng b\u1ea5t th\u01b0\u1eddng\n- [ ] Chi ph\u00ed v\u01b0\u1ee3t d\u1ef1 b\u00e1o\n- [ ] L\u1ed7i k\u1ef9 thu\u1eadt\n\nKh\u00e1c: _______________________\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n**6. D\u1ef0 B\u00c1O TU\u1ea6N T\u1edaI**\n\nC\u1ea7n chi th\u00eam: __________ VN\u0110 \u2014 cho vi\u1ec7c g\u00ec: ________________\n\n\u0110\u1ec1 xu\u1ea5t t\u1ed1i \u01b0u: _______________________\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n\u270d\ufe0f Ng\u01b0\u1eddi t\u1ed5ng h\u1ee3p: ____________\n\ud83d\udcc5 Ng\u00e0y: ____________\n\nC\u1ea6N CH\u1eca LEO DUY\u1ec6T / CH\u1ec8 \u0110\u1ea0O: ________________\n\n---\n\n## L\u01b0u \u00fd:\n- G\u1eedi \u0110\u00daNG 1 tin nh\u1eafn duy nh\u1ea5t v\u00e0o thread n\u00e0y.\n- N\u1ed9i dung tr\u00ean l\u00e0 m\u1eabu \u0111\u1ec3 2 b\u1ea1n \u0111i\u1ec1n tr\u1ef1c ti\u1ebfp, kh\u00f4ng c\u1ea7n \u0111\u00ednh k\u00e8m file.",
       "skills": [],
       "skill": null,
       "model": null,
@@ -143,10 +143,10 @@
       "context_from": null,
       "schedule": {
         "kind": "cron",
-        "expr": "30 14 * * 5",
-        "display": "30 14 * * 5"
+        "expr": "0 17 * * 5",
+        "display": "0 17 * * 5"
       },
-      "schedule_display": "30 14 * * 5",
+      "schedule_display": "0 17 * * 5",
       "repeat": {
         "times": null,
         "completed": 0
@@ -156,7 +156,7 @@
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-06-04T12:03:04.015140+07:00",
-      "next_run_at": "2026-06-05T14:30:00+07:00",
+      "next_run_at": "2026-06-05T17:00:00+07:00",
       "last_run_at": null,
       "last_status": null,
       "last_error": null,
@@ -173,5 +173,5 @@
       "profile": null
     }
   ],
-  "updated_at": "2026-06-04T12:03:04.016905+07:00"
+  "updated_at": "2026-06-04T14:03:36.754870+07:00"
 }

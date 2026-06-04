@@ -143,12 +143,36 @@ def read_latest_discord(vault_name):
 | DuKick-PMCreative | `TaiLieu-Creative` | Quy trình creative, treatment |
 | DuKick-NeoLab | `TaiLieu-Finance` | Hợp đồng mẫu, quy trình chứng từ, tạm ứng |
 
+## Search Strategy
+
+When hunting for a specific deliverable (kịch bản, treatment, script, brief), follow this order to avoid broad searches that return hundreds of irrelevant hits:
+
+1. **Read the most recent 3–5 Discord log files** in each vault (`Discord/YYYY-MM-DD.md`).  
+   These files are **synthesized agent reports**, not raw transcripts. They often contain:  
+   - Executive summaries of who is doing what  
+   - References to external links (Google Drive, Canva, Docs) where the actual file lives  
+   - Deadlines and handoff notes  
+   → *Start here before running keyword searches.*
+
+2. **Scan for external platform references** inside those logs.  
+   Typical patterns:  
+   - `https://docs.google.com/document/d/...` (scripts, treatments, briefs)  
+   - `https://www.canva.com/design/...` (pitch decks, one-pagers)  
+   - `https://drive.google.com/drive/folders/...` (phối cảnh, reference boards)  
+   - `https://docs.google.com/spreadsheets/...` (plans, timelines)  
+   If a user says "Linh gửi kịch bản", the actual file is almost always on Drive/Canva and only the *link* is in the vault.
+
+3. **Only then run targeted keyword searches** inside `TaiLieu-*` and `Báo cáo` folders.  
+   Broad vault-wide keyword searches across all `Discord/` files usually produce 200+ noise hits because the logs are long and mention many names.
+
 ## Pitfalls
 
 1. **BOM in markdown files**: Files written by Obsidian or exported from Discord may start with `\ufeff`. Reading with `utf-8` leaves the BOM as invisible junk at the start of the string; use `utf-8-sig` to strip it automatically.
-2. **Missing date = no activity**: If `2026-06-04.md` does not exist in a vault's `Discord/` folder, that bộ phận had no logged Discord activity on that day. Do not treat as an error.
+2. **Missing date = no activity**: If `2026-06-04.md` does not exist in a vault's `Discord/` folder, that bộ phận had no logged Discord activity for that day. Do not treat as an error.
 3. **Never use `read_file` or `terminal` for vault paths**: Even if the path looks simple, the tool layer on this Windows host is flaky with the `C:\Users\Admin\Documents\Obsidian Vault` tree. Stick to `execute_code` + Python for consistency.
 4. **Vietnamese diacritics in filenames**: Filenames may contain Vietnamese characters (e.g. `Báo-cáo-tổng-hợp.md`). Python `os.listdir` handles these correctly; `read_file` does not.
+5. **Discord logs are synthesized reports, not raw transcripts**: Do not search them as if they were verbatim chat logs. Look for summaries, action items, and external links rather than trying to grep every line.
+6. **Actual deliverables live on external platforms**: Users (especially Creative and Content) share work via Google Drive, Canva, or Docs. The vault almost never contains the native file — only the link and context.
 
 ## References
 

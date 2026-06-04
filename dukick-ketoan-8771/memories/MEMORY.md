@@ -1,0 +1,3 @@
+DuKick team prefers Discord user ID mentions in finance reminders rather than generic role-based tags. Verified IDs: Yến (kế toán) = 885170747797032991, Huyền (PM) = 1338069800240549898, Phương (GĐTC) = 1091125381421072425, Thái (PM/SX) = 1406146356006879313, Hoàng (PM/SX) = 765590233601015849.
+§
+DuKick PPW finance tracking data (bảng QUẢN TRỊ PPW - THU - CHI) is maintained live in Google Sheets online. The local Obsidian .md file is stale and should NEVER be treated as source-of-truth. Always ask for the Sheets link or CSV export URL.
