@@ -13,6 +13,10 @@
       1780372040064310500,
       13620
     ],
+    "apikey-image-gen\\SKILL.md": [
+      1780544129446841400,
+      6276
+    ],
     "article-writing\\SKILL.md": [
       1780372040065304700,
       2980
@@ -85,6 +89,14 @@
       1780372040091304400,
       6729
     ],
+    "grok-image-to-video\\SKILL.md": [
+      1780544129446841400,
+      4270
+    ],
+    "hyperframes\\SKILL.md": [
+      1780544129447840500,
+      3558
+    ],
     "investor-materials\\SKILL.md": [
       1780372040094307100,
       2806
@@ -96,6 +108,10 @@
     "json-canvas\\SKILL.md": [
       1780135643879669500,
       7629
+    ],
+    "markdown-viewer\\SKILL.md": [
+      1780544129448843800,
+      5162
     ],
     "market-research\\SKILL.md": [
       1780372040097304400,
@@ -128,6 +144,10 @@
     "product-capability\\SKILL.md": [
       1780372040103305300,
       4552
+    ],
+    "remotion\\SKILL.md": [
+      1780544129449842900,
+      4411
     ],
     "security-review\\SKILL.md": [
       1780372040104304100,
@@ -291,6 +311,24 @@
       "frontmatter_name": "api-design",
       "description": "REST API design patterns including resource naming, statu...",
       "platforms": [],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    },
+    {
+      "skill_name": "apikey-image-gen",
+      "category": "apikey-image-gen",
+      "frontmatter_name": "apikey-image-gen",
+      "description": "Generate or edit images through Hermes Web UI using the s...",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows",
+        "termux"
+      ],
       "conditions": {
         "fallback_for_toolsets": [],
         "requires_toolsets": [],
@@ -533,6 +571,40 @@
       }
     },
     {
+      "skill_name": "grok-image-to-video",
+      "category": "grok-image-to-video",
+      "frontmatter_name": "grok-image-to-video",
+      "description": "Animate a local image into a short mp4 video through Herm...",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    },
+    {
+      "skill_name": "hyperframes",
+      "category": "hyperframes",
+      "frontmatter_name": "hyperframes",
+      "description": "Create AI videos with HyperFrames in Hermes using HTML, C...",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    },
+    {
       "skill_name": "investor-materials",
       "category": "investor-materials",
       "frontmatter_name": "investor-materials",
@@ -564,6 +636,23 @@
       "frontmatter_name": "json-canvas",
       "description": "",
       "platforms": [],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    },
+    {
+      "skill_name": "markdown-viewer",
+      "category": "markdown-viewer",
+      "frontmatter_name": "markdown-viewer",
+      "description": "Create rich diagrams, data visualizations, technical arch...",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
       "conditions": {
         "fallback_for_toolsets": [],
         "requires_toolsets": [],
@@ -668,6 +757,23 @@
       "frontmatter_name": "product-capability",
       "description": "Translate PRD intent, roadmap asks, or product discussion...",
       "platforms": [],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    },
+    {
+      "skill_name": "remotion",
+      "category": "remotion",
+      "frontmatter_name": "remotion",
+      "description": "Create editable AI video projects with Remotion and React...",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
       "conditions": {
         "fallback_for_toolsets": [],
         "requires_toolsets": [],

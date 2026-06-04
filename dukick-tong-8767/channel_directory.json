@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-03T18:26:13.035040",
+  "updated_at": "2026-06-04T12:00:28.879799",
   "platforms": {
     "discord": [
       {
@@ -229,6 +229,48 @@
         "name": "🔥 DUKICK / #agent-mẹ",
         "type": "group",
         "thread_id": null
+      },
+      {
+        "id": "1092673756457074763",
+        "name": "🔥 DUKICK / #dukick-update",
+        "type": "group",
+        "thread_id": null
+      },
+      {
+        "id": "1093083512837521448",
+        "name": "🔥 DUKICK / #pm",
+        "type": "group",
+        "thread_id": null
+      },
+      {
+        "id": "1093084443356442664",
+        "name": "🔥 DUKICK / #pm-kế-toán-hr",
+        "type": "group",
+        "thread_id": null
+      },
+      {
+        "id": "1093105801192820796",
+        "name": "🔥 DUKICK / #pm-hr",
+        "type": "group",
+        "thread_id": null
+      },
+      {
+        "id": "1508691096312479835",
+        "name": "🔥 DUKICK / #ai-film",
+        "type": "group",
+        "thread_id": null
+      },
+      {
+        "id": "1508691372541214865",
+        "name": "🔥 DUKICK / #ai-marcom-media",
+        "type": "group",
+        "thread_id": null
+      },
+      {
+        "id": "1492791191362732062:1492791191362732062",
+        "name": "🔥 DUKICK / #🧬neolab / chi tiêu / topic 1492791191362732062",
+        "type": "thread",
+        "thread_id": "1492791191362732062"
       }
     ],
     "telegram": [],

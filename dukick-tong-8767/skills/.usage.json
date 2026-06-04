@@ -1,0 +1,80 @@
+{
+  "dukick-vault-ops": {
+    "archived_at": null,
+    "created_at": "2026-06-04T04:55:03.886104+00:00",
+    "created_by": "agent",
+    "last_patched_at": "2026-06-04T04:55:13.144193+00:00",
+    "last_used_at": null,
+    "last_viewed_at": null,
+    "patch_count": 1,
+    "pinned": false,
+    "state": "active",
+    "use_count": 0,
+    "view_count": 0
+  },
+  "leo-daily-sync": {
+    "archived_at": null,
+    "created_at": "2026-06-04T04:25:12.418890+00:00",
+    "created_by": null,
+    "last_patched_at": "2026-06-04T04:55:29.233488+00:00",
+    "last_used_at": "2026-06-04T04:53:40.821529+00:00",
+    "last_viewed_at": "2026-06-04T04:53:40.815750+00:00",
+    "patch_count": 4,
+    "pinned": false,
+    "state": "active",
+    "use_count": 2,
+    "view_count": 2
+  },
+  "messaging-platform-agent": {
+    "archived_at": null,
+    "created_at": "2026-06-04T04:20:20.161330+00:00",
+    "created_by": "agent",
+    "last_patched_at": null,
+    "last_used_at": "2026-06-04T04:25:25.054533+00:00",
+    "last_viewed_at": "2026-06-04T04:25:25.050474+00:00",
+    "patch_count": 0,
+    "pinned": false,
+    "state": "active",
+    "use_count": 1,
+    "view_count": 1
+  },
+  "obsidian-bases": {
+    "archived_at": null,
+    "created_at": "2026-06-04T04:54:08.396971+00:00",
+    "created_by": null,
+    "last_patched_at": null,
+    "last_used_at": "2026-06-04T04:54:08.401889+00:00",
+    "last_viewed_at": "2026-06-04T04:54:08.396989+00:00",
+    "patch_count": 0,
+    "pinned": false,
+    "state": "active",
+    "use_count": 1,
+    "view_count": 1
+  },
+  "obsidian-cli": {
+    "archived_at": null,
+    "created_at": "2026-06-04T04:53:40.810960+00:00",
+    "created_by": null,
+    "last_patched_at": null,
+    "last_used_at": "2026-06-04T04:53:41.828835+00:00",
+    "last_viewed_at": "2026-06-04T04:53:40.810979+00:00",
+    "patch_count": 0,
+    "pinned": false,
+    "state": "active",
+    "use_count": 1,
+    "view_count": 1
+  },
+  "obsidian-markdown": {
+    "archived_at": null,
+    "created_at": "2026-06-04T04:54:09.402390+00:00",
+    "created_by": null,
+    "last_patched_at": null,
+    "last_used_at": "2026-06-04T04:54:09.408265+00:00",
+    "last_viewed_at": "2026-06-04T04:54:09.402407+00:00",
+    "patch_count": 0,
+    "pinned": false,
+    "state": "active",
+    "use_count": 1,
+    "view_count": 1
+  }
+}

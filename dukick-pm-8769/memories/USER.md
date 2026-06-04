@@ -1,0 +1,1 @@
+When asked to analyze or evaluate a topic, the user expects exhaustive tool usage. The directive 'dùng nhiều nhất có thể' means: read vault/archive files, search internal logs, scrape websites, mine pricing history, and synthesize a fully evidence-backed report rather than a brief summary.

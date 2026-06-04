@@ -1,0 +1,22 @@
+﻿STT,Hạng mục,Mô tả,Số lượng,Đơn giá (VNĐ),Thành tiền (VNĐ),Ghi chú
+A,PRE-PRODUCTION,,,,,
+1,Concept & Creative Direction,Brainstorm + treatment + moodboard,1,0,0,Nếu KH đã có concept thì bỏ qua
+2,Storyboard,Vẽ 20–25 khung storyboard,1,0,0,Bao gồm 2 lần chỉnh sửa
+3,PPM/Briefing ekip,Họp triển khai nội bộ,1,0,0,
+B,PRODUCTION (ON-SET),,,,,
+4,Producer / PM,"Quản lý set, điều phối, phiên dịch",2 ngày,0,0,Tính theo ngày công
+5,Đạo diễn,"Chỉ đạo diễn xuất, nhịp phim",2 ngày,0,0,
+6,DOP + Camera Assistant,Quay phim + setup máy,2 ngày,0,0,
+7,Gaffer + Lighting kit,Setup ánh sáng theo mood,2 ngày,0,0,
+8,Makeup & Hair + Stylist,Hóa trang + phục trang,2 ngày,0,0,
+9,Location / Studio rental,Thuê studio hoặc location,2 ngày,0,0,Chưa bao gồm permit nếu public
+10,Cast / Talent,Diễn viên / KOL / model,2 ngày,0,0,Tùy profile talent
+11,Catering & Logistics,"Ăn uống, xe đưa đón, vận chuyển",2 ngày,0,0,
+C,POST-PRODUCTION,,,,,
+12,Offline Edit,"Dựng nhịp, cắt cảnh, chọn nhạc",1 dự án,0,0,"3–5 ngày, 2 rounds sửa"
+13,Online Edit (Color Grading + GFX),"Lên màu, thiết kế đồ họa, chữ",1 dự án,0,0,2–3 ngày
+14,VFX / CGI (nếu có),Hiệu ứng kỹ xảo,1 dự án,0,0,Báo giá riêng theo mức độ phức tạp
+15,Sound Design & Mixing,Design nhạc nền + SFX + lồng tiếng,1 dự án,0,0,
+16,Voiceover / VO Talent,Thu âm lời dẫn,1 phiên,0,0,Tùy ngôi sao/thu âm studio
+D,DELIVERABLES,,,,,
+17,Master 4K + Social cuts,File gốc + cắt ngắn cho social,1 bộ,0,0,

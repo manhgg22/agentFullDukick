@@ -1,0 +1,1 @@
+On this Windows host, the `terminal` tool executes through git-bash/MSYS, not PowerShell or cmd.exe. PowerShell builtins (Get-ChildItem, Select-String, $env:FOO, cmd '/c ...') will fail inside terminal(). Use POSIX syntax (ls, grep, cat, $HOME) or switch to `execute_code` with Python's os module for Windows path operations.
