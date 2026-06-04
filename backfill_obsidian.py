@@ -33,6 +33,23 @@ AGENTS = [
         "env": r"C:\DuKickAgent\dukick-pmcreative-8770\.env",
         "vault": r"C:\Users\Admin\Documents\Obsidian Vault\DuKick-PMCreative",
     },
+    # Hanoi Signature — dùng bot PM với các kênh riêng
+    {
+        "name": "hanoi-signature",
+        "env": r"C:\DuKickAgent\dukick-pm-8769\.env",
+        "vault": r"C:\Users\Admin\Documents\Obsidian Vault\Hanoi-Signature",
+        "channels": ["1489834586585170033","1489834646236561449","1489834663186006036",
+                     "1489834678453141554","1489834696799031316","1489834828278005920",
+                     "1489834867242827928","1498545263760113694","1503598469611520000",
+                     "1504357538269888563","1504428057950421045","1504720548477931560"],
+    },
+    # Photoshoot HNS
+    {
+        "name": "photoshoot-hns",
+        "env": r"C:\DuKickAgent\dukick-pm-8769\.env",
+        "vault": r"C:\Users\Admin\Documents\Obsidian Vault\Photoshoot-HNS",
+        "channels": ["1512008094551507096","1512008847752040482","1512009779386777743","1512014999810474136"],
+    },
     {
         "name": "dukick-ketoan-8771",
         "env": r"C:\DuKickAgent\dukick-ketoan-8771\.env",
@@ -176,33 +193,33 @@ def main():
         print(f"\n[{agent['name']}]")
         env = load_env(agent["env"])
         token = env.get("DISCORD_BOT_TOKEN", "")
-        channel_id = env.get("DISCORD_HOME_CHANNEL", "")
 
         if not token:
             print("  ⚠️  No DISCORD_BOT_TOKEN — skip")
             continue
-        if not channel_id:
-            print("  ⚠️  No DISCORD_HOME_CHANNEL — skip")
-            continue
 
-        # Lấy tên channel
-        ch_info = discord_get(f"/channels/{channel_id}", token)
-        channel_name = ch_info.get("name", channel_id) if ch_info else channel_id
-        print(f"  Channel: #{channel_name} ({channel_id})")
+        # Multi-channel support (Hanoi Signature, Photoshoot HNS)
+        channel_list = agent.get("channels", [])
+        if not channel_list:
+            channel_id = env.get("DISCORD_HOME_CHANNEL", "")
+            if not channel_id:
+                print("  ⚠️  No DISCORD_HOME_CHANNEL — skip")
+                continue
+            channel_list = [channel_id]
 
-        # Kéo tin nhắn
-        print(f"  Fetching messages...")
-        messages = fetch_all_messages(channel_id, token)
-        print(f"  Total messages: {len(messages)}")
+        for channel_id in channel_list:
+            ch_info = discord_get(f"/channels/{channel_id}", token)
+            channel_name = ch_info.get("name", channel_id) if ch_info else channel_id
+            print(f"  Channel: #{channel_name} ({channel_id})")
 
-        if not messages:
-            print("  ⚠️  No messages found")
-            continue
-
-        # Lưu vào Obsidian
-        saved, days = save_messages_to_vault(messages, agent["vault"], channel_name)
-        total_saved += saved
-        print(f"  ✅ Saved {saved} entries across {days} days → {agent['vault']}\\Discord\\")
+            # Kéo tin nhắn
+            messages = fetch_all_messages(channel_id, token)
+            print(f"  Total: {len(messages)} messages")
+            if not messages:
+                continue
+            saved, days = save_messages_to_vault(messages, agent["vault"], channel_name)
+            total_saved += saved
+            print(f"  ✅ +{saved} entries → {agent['vault']}\\Discord\\")
 
     print(f"\n{'=' * 60}")
     print(f"Done! Total {total_saved} entries saved to Obsidian.")
