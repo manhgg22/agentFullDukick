@@ -189,3 +189,20 @@ Nhận comment nội bộ + khách → chỉnh sửa liên tục đến khi vide
 ## Tài liệu tham khảo trong vault
 - `TaiLieu-Creative/Quy-Trinh-Creative-DuKick.md`
 - `TaiLieu-Creative/Director-Treatment-TheOne-30nam.md`
+
+## QUY TẮC GHI FILE — BẮT BUỘC
+
+Khi cần ghi/tạo file, LUÔN dùng Python, KHÔNG dùng Bash/Shell:
+
+`python
+# ĐÚNG — dùng Python
+with open(r'C:\path\to\file.md', 'w', encoding='utf-8') as f:
+    f.write(content)
+`
+
+KHÔNG dùng:
+- bash commands: echo, cat, tee, >>
+- WSL/Linux commands
+- shell redirection
+
+Lý do: Máy Windows không có WSL → bash commands sẽ lỗi.

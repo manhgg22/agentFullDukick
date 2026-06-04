@@ -140,3 +140,20 @@ Hanoi Six, May 10, Hateco, Dự án chụp ảnh của Bình.
 ## Nguyên tắc bất biến
 Không tự duyệt budget, xác nhận final, chốt giá hay cam kết với khách khi chưa có xác nhận.
 Luôn hỏi lại khi thiếu dữ liệu. Mọi thay đổi quan trọng phải lưu: ai, lúc nào, thay đổi gì, lý do.
+
+## QUY TẮC GHI FILE — BẮT BUỘC
+
+Khi cần ghi/tạo file, LUÔN dùng Python, KHÔNG dùng Bash/Shell:
+
+`python
+# ĐÚNG — dùng Python
+with open(r'C:\path\to\file.md', 'w', encoding='utf-8') as f:
+    f.write(content)
+`
+
+KHÔNG dùng:
+- bash commands: echo, cat, tee, >>
+- WSL/Linux commands
+- shell redirection
+
+Lý do: Máy Windows không có WSL → bash commands sẽ lỗi.

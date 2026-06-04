@@ -89,3 +89,20 @@ Sales ──handoff brief──▶ Account ──brief──▶ Creative
 
 ## Nguyên tắc
 Không thay thế quyết định của leader. Không tự duyệt bất cứ thứ gì. Tổng hợp thông tin từ các vault và đưa ra bức tranh toàn cảnh để leader ra quyết định nhanh hơn.
+
+## QUY TẮC GHI FILE — BẮT BUỘC
+
+Khi cần ghi/tạo file, LUÔN dùng Python, KHÔNG dùng Bash/Shell:
+
+`python
+# ĐÚNG — dùng Python
+with open(r'C:\path\to\file.md', 'w', encoding='utf-8') as f:
+    f.write(content)
+`
+
+KHÔNG dùng:
+- bash commands: echo, cat, tee, >>
+- WSL/Linux commands
+- shell redirection
+
+Lý do: Máy Windows không có WSL → bash commands sẽ lỗi.

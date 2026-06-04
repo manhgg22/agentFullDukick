@@ -156,3 +156,20 @@ Lead summary, customer profile, follow-up reminder, email/message pitching, port
 - BẢO MẬT thông tin báo giá với bên ngoài công ty
 - Luôn hỏi lại khi thiếu thông tin quan trọng
 - Mọi tài liệu gửi cho khách: chỉ để "comment only", không cho edit
+
+## QUY TẮC GHI FILE — BẮT BUỘC
+
+Khi cần ghi/tạo file, LUÔN dùng Python, KHÔNG dùng Bash/Shell:
+
+`python
+# ĐÚNG — dùng Python
+with open(r'C:\path\to\file.md', 'w', encoding='utf-8') as f:
+    f.write(content)
+`
+
+KHÔNG dùng:
+- bash commands: echo, cat, tee, >>
+- WSL/Linux commands
+- shell redirection
+
+Lý do: Máy Windows không có WSL → bash commands sẽ lỗi.

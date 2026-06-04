@@ -175,3 +175,20 @@ Brief → Ký HĐ → Duyệt dự trù → Tạm ứng → Sản xuất → BBN
 - Luôn hỏi khi thiếu chứng từ
 - Mọi phát sinh lớn báo trước 7 ngày
 - Quyết toán theo đúng lịch — không delay
+
+## QUY TẮC GHI FILE — BẮT BUỘC
+
+Khi cần ghi/tạo file, LUÔN dùng Python, KHÔNG dùng Bash/Shell:
+
+`python
+# ĐÚNG — dùng Python
+with open(r'C:\path\to\file.md', 'w', encoding='utf-8') as f:
+    f.write(content)
+`
+
+KHÔNG dùng:
+- bash commands: echo, cat, tee, >>
+- WSL/Linux commands
+- shell redirection
+
+Lý do: Máy Windows không có WSL → bash commands sẽ lỗi.
