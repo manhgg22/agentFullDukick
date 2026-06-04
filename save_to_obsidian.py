@@ -6,22 +6,41 @@ import json, sys, os, re
 from datetime import datetime
 from pathlib import Path
 
-VAULT_MAP = {
-    "dukick-tong-8767":        r"C:\Users\Admin\Documents\Obsidian Vault\DuKick-Tong",
-    "dukick-truyenthong-8768": r"C:\Users\Admin\Documents\Obsidian Vault\DuKick-TruyenThong",
-    "dukick-pm-8769":          r"C:\Users\Admin\Documents\Obsidian Vault\DuKick-PM",
-    "dukick-pmcreative-8770":  r"C:\Users\Admin\Documents\Obsidian Vault\DuKick-PMCreative",
-    "dukick-neolab-8771":      r"C:\Users\Admin\Documents\Obsidian Vault\DuKick-NeoLab",
+VAULT_ROOT = r"C:\Users\Admin\Documents\Obsidian Vault"
+
+# Map agent → vault mặc định (khi không xác định được server)
+AGENT_VAULT_MAP = {
+    "dukick-tong-8767":        "DuKick-Tong",
+    "dukick-truyenthong-8768": "DuKick-TruyenThong",
+    "dukick-pm-8769":          "DuKick-PM",
+    "dukick-pmcreative-8770":  "DuKick-PMCreative",
+    "dukick-ketoan-8771":      "DuKick-NeoLab",
 }
 
-def get_vault_folder() -> Path | None:
-    hermes_home = os.environ.get("HERMES_HOME", "")
-    for key, vault_path in VAULT_MAP.items():
-        if key in hermes_home:
-            folder = Path(vault_path) / "Discord"
-            folder.mkdir(parents=True, exist_ok=True)
-            return folder
-    return None
+# Map guild_id → vault folder
+GUILD_VAULT_MAP = {
+    "1092673756457074760": "DuKick-PM",           # 🔥 DUKICK
+    "1489834585176015018": "Hanoi-Signature",      # Hanoi Signature
+    "1512008093834285146": "Photoshoot-HNS",       # Photoshoot HNS
+}
+
+def get_vault_folder(guild_id: str = None) -> Path | None:
+    # Ưu tiên theo server
+    if guild_id and guild_id in GUILD_VAULT_MAP:
+        vault_name = GUILD_VAULT_MAP[guild_id]
+    else:
+        # Fallback theo agent
+        hermes_home = os.environ.get("HERMES_HOME", "")
+        vault_name = None
+        for key, vname in AGENT_VAULT_MAP.items():
+            if key in hermes_home:
+                vault_name = vname
+                break
+    if not vault_name:
+        return None
+    folder = Path(VAULT_ROOT) / vault_name / "Discord"
+    folder.mkdir(parents=True, exist_ok=True)
+    return folder
 
 def extract_message(payload: dict) -> dict | None:
     extra = payload.get("extra", {})
@@ -96,7 +115,17 @@ def main():
     if payload.get("hook_event_name") != "pre_gateway_dispatch":
         sys.exit(0)
 
-    vault_folder = get_vault_folder()
+    # Lấy guild_id từ event để xác định server
+    extra = payload.get("extra", {})
+    event = extra.get("event", {})
+    if isinstance(event, str):
+        try:
+            event = json.loads(event)
+        except Exception:
+            event = {}
+    guild_id = str(event.get("guild_id") or "")
+
+    vault_folder = get_vault_folder(guild_id)
     if not vault_folder:
         sys.exit(0)
 
