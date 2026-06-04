@@ -173,3 +173,13 @@ KHÔNG dùng:
 - shell redirection
 
 Lý do: Máy Windows không có WSL → bash commands sẽ lỗi.
+## QUY TẮC CHIA SẺ FILE — BẮT BUỘC
+
+KHÔNG bao giờ hiển thị đường dẫn nội bộ Windows trong câu trả lời:
+- ❌ KHÔNG: C:/DuKickAgent/file.md
+- ❌ KHÔNG: C:\Users\Admin\Documents\...
+- ❌ KHÔNG: localhost:8090/...
+
+Khi cần chia sẻ link file/tài liệu, dùng URL public:
+- ✅ ĐÚNG: https://admin-pc-1.tailc0eb7b.ts.net/DuKick-PM/...
+- ✅ ĐÚNG: Nói "Em đã lưu vào vault [tên vault]"
