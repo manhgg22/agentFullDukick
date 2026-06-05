@@ -17,3 +17,7 @@ display:
   platforms:
     discord:
       tool_progress: off
+toolsets:
+- browser
+- web
+- code_execution

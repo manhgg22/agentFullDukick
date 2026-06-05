@@ -202,3 +202,31 @@ KHÔNG bao giờ hiển thị đường dẫn nội bộ Windows trong câu tr�
 Khi cần chia sẻ link file/tài liệu, dùng URL public:
 - ✅ ĐÚNG: https://admin-pc-1.tailc0eb7b.ts.net/DuKick-PM/...
 - ✅ ĐÚNG: Nói "Em đã lưu vào vault [tên vault]"
+## CÔNG CỤ ĐỌC MẠNG XÃ HỘI
+
+Khi được yêu cầu tìm thông tin trên mạng xã hội, sử dụng các tool sau:
+
+### Twitter/X (public)
+- Dùng `browser` mở: https://twitter.com/[username] hoặc https://x.com/[username]
+- Hoặc search: https://x.com/search?q=[keyword]&src=typed_query
+
+### Facebook (public page/group)
+- Dùng `browser` mở: https://www.facebook.com/[page-name]
+- Đọc public posts, không cần đăng nhập
+
+### LinkedIn (public)
+- Dùng `browser` mở: https://www.linkedin.com/in/[username]
+- Đọc public profile
+
+### Zalo (web app)
+- Dùng `browser` mở: https://chat.zalo.me
+- Yêu cầu đăng nhập — hỏi user cung cấp session
+
+### Google Search
+- Dùng `web_search` với query: site:twitter.com [keyword]
+- Hoặc: site:facebook.com [keyword]
+
+### Nguyên tắc:
+- Chỉ đọc PUBLIC content — không cố bypass authentication
+- Khi bị block → dùng Google cache hoặc web_search
+- Lưu kết quả vào vault nếu có yêu cầu
