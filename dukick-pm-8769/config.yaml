@@ -20,6 +20,7 @@ display:
   platforms:
     discord:
       tool_progress: off
+      show_token_analytics: true
 toolsets:
 - browser
 - web

@@ -13,6 +13,7 @@ streaming: false
 toolsets:
 - browser
 - web
+- code_execution
 max_tokens: 4000
 display:
   tool_progress: false
@@ -20,7 +21,4 @@ display:
   platforms:
     discord:
       tool_progress: off
-toolsets:
-- browser
-- web
-- code_execution
+      show_token_analytics: true
