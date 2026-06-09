@@ -1,13 +1,7 @@
 {
-  "updated_at": "2026-06-04T15:13:37.898752",
+  "updated_at": "2026-06-09T16:06:21.065149",
   "platforms": {
     "discord": [
-      {
-        "id": "1511583768782311576",
-        "name": "agent-mẹ",
-        "guild": "🔥 DUKICK",
-        "type": "channel"
-      },
       {
         "id": "1441264760321474814",
         "name": "hr-admin-hương",
@@ -16,7 +10,7 @@
       },
       {
         "id": "1092673756457074763",
-        "name": "dukick-update",
+        "name": "🔥dukick-update",
         "guild": "🔥 DUKICK",
         "type": "channel"
       },
@@ -28,13 +22,25 @@
       },
       {
         "id": "1093079987998949426",
-        "name": "dukick-funny",
+        "name": "🤡dukick-funny",
         "guild": "🔥 DUKICK",
         "type": "channel"
       },
       {
-        "id": "1501519731927285860",
-        "name": "🤖hermes-debug-fix",
+        "id": "1511583768782311576",
+        "name": "agent-mẹ",
+        "guild": "🔥 DUKICK",
+        "type": "channel"
+      },
+      {
+        "id": "1513463364733501532",
+        "name": "agent-nhân-sự",
+        "guild": "🔥 DUKICK",
+        "type": "channel"
+      },
+      {
+        "id": "1512287354994557018",
+        "name": "test-hermes-tổng",
         "guild": "🔥 DUKICK",
         "type": "channel"
       },
@@ -271,6 +277,18 @@
         "name": "🔥 DUKICK / #🧬neolab / chi tiêu / topic 1492791191362732062",
         "type": "thread",
         "thread_id": "1492791191362732062"
+      },
+      {
+        "id": "1512287354994557018",
+        "name": "🔥 DUKICK / #test-hermes",
+        "type": "group",
+        "thread_id": null
+      },
+      {
+        "id": "1497080878499889203:1497080878499889203",
+        "name": "🔥 DUKICK / #🧬neolab / AI UGC / topic 1497080878499889203",
+        "type": "thread",
+        "thread_id": "1497080878499889203"
       }
     ],
     "telegram": [],

@@ -68,7 +68,7 @@ On this Windows host both `read_file` and `terminal` are **unreliable** for vaul
 
 | Tool | Failure mode |
 |------|-------------|
-| `read_file` | "File not found" on paths containing spaces or Vietnamese characters (e.g. `Báo cáo`, `Tài liệu`) |
+| `read_file` | "File not found" on **any** path under the `Obsidian Vault` tree — even simple filenames like `2026-06-04.md`. The failure is systematic, not limited to spaces or Vietnamese characters. |
 | `terminal` | WSL not installed → every shell command errors out |
 
 **Always use `execute_code` with Python** for vault file I/O.
@@ -177,3 +177,5 @@ When hunting for a specific deliverable (kịch bản, treatment, script, brief)
 ## References
 
 - See `references/discord-log-structure.md` for a concrete example of how Discord logs are structured inside a daily file.
+- See `references/extract-user-blocks-from-discord-logs.md` for the canonical pattern to reverse-engineer a user's implicit "plan" from scattered Discord messages — splitting by author block, filtering by topic keywords, and keeping only substantive blocks.
+- See `references/vault-search-scripts.md` for ready-to-run Python scripts (recent logs, external-link extraction, person+deliverable search, recently-modified non-Discord files).

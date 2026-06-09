@@ -20,5 +20,8 @@ display:
   show_tool_calls: false
   platforms:
     discord:
-      tool_progress: off
+      tool_progress: false
       show_token_analytics: true
+billing:
+  input_cost_per_million: 0
+  output_cost_per_million: 0

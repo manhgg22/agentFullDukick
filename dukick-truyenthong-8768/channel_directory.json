@@ -1,13 +1,7 @@
 {
-  "updated_at": "2026-06-04T15:15:15.354072",
+  "updated_at": "2026-06-09T16:06:01.405981",
   "platforms": {
     "discord": [
-      {
-        "id": "1511583768782311576",
-        "name": "agent-mẹ",
-        "guild": "🔥 DUKICK",
-        "type": "channel"
-      },
       {
         "id": "1441264760321474814",
         "name": "hr-admin-hương",
@@ -16,7 +10,7 @@
       },
       {
         "id": "1092673756457074763",
-        "name": "dukick-update",
+        "name": "🔥dukick-update",
         "guild": "🔥 DUKICK",
         "type": "channel"
       },
@@ -28,13 +22,25 @@
       },
       {
         "id": "1093079987998949426",
-        "name": "dukick-funny",
+        "name": "🤡dukick-funny",
         "guild": "🔥 DUKICK",
         "type": "channel"
       },
       {
-        "id": "1501519731927285860",
-        "name": "🤖hermes-debug-fix",
+        "id": "1511583768782311576",
+        "name": "agent-mẹ",
+        "guild": "🔥 DUKICK",
+        "type": "channel"
+      },
+      {
+        "id": "1513463364733501532",
+        "name": "agent-nhân-sự",
+        "guild": "🔥 DUKICK",
+        "type": "channel"
+      },
+      {
+        "id": "1512287354994557018",
+        "name": "test-hermes-tổng",
         "guild": "🔥 DUKICK",
         "type": "channel"
       },

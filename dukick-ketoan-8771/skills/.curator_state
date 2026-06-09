@@ -1,9 +1,9 @@
 {
-  "last_report_path": null,
-  "last_run_at": "2026-05-30T10:54:41.957197+00:00",
-  "last_run_duration_seconds": null,
-  "last_run_summary": "deferred first run — curator seeded, will run after one interval; use `hermes curator run --dry-run` to preview now",
+  "last_report_path": "C:\\DuKickAgent\\dukick-ketoan-8771\\logs\\curator\\20260608-073545",
+  "last_run_at": "2026-06-08T07:35:45.954868+00:00",
+  "last_run_duration_seconds": 83.205234,
+  "last_run_summary": "auto: no changes; llm: I scanned the filtered candidate list. There is exactly **one** agent-created skill in this profile:\n\n- **`production-finance-ops`** — already a class-level umbrella covering DuKick Film finance operations (cronjobs, PPW tracking, Discord t…",
   "last_run_summary_shown_at": null,
   "paused": false,
-  "run_count": 0
+  "run_count": 1
 }

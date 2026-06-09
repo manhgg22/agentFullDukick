@@ -1,13 +1,7 @@
 {
-  "updated_at": "2026-06-04T15:15:19.206347",
+  "updated_at": "2026-06-09T16:06:03.136355",
   "platforms": {
     "discord": [
-      {
-        "id": "1511583768782311576",
-        "name": "agent-mẹ",
-        "guild": "🔥 DUKICK",
-        "type": "channel"
-      },
       {
         "id": "1441264760321474814",
         "name": "hr-admin-hương",
@@ -16,7 +10,7 @@
       },
       {
         "id": "1092673756457074763",
-        "name": "dukick-update",
+        "name": "🔥dukick-update",
         "guild": "🔥 DUKICK",
         "type": "channel"
       },
@@ -28,13 +22,25 @@
       },
       {
         "id": "1093079987998949426",
-        "name": "dukick-funny",
+        "name": "🤡dukick-funny",
         "guild": "🔥 DUKICK",
         "type": "channel"
       },
       {
-        "id": "1501519731927285860",
-        "name": "🤖hermes-debug-fix",
+        "id": "1511583768782311576",
+        "name": "agent-mẹ",
+        "guild": "🔥 DUKICK",
+        "type": "channel"
+      },
+      {
+        "id": "1513463364733501532",
+        "name": "agent-nhân-sự",
+        "guild": "🔥 DUKICK",
+        "type": "channel"
+      },
+      {
+        "id": "1512287354994557018",
+        "name": "test-hermes-tổng",
         "guild": "🔥 DUKICK",
         "type": "channel"
       },
@@ -225,8 +231,146 @@
         "type": "channel"
       },
       {
+        "id": "1489834828278005920",
+        "name": "only-pm",
+        "guild": "Hanoi Signature - Phim thương hiệu",
+        "type": "channel"
+      },
+      {
+        "id": "1498545263760113694",
+        "name": "only-pm-sx",
+        "guild": "Hanoi Signature - Phim thương hiệu",
+        "type": "channel"
+      },
+      {
+        "id": "1489834586585170033",
+        "name": "báo-danh",
+        "guild": "Hanoi Signature - Phim thương hiệu",
+        "type": "channel"
+      },
+      {
+        "id": "1489834696799031316",
+        "name": "tư-liệu-khách-gửi",
+        "guild": "Hanoi Signature - Phim thương hiệu",
+        "type": "channel"
+      },
+      {
+        "id": "1489834663186006036",
+        "name": "chat-chung-recap",
+        "guild": "Hanoi Signature - Phim thương hiệu",
+        "type": "channel"
+      },
+      {
+        "id": "1489834678453141554",
+        "name": "ref",
+        "guild": "Hanoi Signature - Phim thương hiệu",
+        "type": "channel"
+      },
+      {
+        "id": "1489834646236561449",
+        "name": "timeline",
+        "guild": "Hanoi Signature - Phim thương hiệu",
+        "type": "channel"
+      },
+      {
+        "id": "1489834867242827928",
+        "name": "idea",
+        "guild": "Hanoi Signature - Phim thương hiệu",
+        "type": "channel"
+      },
+      {
+        "id": "1503598469611520000",
+        "name": "ppm",
+        "guild": "Hanoi Signature - Phim thương hiệu",
+        "type": "channel"
+      },
+      {
+        "id": "1504357538269888563",
+        "name": "art",
+        "guild": "Hanoi Signature - Phim thương hiệu",
+        "type": "channel"
+      },
+      {
+        "id": "1504428057950421045",
+        "name": "editor",
+        "guild": "Hanoi Signature - Phim thương hiệu",
+        "type": "channel"
+      },
+      {
+        "id": "1504720548477931560",
+        "name": "ai-board",
+        "guild": "Hanoi Signature - Phim thương hiệu",
+        "type": "channel"
+      },
+      {
+        "id": "1512008094551507096",
+        "name": "chung",
+        "guild": "Photoshoot HNS",
+        "type": "channel"
+      },
+      {
+        "id": "1512009779386777743",
+        "name": "tài-liệu",
+        "guild": "Photoshoot HNS",
+        "type": "channel"
+      },
+      {
+        "id": "1512014999810474136",
+        "name": "timeline",
+        "guild": "Photoshoot HNS",
+        "type": "channel"
+      },
+      {
+        "id": "1513817595906887720",
+        "name": "tư-liệu-khách-gửi",
+        "guild": "Photoshoot HNS",
+        "type": "channel"
+      },
+      {
+        "id": "1513818293482295337",
+        "name": "pm",
+        "guild": "Photoshoot HNS",
+        "type": "channel"
+      },
+      {
+        "id": "1513818582629351524",
+        "name": "pm-sản-xuất",
+        "guild": "Photoshoot HNS",
+        "type": "channel"
+      },
+      {
+        "id": "1513819299729637487",
+        "name": "ref",
+        "guild": "Photoshoot HNS",
+        "type": "channel"
+      },
+      {
         "id": "1093083512837521448",
         "name": "🔥 DUKICK / #pm",
+        "type": "group",
+        "thread_id": null
+      },
+      {
+        "id": "1512008094551507096",
+        "name": "Photoshoot HNS / #chung",
+        "type": "group",
+        "thread_id": null
+      },
+      {
+        "id": "1512009779386777743",
+        "name": "Photoshoot HNS / #tài-liệu",
+        "type": "group",
+        "thread_id": null
+      },
+      {
+        "id": "1489834663186006036",
+        "name": "Hanoi Signature - Phim thương hiệu / #chat-chung-recap",
+        "type": "group",
+        "thread_id": null
+      },
+      {
+        "id": "1489834828278005920",
+        "name": "Hanoi Signature - Phim thương hiệu / #only-pm",
         "type": "group",
         "thread_id": null
       }
