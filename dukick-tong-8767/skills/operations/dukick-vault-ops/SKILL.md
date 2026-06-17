@@ -1,16 +1,16 @@
----
-name: dukick-vault-ops
+﻿---
+name: Dukick-vault-ops
 description: >
-  Reliable access to DuKick's 5 Obsidian vaults on the Windows host.
+  Reliable access to Dukick's 5 Obsidian vaults on the Windows host.
   Covers directory layout, Discord log file conventions, and the critical
   Windows-path workaround (use execute_code + Python instead of read_file/terminal).
 triggers:
-  - Need to read vault files from DuKick-Tong, DuKick-PM, DuKick-TruyenThong, DuKick-PMCreative, or DuKick-NeoLab
+  - Need to read vault files from Dukick-Tong, Dukick-PM, Dukick-TruyenThong, Dukick-PMCreative, or Dukick-NeoLab
   - read_file or terminal fails on vault paths
   - Need to list, search, or parse Discord logs or Báo cáo files
 ---
 
-# DuKick Vault Operations
+# Dukick Vault Operations
 
 ## Vault Layout
 
@@ -18,23 +18,23 @@ All 5 vaults live under the same parent directory:
 
 ```
 C:\Users\Admin\Documents\Obsidian Vault\
-├── DuKick-Tong\          (Tổng — điều phối)
+├── Dukick-Tong\          (CEO Assistant)
 │   ├── Báo cáo\
 │   ├── Discord\
 │   └── README.md
-├── DuKick-PM\            (Account)
+├── Dukick-PM\            (Account)
 │   ├── Discord\
 │   ├── TaiLieu-Account\
 │   └── README.md
-├── DuKick-TruyenThong\   (Sales)
+├── Dukick-TruyenThong\   (Sales)
 │   ├── Discord\
 │   ├── TaiLieu-Sales\
 │   └── README.md
-├── DuKick-PMCreative\    (Creative)
+├── Dukick-PMCreative\    (Creative)
 │   ├── Discord\
 │   ├── TaiLieu-Creative\
 │   └── README.md
-└── DuKick-NeoLab\        (Finance)
+└── Dukick-NeoLab\        (Finance)
     ├── Discord\
     ├── TaiLieu-Finance\
     └── README.md
@@ -56,7 +56,7 @@ Each vault's `Discord\` folder contains daily log files named `YYYY-MM-DD.md`.
 ```python
 import os, glob
 
-vault = r"C:\Users\Admin\Documents\Obsidian Vault\DuKick-PM"
+vault = r"C:\Users\Admin\Documents\Obsidian Vault\Dukick-PM"
 discord_dir = os.path.join(vault, "Discord")
 files = sorted(os.listdir(discord_dir))   # already sorted by date string
 latest = files[-1] if files else None
@@ -78,7 +78,7 @@ On this Windows host both `read_file` and `terminal` are **unreliable** for vaul
 ```python
 import os
 
-path = r"C:\Users\Admin\Documents\Obsidian Vault\DuKick-Tong\Báo cáo\2026-06-03_Báo-cáo-tổng-hợp.md"
+path = r"C:\Users\Admin\Documents\Obsidian Vault\Dukick-Tong\Báo cáo\2026-06-03_Báo-cáo-tổng-hợp.md"
 with open(path, "r", encoding="utf-8-sig") as f:
     content = f.read()
 print(content[:2000])
@@ -89,7 +89,7 @@ print(content[:2000])
 ```python
 import os
 
-dir_path = r"C:\Users\Admin\Documents\Obsidian Vault\DuKick-PM\TaiLieu-Account"
+dir_path = r"C:\Users\Admin\Documents\Obsidian Vault\Dukick-PM\TaiLieu-Account"
 files = os.listdir(dir_path)
 print(files)
 ```
@@ -114,11 +114,11 @@ import os
 
 VAULT_ROOT = r"C:\Users\Admin\Documents\Obsidian Vault"
 vaults = {
-    "Tong": "DuKick-Tong",
-    "PM": "DuKick-PM",
-    "TruyenThong": "DuKick-TruyenThong",
-    "PMCreative": "DuKick-PMCreative",
-    "NeoLab": "DuKick-NeoLab",
+    "Tong": "Dukick-Tong",
+    "PM": "Dukick-PM",
+    "TruyenThong": "Dukick-TruyenThong",
+    "PMCreative": "Dukick-PMCreative",
+    "NeoLab": "Dukick-NeoLab",
 }
 
 def read_latest_discord(vault_name):
@@ -137,11 +137,11 @@ def read_latest_discord(vault_name):
 
 | Vault | Subfolder | Purpose |
 |-------|-----------|---------|
-| DuKick-Tong | `Báo cáo` | Báo cáo tổng hợp định kỳ (agent-generated) |
-| DuKick-PM | `TaiLieu-Account` | SOP, case study, tài liệu nghiệp vụ Account |
-| DuKick-TruyenThong | `TaiLieu-Sales` | Elevator pitch, email mẫu, list câu hỏi sale |
-| DuKick-PMCreative | `TaiLieu-Creative` | Quy trình creative, treatment |
-| DuKick-NeoLab | `TaiLieu-Finance` | Hợp đồng mẫu, quy trình chứng từ, tạm ứng |
+| Dukick-Tong | `Báo cáo` | Báo cáo tổng hợp định kỳ (agent-generated) |
+| Dukick-PM | `TaiLieu-Account` | SOP, case study, tài liệu nghiệp vụ Account |
+| Dukick-TruyenThong | `TaiLieu-Sales` | Elevator pitch, email mẫu, list câu hỏi sale |
+| Dukick-PMCreative | `TaiLieu-Creative` | Quy trình creative, treatment |
+| Dukick-NeoLab | `TaiLieu-Finance` | Hợp đồng mẫu, quy trình chứng từ, tạm ứng |
 
 ## Search Strategy
 
@@ -173,6 +173,7 @@ When hunting for a specific deliverable (kịch bản, treatment, script, brief)
 4. **Vietnamese diacritics in filenames**: Filenames may contain Vietnamese characters (e.g. `Báo-cáo-tổng-hợp.md`). Python `os.listdir` handles these correctly; `read_file` does not.
 5. **Discord logs are synthesized reports, not raw transcripts**: Do not search them as if they were verbatim chat logs. Look for summaries, action items, and external links rather than trying to grep every line.
 6. **Actual deliverables live on external platforms**: Users (especially Creative and Content) share work via Google Drive, Canva, or Docs. The vault almost never contains the native file — only the link and context.
+7. **Tool-layer latency after write**: If `write_file` succeeds but a subsequent `read_file` on the same path returns "File not found", the file does exist. Use `execute_code` + Python to verify (`os.path.exists`, `open(...)`) rather than retrying with `read_file`. The `read_file` tool may have stale directory cache on this Windows host.
 
 ## References
 
