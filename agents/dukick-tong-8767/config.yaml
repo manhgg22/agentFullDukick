@@ -1,0 +1,32 @@
+﻿model: kimi-k2.6
+provider: openai-api
+fallback:
+- model: kimi-k2.6
+  provider: openai-api
+  api_key: ***REMOVED***
+  base_url: https://ollama.com/v1
+discord:
+  require_mention: true
+  auto_thread: false
+  thread_require_mention: true
+  history_backfill: true
+hooks:
+  pre_gateway_dispatch:
+  - command: C:/DukickAgent/venv/Scripts/python.exe C:/DukickAgent/save_to_obsidian.py
+    timeout: 5
+streaming: false
+max_tokens: 4000
+display:
+  tool_progress: false
+  show_tool_calls: false
+  platforms:
+    discord:
+      tool_progress: false
+      show_token_analytics: true
+toolsets:
+- browser
+- web
+- code_execution
+billing:
+  input_cost_per_million: 0
+  output_cost_per_million: 0

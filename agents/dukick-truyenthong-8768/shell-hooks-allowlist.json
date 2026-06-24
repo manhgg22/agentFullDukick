@@ -1,0 +1,10 @@
+{
+  "approvals": [
+    {
+      "approved_at": "2026-06-11T04:05:25.344447Z",
+      "command": "C:/DukickAgent/venv/Scripts/python.exe C:/DukickAgent/save_to_obsidian.py",
+      "event": "pre_gateway_dispatch",
+      "script_mtime_at_approval": "2026-06-10T05:10:17.372426Z"
+    }
+  ]
+}

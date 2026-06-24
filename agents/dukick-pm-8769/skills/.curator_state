@@ -1,0 +1,9 @@
+{
+  "last_report_path": "C:\\DukickAgent\\Dukick-pm-8769\\logs\\curator\\20260622-081446",
+  "last_run_at": "2026-06-22T08:14:46.833847+00:00",
+  "last_run_duration_seconds": 0.436529,
+  "last_run_summary": "auto: no changes; llm: skipped (no candidates)",
+  "last_run_summary_shown_at": null,
+  "paused": false,
+  "run_count": 3
+}

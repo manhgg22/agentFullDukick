@@ -1,9 +1,9 @@
----
-id: dukick-never-commit-env
-trigger: "when committing or staging files in DuKick project"
+﻿---
+id: Dukick-never-commit-env
+trigger: "when committing or staging files in Dukick project"
 confidence: 0.99
 domain: security
-source: dukick-project
+source: Dukick-project
 ---
 
 # Never Commit .env Files
@@ -16,11 +16,11 @@ Always check that `.env` files are excluded before committing. These contain Dis
 - `.gitignore` excludes `*/.env` and `.env`
 
 ---
-id: dukick-agent-isolation
+id: Dukick-agent-isolation
 trigger: "when editing a Hermes agent's config or SOUL.md"
 confidence: 0.95
 domain: architecture
-source: dukick-project
+source: Dukick-project
 ---
 
 # Agent Isolation Rule
@@ -30,31 +30,31 @@ Changes to one agent (SOUL.md, config.yaml, .env) must NOT be copied to other ag
 
 ## Evidence
 - 5 agents serve different departments: tong, truyenthong, pm, pmcreative, neolab
-- dukick-tong is coordinator — its SOUL.md includes all vault paths
+- Dukick-tong is coordinator — its SOUL.md includes all vault paths
 
 ---
-id: dukick-tong-starts-last
+id: Dukick-tong-starts-last
 trigger: "when starting or deploying Hermes agents"
 confidence: 0.9
 domain: deployment
-source: dukick-project
+source: Dukick-project
 ---
 
-# Start dukick-tong Last
+# Start Dukick-tong Last
 
 ## Action
-Always start dukick-tong-8767 AFTER all other agents are running. It is the coordinator.
+Always start Dukick-tong-8767 AFTER all other agents are running. It is the coordinator.
 
 ## Evidence
-- dukick-tong reads all 4 other vaults — they must exist and be populated first
+- Dukick-tong reads all 4 other vaults — they must exist and be populated first
 - Start order: truyenthong → pm → pmcreative → neolab → tong
 
 ---
-id: dukick-python-encoding
-trigger: "when writing Python code that reads or writes files in DuKick project"
+id: Dukick-python-encoding
+trigger: "when writing Python code that reads or writes files in Dukick project"
 confidence: 0.97
 domain: code-style
-source: dukick-project
+source: Dukick-project
 ---
 
 # Always Specify UTF-8 Encoding
@@ -68,11 +68,11 @@ Always use `encoding="utf-8"` in `open()` calls. Windows default encoding causes
 - `save_to_obsidian.py` uses utf-8 throughout
 
 ---
-id: dukick-hook-exit-clean
+id: Dukick-hook-exit-clean
 trigger: "when writing or editing a pre_gateway_dispatch hook script"
 confidence: 0.95
 domain: code-style
-source: dukick-project
+source: Dukick-project
 ---
 
 # Hook Scripts Must Exit Cleanly

@@ -1,7 +1,7 @@
-{
+﻿{
   "permissions": {
     "allow": [
-      "PowerShell(Get-Content \"C:\\\\DuKickAgent\\\\dukick-truyenthong-8768\\\\channel_directory.json\" | ConvertFrom-Json | Select-Object -ExpandProperty platforms | Select-Object -ExpandProperty discord | Where-Object { $_.name -match \"pm|truyen|creative|truyenthong\" } | Select-Object id, name | Format-Table -AutoSize)"
+      "PowerShell(Get-Content \"C:\\\\DukickAgent\\\\Dukick-truyenthong-8768\\\\channel_directory.json\" | ConvertFrom-Json | Select-Object -ExpandProperty platforms | Select-Object -ExpandProperty discord | Where-Object { $_.name -match \"pm|truyen|creative|truyenthong\" } | Select-Object id, name | Format-Table -AutoSize)"
     ]
   }
 }

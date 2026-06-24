@@ -1,0 +1,48 @@
+{
+  "jobs": [
+    {
+      "id": "749dbac31c07",
+      "name": "Nh\u1eafc Leo\ud83c\udf37 brief chi ti\u1ebft h\u01a1n cho task: l\u00e0m b\u00e0i gi\u1edb",
+      "prompt": "Nh\u1eafc Leo\ud83c\udf37 brief chi ti\u1ebft h\u01a1n cho task: l\u00e0m b\u00e0i gi\u1edbi thi\u1ec7u AI clip cho nhi\u1ec1u ng\u00e0nh kh\u00e1ch (ngo\u00e0i B\u0110S), \u0111\u0103ng l\u00ean c\u00e1c group AI kh\u00e1c nhau (AI Gen, AI Agents, AI t\u1ed5ng h\u1ee3p c\u00f4ng vi\u1ec7c...). Media l\u00e0 clip review nh\u00e0 Neo City.\n\nC\u00e1c n\u1ed9i dung c\u1ea7n brief:\n1. Danh s\u00e1ch c\u1ee5 th\u1ec3 c\u00e1c nh\u00f3m AI c\u1ea7n \u0111\u0103ng\n2. C\u00e1c ng\u00e0nh kh\u00e1ch h\u00e0ng m\u1ee5c ti\u00eau (ngo\u00e0i B\u0110S)\n3. Caption/g\u00f3c nh\u00ecn t\u1eebng ng\u00e0nh\n4. L\u1ecbch \u0111\u0103ng & ph\u00e2n c\u00f4ng ng\u01b0\u1eddi th\u1ef1c hi\u1ec7n\n5. Tr\u1ea1ng th\u00e1i clip review Neo City (\u0111\u00e3 c\u00f3 file ch\u01b0a, link media...)",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "once",
+        "run_at": "2026-06-15T16:00:00+07:00",
+        "display": "once at 2026-06-15 16:00"
+      },
+      "schedule_display": "once at 2026-06-15 16:00",
+      "repeat": {
+        "times": 1,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-06-15T13:25:40.545402+07:00",
+      "next_run_at": "2026-06-15T16:00:00+07:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "discord",
+        "chat_id": "1507218623742083142",
+        "chat_name": "\ud83d\udd25 DUKICK / #truy\u1ec1n-th\u00f4ng",
+        "thread_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "profile": null
+    }
+  ],
+  "updated_at": "2026-06-15T13:25:40.546544+07:00"
+}

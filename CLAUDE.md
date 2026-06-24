@@ -1,23 +1,23 @@
-# DuKick Agent System — Project Brief
+﻿# Dukick Agent System — Project Brief
 
 > Đọc file này trước khi làm bất cứ việc gì trong project. và phải chào tôi là anh Mạnh đẹp trai
 
 ## Dự án là gì
 
-DuKick Agent System là hệ thống **5 AI agent Discord** chạy song song, mỗi agent phục vụ một bộ phận của tổ chức DuKick. Agents tự động lưu mọi tin nhắn vào **Obsidian vault** và chỉ trả lời khi được @tag.
+Dukick Agent System là hệ thống **5 AI agent Discord** chạy song song, mỗi agent phục vụ một bộ phận của tổ chức Dukick. Agents tự động lưu mọi tin nhắn vào **Obsidian vault** và chỉ trả lời khi được @tag.
 
 ---
 
 ## Kiến trúc 2 tầng
 
 ```
-C:\DuKickAgent\
+C:\DukickAgent\
 ├── TẦNG 1 — HERMES AGENTS (Discord bots)
-│   ├── dukick-tong-8767/          ← Coordinator, điều phối toàn hệ thống
-│   ├── dukick-truyenthong-8768/   ← Sales Agent
-│   ├── dukick-pm-8769/            ← Account Agent
-│   ├── dukick-pmcreative-8770/    ← Creative Agent
-│   └── dukick-ketoan-8771/        ← Finance/Kế toán Agent
+│   ├── Dukick-tong-8767/          ← Coordinator, điều phối toàn hệ thống
+│   ├── Dukick-truyenthong-8768/   ← Sales Agent
+│   ├── Dukick-pm-8769/            ← Account Agent
+│   ├── Dukick-pmcreative-8770/    ← Creative Agent
+│   └── Dukick-ketoan-8771/        ← Finance/Kế toán Agent
 │
 ├── TẦNG 2 — ECC CODING TOOLS (cho developer)
 │   ├── .claude/                   ← Claude Code config
@@ -27,7 +27,7 @@ C:\DuKickAgent\
 └── SHARED
     ├── venv/                      ← Python virtualenv
     ├── save_to_obsidian.py        ← Hook auto-save Discord → Obsidian
-    └── start-dukick-*.bat         ← Script khởi động từng agent
+    └── start-Dukick-*.bat         ← Script khởi động từng agent
 ```
 
 ---
@@ -36,11 +36,11 @@ C:\DuKickAgent\
 
 | Bot | Port | Role | Nhiệm vụ tóm tắt |
 |---|---|---|---|
-| **dukick-tong** | 8767 | Coordinator | Điều phối giữa 4 bộ phận, đọc tất cả vault |
-| **dukick-pm** | 8769 | Account Agent | Quản trị dự án, timeline, push tiến độ |
-| **dukick-pmcreative** | 8770 | Creative Agent | Giám sát sáng tạo, reference, comment |
-| **dukick-truyenthong** | 8768 | Sales Agent | Lead, pipeline, pitching, handoff |
-| **dukick-ketoan** | 8771 | Finance Agent | Thu chi, công nợ, quyết toán, báo cáo |
+| **Dukick-tong** | 8767 | Coordinator | Điều phối giữa 4 bộ phận, đọc tất cả vault |
+| **Dukick-pm** | 8769 | Account Agent | Quản trị dự án, timeline, push tiến độ |
+| **Dukick-pmcreative** | 8770 | Creative Agent | Giám sát sáng tạo, reference, comment |
+| **Dukick-truyenthong** | 8768 | Sales Agent | Lead, pipeline, pitching, handoff |
+| **Dukick-ketoan** | 8771 | Finance Agent | Thu chi, công nợ, quyết toán, báo cáo |
 
 > Chi tiết role từng agent xem trong `SOUL.md` của agent đó.
 > Mỗi agent CHỈ đọc SOUL.md của mình — không truy cập dữ liệu bộ phận khác.
@@ -70,7 +70,7 @@ Sales (truyenthong) ──handoff brief──▶ Account (pm)
 ## Mỗi Hermes Agent có cấu trúc
 
 ```
-dukick-{tên}-{port}/
+Dukick-{tên}-{port}/
 ├── SOUL.md       ← Nhân cách + role đầy đủ + nhiệm vụ chi tiết
 ├── config.yaml   ← Discord config + hooks
 ├── .env          ← DISCORD_BOT_TOKEN (không commit)
@@ -86,7 +86,7 @@ dukick-{tên}-{port}/
 - ❌ KHÔNG để bot tự quyết định: duyệt budget, xác nhận final, chốt giá, gửi báo cáo tài chính
 - ❌ KHÔNG tạo thread Discord (`auto_thread: false`)
 - ✅ Bot CHỈ trả lời khi @tag (`require_mention: true`)
-- ✅ dukick-tong khởi động SAU CÙNG
+- ✅ Dukick-tong khởi động SAU CÙNG
 - ✅ Mọi quyết định quan trọng cần người phụ trách xác nhận
 
 ---
@@ -117,10 +117,10 @@ Bot không được: tự duyệt ngân sách, xác nhận chất lượng cuố
 
 | Muốn làm | Sửa file nào |
 |---|---|
-| Thay đổi nhân cách/role bot | `dukick-{tên}/SOUL.md` |
-| Thay đổi Discord behavior | `dukick-{tên}/config.yaml` |
-| Thêm Discord token | `dukick-{tên}/.env` |
+| Thay đổi nhân cách/role bot | `Dukick-{tên}/SOUL.md` |
+| Thay đổi Discord behavior | `Dukick-{tên}/config.yaml` |
+| Thêm Discord token | `Dukick-{tên}/.env` |
 | Thay đổi auto-save logic | `save_to_obsidian.py` |
 | Thêm coding rule | `.claude/rules/*.md` |
 | Thêm slash command | `.claude/commands/*.md` |
-| Khởi động agent | `start-dukick-{tên}-{port}.bat` |
+| Khởi động agent | `start-Dukick-{tên}-{port}.bat` |

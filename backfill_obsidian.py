@@ -1,4 +1,4 @@
-"""
+﻿"""
 Backfill: Kéo toàn bộ lịch sử tin nhắn Discord về Obsidian vault.
 Chạy: python backfill_obsidian.py
 """
@@ -14,29 +14,29 @@ import requests
 
 AGENTS = [
     {
-        "name": "dukick-truyenthong-8768",
-        "env": r"C:\DuKickAgent\dukick-truyenthong-8768\.env",
-        "vault": r"C:\Users\Admin\Documents\Obsidian Vault\DuKick-TruyenThong",
+        "name": "Dukick-truyenthong-8768",
+        "env": r"C:\DukickAgent\Dukick-truyenthong-8768\.env",
+        "vault": r"C:\Users\Admin\Documents\Obsidian Vault\Dukick-TruyenThong",
     },
     {
-        "name": "dukick-tong-8767",
-        "env": r"C:\DuKickAgent\dukick-tong-8767\.env",
-        "vault": r"C:\Users\Admin\Documents\Obsidian Vault\DuKick-Tong",
+        "name": "Dukick-tong-8767",
+        "env": r"C:\DukickAgent\Dukick-tong-8767\.env",
+        "vault": r"C:\Users\Admin\Documents\Obsidian Vault\Dukick-Tong",
     },
     {
-        "name": "dukick-pm-8769",
-        "env": r"C:\DuKickAgent\dukick-pm-8769\.env",
-        "vault": r"C:\Users\Admin\Documents\Obsidian Vault\DuKick-PM",
+        "name": "Dukick-pm-8769",
+        "env": r"C:\DukickAgent\Dukick-pm-8769\.env",
+        "vault": r"C:\Users\Admin\Documents\Obsidian Vault\Dukick-PM",
     },
     {
-        "name": "dukick-pmcreative-8770",
-        "env": r"C:\DuKickAgent\dukick-pmcreative-8770\.env",
-        "vault": r"C:\Users\Admin\Documents\Obsidian Vault\DuKick-PMCreative",
+        "name": "Dukick-pmcreative-8770",
+        "env": r"C:\DukickAgent\Dukick-pmcreative-8770\.env",
+        "vault": r"C:\Users\Admin\Documents\Obsidian Vault\Dukick-PMCreative",
     },
     # Hanoi Signature — dùng bot PM với các kênh riêng
     {
         "name": "hanoi-signature",
-        "env": r"C:\DuKickAgent\dukick-pm-8769\.env",
+        "env": r"C:\DukickAgent\Dukick-pm-8769\.env",
         "vault": r"C:\Users\Admin\Documents\Obsidian Vault\Hanoi-Signature",
         "channels": ["1489834586585170033","1489834646236561449","1489834663186006036",
                      "1489834678453141554","1489834696799031316","1489834828278005920",
@@ -46,14 +46,14 @@ AGENTS = [
     # Photoshoot HNS
     {
         "name": "photoshoot-hns",
-        "env": r"C:\DuKickAgent\dukick-pm-8769\.env",
+        "env": r"C:\DukickAgent\Dukick-pm-8769\.env",
         "vault": r"C:\Users\Admin\Documents\Obsidian Vault\Photoshoot-HNS",
         "channels": ["1512008094551507096","1512008847752040482","1512009779386777743","1512014999810474136"],
     },
     {
-        "name": "dukick-ketoan-8771",
-        "env": r"C:\DuKickAgent\dukick-ketoan-8771\.env",
-        "vault": r"C:\Users\Admin\Documents\Obsidian Vault\DuKick-NeoLab",
+        "name": "Dukick-ketoan-8771",
+        "env": r"C:\DukickAgent\Dukick-ketoan-8771\.env",
+        "vault": r"C:\Users\Admin\Documents\Obsidian Vault\Dukick-NeoLab",
     },
 ]
 
@@ -184,7 +184,7 @@ def save_messages_to_vault(messages, vault_path, channel_name):
 
 def main():
     print("=" * 60)
-    print("DuKick Discord → Obsidian Backfill")
+    print("Dukick Discord → Obsidian Backfill")
     print("=" * 60)
 
     total_saved = 0

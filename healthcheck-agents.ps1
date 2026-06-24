@@ -1,6 +1,6 @@
-
-$logFile = "C:\DuKickAgent\logs\healthcheck.log"
-New-Item -ItemType Directory -Path "C:\DuKickAgent\logs" -Force | Out-Null
+﻿
+$logFile = "C:\DukickAgent\logs\healthcheck.log"
+New-Item -ItemType Directory -Path "C:\DukickAgent\logs" -Force | Out-Null
 
 function Write-Log($msg) {
     $ts = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
@@ -8,15 +8,15 @@ function Write-Log($msg) {
 }
 
 $agents = @(
-    "dukick-truyenthong-8768",
-    "dukick-pm-8769",
-    "dukick-pmcreative-8770",
-    "dukick-ketoan-8771",
-    "dukick-tong-8767"
+    "Dukick-truyenthong-8768",
+    "Dukick-pm-8769",
+    "Dukick-pmcreative-8770",
+    "Dukick-ketoan-8771",
+    "Dukick-tong-8767"
 )
 
 foreach ($a in $agents) {
-    $stateFile = "C:\DuKickAgent\$a\gateway_state.json"
+    $stateFile = "C:\DukickAgent\$a\gateway_state.json"
     if (-not (Test-Path $stateFile)) { continue }
 
     $state = Get-Content $stateFile | ConvertFrom-Json
@@ -33,15 +33,15 @@ foreach ($a in $agents) {
         Stop-Process -Id $gPid -Force -ErrorAction SilentlyContinue
         Start-Sleep -Seconds 2
 
-        Remove-Item "C:\DuKickAgent\$a\gateway.lock" -Force -ErrorAction SilentlyContinue
-        Remove-Item "C:\DuKickAgent\$a\gateway.pid" -Force -ErrorAction SilentlyContinue
+        Remove-Item "C:\DukickAgent\$a\gateway.lock" -Force -ErrorAction SilentlyContinue
+        Remove-Item "C:\DukickAgent\$a\gateway.pid" -Force -ErrorAction SilentlyContinue
 
         $psi = New-Object System.Diagnostics.ProcessStartInfo
-        $psi.FileName = "C:/DuKickAgent/venv/Scripts/python.exe"
+        $psi.FileName = "C:/DukickAgent/venv/Scripts/python.exe"
         $psi.Arguments = "-m hermes_cli.main gateway run --accept-hooks"
         $psi.UseShellExecute = $false
         $psi.CreateNoWindow = $true
-        $psi.Environment["HERMES_HOME"] = "C:/DuKickAgent/$a"
+        $psi.Environment["HERMES_HOME"] = "C:/DukickAgent/$a"
         $psi.Environment["PYTHONIOENCODING"] = "utf-8"
         $psi.Environment["PATH"] = $env:PATH
         [System.Diagnostics.Process]::Start($psi) | Out-Null

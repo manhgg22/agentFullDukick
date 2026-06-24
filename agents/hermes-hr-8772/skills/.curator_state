@@ -1,0 +1,9 @@
+{
+  "last_report_path": "C:\\DuKickAgent\\hermes-hr-8772\\logs\\curator\\20260620-125717",
+  "last_run_at": "2026-06-20T12:57:17.624296+00:00",
+  "last_run_duration_seconds": 0.064502,
+  "last_run_summary": "auto: no changes; llm: skipped (no candidates)",
+  "last_run_summary_shown_at": null,
+  "paused": false,
+  "run_count": 1
+}

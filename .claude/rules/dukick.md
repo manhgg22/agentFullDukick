@@ -1,9 +1,9 @@
----
-description: "DuKick project rules — Hermes agents, Discord bots, Obsidian vault"
+﻿---
+description: "Dukick project rules — Hermes agents, Discord bots, Obsidian vault"
 alwaysApply: true
 ---
 
-# DuKick Project Rules
+# Dukick Project Rules
 
 ## Kiến trúc hệ thống
 
@@ -11,25 +11,25 @@ Project gồm 2 tầng riêng biệt — KHÔNG trộn lẫn config của 2 tầ
 
 | Tầng | Thư mục | Mục đích |
 |---|---|---|
-| **Hermes agents** | `dukick-*/` | Discord bots, chạy qua `hermes_cli` |
+| **Hermes agents** | `Dukick-*/` | Discord bots, chạy qua `hermes_cli` |
 | **ECC coding** | `.claude/`, `.cursor/` | Trợ lý code cho developer |
 
 ## 5 Hermes Agents
 
 | Agent | Port | Vai trò | Vault |
 |---|---|---|---|
-| `dukick-tong-8767` | 8767 | Coordinator — đọc TẤT CẢ vault | `DuKick-Tong` |
-| `dukick-truyenthong-8768` | 8768 | Truyền thông | `DuKick-TruyenThong` |
-| `dukick-pm-8769` | 8769 | Project Management | `DuKick-PM` |
-| `dukick-pmcreative-8770` | 8770 | PM Creative | `DuKick-PMCreative` |
-| `dukick-neolab-8771` | 8771 | NeoLab | `DuKick-NeoLab` |
+| `Dukick-tong-8767` | 8767 | Coordinator — đọc TẤT CẢ vault | `Dukick-Tong` |
+| `Dukick-truyenthong-8768` | 8768 | Truyền thông | `Dukick-TruyenThong` |
+| `Dukick-pm-8769` | 8769 | Project Management | `Dukick-PM` |
+| `Dukick-pmcreative-8770` | 8770 | PM Creative | `Dukick-PMCreative` |
+| `Dukick-neolab-8771` | 8771 | NeoLab | `Dukick-NeoLab` |
 
 ## Quy tắc khi sửa agent
 
 - Mỗi agent có `SOUL.md` (nhân cách), `config.yaml` (hooks/Discord), `.env` (secrets)
 - KHÔNG commit `.env` — chứa Discord bot token
 - Khi sửa SOUL.md của một agent, KHÔNG copy sang agent khác (mỗi agent có vai trò riêng)
-- Vault path: `C:\Users\Admin\Documents\Obsidian Vault\DuKick-{TenAgent}\`
+- Vault path: `C:\Users\Admin\Documents\Obsidian Vault\Dukick-{TenAgent}\`
 
 ## Discord bot rules
 
@@ -39,8 +39,8 @@ Project gồm 2 tầng riêng biệt — KHÔNG trộn lẫn config của 2 tầ
 
 ## Python style (Hermes codebase)
 
-- Dùng `venv` tại `C:\DuKickAgent\venv\`
-- Python executable: `C:/DuKickAgent/venv/Scripts/python.exe`
+- Dùng `venv` tại `C:\DukickAgent\venv\`
+- Python executable: `C:/DukickAgent/venv/Scripts/python.exe`
 - Encoding: luôn dùng `utf-8` khi đọc/ghi file
 - Hermes config: `YAML` format trong `config.yaml`
 

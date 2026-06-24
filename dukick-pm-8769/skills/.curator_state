@@ -1,9 +1,0 @@
-{
-  "last_report_path": "C:\\DuKickAgent\\dukick-pm-8769\\logs\\curator\\20260608-073541",
-  "last_run_at": "2026-06-08T07:35:41.096927+00:00",
-  "last_run_duration_seconds": 531.644495,
-  "last_run_summary": "auto: no changes; llm: **Umbrella-building pass complete.**  \nCluster identified: **`dukick-*` / `b2b-*` / `production-*` (production-agency account-management domain)** — 4 skills collapsed into 1 umbrella.\n\n### What was done\n\n1. **Created `references/` and `tem…\narchived 3 skill(s):\n  • b2b-account-analysis → dukick-account\n  • creative-brief-analysis → dukick-account\n  • production-proposals → dukick-account\nfull report: hermes curator status\nkeep an umbrella stable: hermes curator pin dukick-account",
-  "last_run_summary_shown_at": null,
-  "paused": false,
-  "run_count": 1
-}

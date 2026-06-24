@@ -1,0 +1,3 @@
+﻿User Leo (Leo🌷 / chị Leo) is the leader of Dukick. She is direct, action-oriented, and prefers concise, scannable formats (tables, bullet points). She gets frustrated when agents explain limitations without offering concrete solutions. Key signal: "chị ở đâu, thì nó phải ở đó" — she expects omnipresence and will push hard on agent capabilities.
+§
+When presenting options or choices for any task or operation, always prioritize solutions that optimize/minimize token usage. This applies to all workflows, tool calls, and recommendations.

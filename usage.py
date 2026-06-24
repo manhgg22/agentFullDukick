@@ -1,13 +1,13 @@
-import sys, re, os, json
+﻿import sys, re, os, json
 from datetime import datetime, timedelta
 sys.stdout.reconfigure(encoding='utf-8')
 
 agents = {
-    'tong':     r'C:\DuKickAgent\dukick-tong-8767\logs\agent.log',
-    'sales':    r'C:\DuKickAgent\dukick-truyenthong-8768\logs\agent.log',
-    'account':  r'C:\DuKickAgent\dukick-pm-8769\logs\agent.log',
-    'creative': r'C:\DuKickAgent\dukick-pmcreative-8770\logs\agent.log',
-    'finance':  r'C:\DuKickAgent\dukick-ketoan-8771\logs\agent.log',
+    'tong':     r'C:\DukickAgent\Dukick-tong-8767\logs\agent.log',
+    'sales':    r'C:\DukickAgent\Dukick-truyenthong-8768\logs\agent.log',
+    'account':  r'C:\DukickAgent\Dukick-pm-8769\logs\agent.log',
+    'creative': r'C:\DukickAgent\Dukick-pmcreative-8770\logs\agent.log',
+    'finance':  r'C:\DukickAgent\Dukick-ketoan-8771\logs\agent.log',
 }
 
 today = datetime.now().strftime('%Y-%m-%d')

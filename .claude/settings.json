@@ -1,4 +1,4 @@
-{
+﻿{
   "hooks": {
     "PreToolUse": [
       {
@@ -7,7 +7,7 @@
           {
             "type": "command",
             "shell": "powershell",
-            "command": "$md = Get-Content 'C:\\DuKickAgent\\CLAUDE.md' -Raw -Encoding utf8 -ErrorAction SilentlyContinue; if ($md) { @{ hookSpecificOutput = @{ hookEventName = 'PreToolUse'; additionalContext = \"=== CLAUDE.md (DuKick context) ===`n$md`n=== end CLAUDE.md ===\"} } | ConvertTo-Json -Compress } else { '{}' }",
+            "command": "$md = Get-Content 'C:\\DukickAgent\\CLAUDE.md' -Raw -Encoding utf8 -ErrorAction SilentlyContinue; if ($md) { @{ hookSpecificOutput = @{ hookEventName = 'PreToolUse'; additionalContext = \"=== CLAUDE.md (Dukick context) ===`n$md`n=== end CLAUDE.md ===\"} } | ConvertTo-Json -Compress } else { '{}' }",
             "timeout": 5,
             "statusMessage": "Loading CLAUDE.md context..."
           }

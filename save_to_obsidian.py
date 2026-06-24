@@ -1,4 +1,4 @@
-"""
+﻿"""
 Hook script: pre_gateway_dispatch
 Tự động lưu mọi tin nhắn Discord vào Obsidian vault theo ngày.
 """
@@ -10,16 +10,16 @@ VAULT_ROOT = r"C:\Users\Admin\Documents\Obsidian Vault"
 
 # Map agent → vault mặc định (khi không xác định được server)
 AGENT_VAULT_MAP = {
-    "dukick-tong-8767":        "DuKick-Tong",
-    "dukick-truyenthong-8768": "DuKick-TruyenThong",
-    "dukick-pm-8769":          "DuKick-PM",
-    "dukick-pmcreative-8770":  "DuKick-PMCreative",
-    "dukick-ketoan-8771":      "DuKick-NeoLab",
+    "Dukick-tong-8767":        "Dukick-Tong",
+    "Dukick-truyenthong-8768": "Dukick-TruyenThong",
+    "Dukick-pm-8769":          "Dukick-PM",
+    "Dukick-pmcreative-8770":  "Dukick-PMCreative",
+    "Dukick-ketoan-8771":      "Dukick-NeoLab",
 }
 
 # Map guild_id → vault folder
 GUILD_VAULT_MAP = {
-    "1092673756457074760": "DuKick-PM",           # 🔥 DUKICK
+    "1092673756457074760": "Dukick-PM",           # 🔥 Dukick
     "1489834585176015018": "Hanoi-Signature",      # Hanoi Signature
     "1512008093834285146": "Photoshoot-HNS",       # Photoshoot HNS
 }

@@ -1,14 +1,14 @@
----
+﻿---
 description: "Python rules cho Hermes agent codebase"
-globs: ["**/*.py", "save_to_obsidian.py", "dukick-*/**/*.py"]
+globs: ["**/*.py", "save_to_obsidian.py", "Dukick-*/**/*.py"]
 alwaysApply: false
 ---
 
-# Python Rules — Hermes/DuKick
+# Python Rules — Hermes/Dukick
 
 ## Môi trường
 
-- Interpreter: `C:/DuKickAgent/venv/Scripts/python.exe`
+- Interpreter: `C:/DukickAgent/venv/Scripts/python.exe`
 - Luôn dùng `from __future__ import annotations` ở đầu file
 - Type hints bắt buộc trên mọi function
 
@@ -25,7 +25,7 @@ with open(path, "a", encoding="utf-8") as f: ...
 ```python
 from pathlib import Path   # dùng Path, không dùng os.path
 vault = Path(r"C:\Users\Admin\Documents\Obsidian Vault")
-folder = vault / "DuKick-Tong" / "Discord"
+folder = vault / "Dukick-Tong" / "Discord"
 folder.mkdir(parents=True, exist_ok=True)
 ```
 

@@ -1,9 +1,0 @@
-{
-  "last_report_path": "C:\\DuKickAgent\\dukick-pmcreative-8770\\logs\\curator\\20260608-073543",
-  "last_run_at": "2026-06-08T07:35:43.680555+00:00",
-  "last_run_duration_seconds": 0.18658,
-  "last_run_summary": "auto: no changes; llm: skipped (no candidates)",
-  "last_run_summary_shown_at": null,
-  "paused": false,
-  "run_count": 1
-}
