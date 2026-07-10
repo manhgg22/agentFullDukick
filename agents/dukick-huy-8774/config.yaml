@@ -1,4 +1,4 @@
-name: hermes_DukickHuy
+﻿name: hermes_DukickHuy
 port: 8774
 discord:
   require_mention: true
@@ -8,11 +8,11 @@ discord:
   status: online
   activity: Huy Agent | @tag de hoi
 model: glm-5.2
-provider: openai-api
+provider: ollama-cloud
 fallback:
 - model: glm-5.2
-  provider: openai-api
-  api_key: ***REMOVED***
+  provider: ollama-cloud
+  api_key: ''
   base_url: https://ollama.com/v1
 streaming: false
 max_tokens: 4000

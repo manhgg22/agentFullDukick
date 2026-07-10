@@ -1,9 +1,9 @@
-model: kimi-k2.6
-provider: openai-api
+﻿model: kimi-k2.6
+provider: ollama-cloud
 fallback:
 - model: kimi-k2.6
-  provider: openai-api
-  api_key: ***REMOVED***
+  provider: ollama-cloud
+  api_key: ''
   base_url: https://ollama.com/v1
 discord:
   require_mention: true

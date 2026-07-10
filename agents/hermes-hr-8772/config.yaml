@@ -4,13 +4,13 @@ discord:
   require_mention: true
   auto_thread: false
   status: online
-  activity: Hỗ trợ HR | @tag để hỏi
+  activity: Há»— trá»£ HR | @tag Ä‘á»ƒ há»i
 model: kimi-k2.6
-provider: openai-api
+provider: ollama-cloud
 fallback:
 - model: kimi-k2.6
-  provider: openai-api
-  api_key: ***REMOVED***
+  provider: ollama-cloud
+  api_key: ''
   base_url: https://ollama.com/v1
 toolsets:
 - core

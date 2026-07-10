@@ -1,6 +1,7 @@
-model:
+﻿model:
   default: kimi-k2.6
-  provider: openai-api
+  provider: ollama-cloud
+  base_url: https://ollama.com/v1
 providers: {}
 fallback_providers: []
 credential_pool_strategies: {}
@@ -539,8 +540,8 @@ tools:
 streaming: false
 fallback:
 - model: kimi-k2.6
-  provider: openai-api
-  api_key: ***REMOVED***
+  provider: ollama-cloud
+  api_key: ''
   base_url: https://ollama.com/v1
 max_tokens: 4000
 billing:
