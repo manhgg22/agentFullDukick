@@ -1,4 +1,4 @@
-﻿model: kimi-k2.6
+model: kimi-k2.6
 provider: openai-api
 fallback:
 - model: kimi-k2.6
@@ -30,3 +30,11 @@ toolsets:
 billing:
   input_cost_per_million: 0
   output_cost_per_million: 0
+mcp_servers:
+  markitdown:
+    command: C:/DukickAgent/venv/Scripts/python.exe
+    args:
+    - C:/DuKickAgent/tools/markitdown_mcp_server.py
+    env:
+      PYTHONIOENCODING: utf-8
+    timeout: 120

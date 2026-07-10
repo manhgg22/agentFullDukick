@@ -11,5 +11,7 @@ timeout /t 3 /nobreak >nul
 start "" /min "C:\DuKickAgent\start-dukick-ketoan-8771.bat"
 timeout /t 3 /nobreak >nul
 start "" /min "C:\DuKickAgent\start-hermes-hr-8772.bat"
+timeout /t 3 /nobreak >nul
+start "" /min "C:\DuKickAgent\start-dukick-huy-8774.bat"
 timeout /t 8 /nobreak >nul
 start "" /min "C:\DuKickAgent\start-dukick-tong-8767.bat"

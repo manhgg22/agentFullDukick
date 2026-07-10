@@ -23,6 +23,11 @@
     "sequential-thinking": {
       "command": "npx",
       "args": ["-y", "@modelcontextprotocol/server-sequential-thinking@2025.12.18"]
+    },
+    "markitdown": {
+      "command": "C:/DukickAgent/venv/Scripts/python.exe",
+      "args": ["C:/DuKickAgent/tools/markitdown_mcp_server.py"],
+      "env": { "PYTHONIOENCODING": "utf-8" }
     }
   }
 }

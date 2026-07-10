@@ -15,6 +15,7 @@ AGENT_VAULT_MAP = {
     "Dukick-pm-8769":          "Dukick-PM",
     "Dukick-pmcreative-8770":  "Dukick-PMCreative",
     "Dukick-ketoan-8771":      "Dukick-NeoLab",
+    "dukick-huy-8774":         "Dukick-Huy",
 }
 
 # Map guild_id → vault folder

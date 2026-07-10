@@ -126,5 +126,168 @@ Before delivering:
 ## Related Skills
 
 - `brand-voice` for source-derived voice profiles
-- `crosspost` for platform-specific distribution
-- `x-api` for sourcing recent posts and publishing approved X output
+- `media-generation` for generating images, videos, and audio for posts
+
+---
+
+## Appendix A: Platform Distribution Reference
+
+| Goal | Platform | Reasoning |
+|------|----------|-----------|
+| Real-time engagement | X (Twitter) | Fastest iteration, best for announcements |
+| Professional thought leadership | LinkedIn | Longer posts, higher signal-to-noise |
+| Community building | Telegram | Direct channel with subscribers |
+| Niche/creator community | Discord | Rich formatting, threads, reactions |
+| B2B authority | LinkedIn | Decision-makers, case studies, data |
+| Behind-the-scenes | Telegram | Raw, unfiltered updates |
+| Interactive Q&A | X + Discord | Live tweet + Discord thread |
+
+### Platform Comparison
+
+- **X (Twitter):** 280 chars/post, threads, images/video, polls, Spaces. Fastest iteration.
+- **LinkedIn:** 3k chars/post, articles, newsletters, documents. Professional context.
+- **Telegram:** Unlimited text, channels/groups, polls, reactions. Direct subscriber model.
+- **Discord:** Rich formatting, threads, roles, bots. Niche communities.
+
+### Multi-Language Workflow
+
+1. Write in primary language
+2. Identify cultural references, idioms, humor
+3. Translate literally first
+4. Adapt for cultural context
+5. Check character limits per language
+6. Preserve CTA and key metrics
+7. Review with native speaker if possible
+8. Schedule with timezone consideration
+
+### Platform-Specific Formatting
+
+**X:**
+```
+Hook line (no emojis in first line)
+Body with line breaks
+Thread indicator: "(1/7)"
+Media: 1 image or 1 video per post
+```
+
+**LinkedIn:**
+```
+First line = scroll stopper
+Body with short paragraphs
+Hashtags: 3-5 relevant
+Tag relevant people
+Call to action at end
+```
+
+**Telegram:**
+```
+Bold headers with **markdown**
+Bullet points for scannability
+Links with preview
+Images/gifs inline
+```
+
+**Discord:**
+```
+Use embeds for announcements
+Thread names: descriptive
+Use roles for @mentions
+Rich formatting: ```code```, > quotes
+```
+
+---
+
+## Appendix B: Direct X/Twitter API Integration
+
+Use for advanced posting beyond built-in tools. Requires OAuth 1.0a tokens: `TWITTER_API_KEY`, `TWITTER_API_SECRET`, `TWITTER_ACCESS_TOKEN`, `TWITTER_ACCESS_TOKEN_SECRET`.
+
+### Python Example (OAuth1Session)
+
+```python
+from requests_oauthlib import OAuth1Session
+import json
+
+client = OAuth1Session(
+    consumer_key, client_secret=consumer_secret,
+    resource_owner_key=access_token,
+    resource_owner_secret=access_token_secret
+)
+
+response = client.post(
+    "https://api.twitter.com/2/tweets",
+    json={"text": "Hello from the X API!"}
+)
+```
+
+### Media Upload (v1.1)
+
+```python
+media = open("image.png", "rb")
+media_upload = client.post(
+    "https://upload.twitter.com/1.1/media/upload.json",
+    files={"media": media}
+)
+media_id = media_upload.json()["media_id_string"]
+
+response = client.post(
+    "https://api.twitter.com/2/tweets",
+    json={"text": "Check this out!", "media": {"media_keys": [media_id]}}
+)
+```
+
+### Thread Posting
+
+```python
+tweets = ["First tweet", "Second tweet", "Third tweet"]
+prev_id = None
+for text in tweets:
+    payload = {"text": text}
+    if prev_id:
+        payload["reply"] = {"in_reply_to_tweet_id": prev_id}
+    resp = client.post("https://api.twitter.com/2/tweets", json=payload)
+    prev_id = resp.json()["data"]["id"]
+```
+
+### Error Handling
+
+- `403 Forbidden` — check token permissions (needs `tweet.write`)
+- `429 Too Many Requests` — rate limit exceeded; implement exponential backoff
+- `401 Unauthorized` — token expired or invalid; re-authenticate
+
+### Rate Limits (v2)
+
+- **Tweet creation:** 200 per 15 min per user
+- **Media upload:** 500 per 24 hours
+- **Read timeline:** 180 per 15 min
+
+### Analytics
+
+```python
+response = client.get(
+    "https://api.twitter.com/2/users/me/tweets",
+    params={"tweet_fields": "public_metrics,created_at", "max_results": 10}
+)
+for tweet in response.json()["data"]:
+    print(f"{tweet['text'][:50]}... | Likes: {tweet['public_metrics']['like_count']}")
+```
+
+---
+
+## Appendix C: Cronjob Scheduling
+
+Schedule recurring content distribution via cronjob.
+
+**Daily LinkedIn post:**
+```yaml
+prompt: "Draft and post a daily update to LinkedIn using content-engine voice and formatting."
+enabled_toolsets: ["web", "send_message"]
+schedule: "0 9 * * *"
+```
+
+**Thread campaign:**
+```yaml
+prompt: "Post the next tweet in the #BuildInPublic thread series. Reference previous tweets via the X API."
+enabled_toolsets: ["web", "terminal"]
+schedule: "0 10 * * 1,3,5"
+```
+

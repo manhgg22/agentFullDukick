@@ -1,0 +1,1 @@
+User prefers receiving deliverable files (PDF, DOCX, etc.) via Google Drive shareable link rather than copy-paste text in chat.

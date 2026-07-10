@@ -29,6 +29,11 @@ hermes-global.env
 hermes-manh/.env
 hermes-chat/.env
 
+# Google Service Account key + OAuth client secret + token (Drive auto-upload) — KHÔNG commit
+shared/gcp/*.json
+shared/gcp/.pkce_verifier
+!shared/gcp/.gitkeep
+
 # Python cache
 __pycache__/
 *.pyc
@@ -47,3 +52,56 @@ Thumbs.db
 
 # Local secrets file
 .secrets.env
+
+google-credentials.json
+
+# === Depth-correct patterns (fix: agents/*/* 2-level) — appended 2026-07-10 ===
+# Secrets ở mọi độ sâu
+**/.env
+**/auth.json
+**/auth.json.*
+**/auth.lock
+**/google-credentials.json
+**/channel_directory.json
+
+# Runtime state ở mọi độ sâu
+**/sessions/
+**/pairing/
+**/request_dump_*.json
+**/audio_cache/
+**/image_cache/
+**/cache/
+**/logs/
+**/lsp/
+**/cron/output/
+**/.curator_backups/
+**/processes.json
+**/discord_threads.json
+**/.skills_prompt_snapshot.json
+**/.usage.json
+**/.curator_state
+**/context_length_cache.yaml
+
+# GCP secrets ở mọi độ sâu
+**/shared/gcp/
+**/shared/*.json
+**/shared/.pkce_verifier
+
+# Word/Office temp lock files
+~$*
+
+# Server log dumps
+cloudflare-err.txt
+cloudflare-out.txt
+server-err.txt
+server-out.txt
+
+# Stray dirs
+agents$agent/
+downloaded_files/
+
+# Debt/financial data + Zalo bot creds (live secrets) — KHÔNG commit
+**/debt_data/
+**/client_secret*.json
+**/credentials*.json
+**/service-account*.json

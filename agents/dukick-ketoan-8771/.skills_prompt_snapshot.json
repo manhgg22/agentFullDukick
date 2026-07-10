@@ -146,8 +146,8 @@
       4552
     ],
     "production\\production-finance-ops\\SKILL.md": [
-      1781068204692814700,
-      5346
+      1782459790917151900,
+      7695
     ],
     "remotion\\SKILL.md": [
       1780544129449842900,
@@ -772,7 +772,7 @@
       "skill_name": "production-finance-ops",
       "category": "production",
       "frontmatter_name": "production-finance-ops",
-      "description": "",
+      "description": "Finance operations for Dukick Film — cronjob reminders, P...",
       "platforms": [],
       "conditions": {
         "fallback_for_toolsets": [],

@@ -8,3 +8,5 @@ Agent Tổng hoạt động theo workflow "Leo Daily Sync":
 - Chị Leo ốm hôm nay (04/06/2026) — thông báo đã gửi (bị lỗi quyền #pm, chị cần tự gửi hoặc nhờ admin)
 §
 Workflow duyệt từ chị Leo (06/04/2026): Khi tag chị Leo, bắt buộc phải kèm thêm câu "CẦN CHỊ LEO DUYỆT". Mọi người đều phải like tin nhắn đó. Ai không làm đúng thì coi như tin nhắn chưa nhận được.
+§
+Quy trình nhắc bill: Khi nhân sự xin duyệt chi phí được duyệt và chuyển khoản thành công, ngày hôm sau Agent Tổng tự động tag người đó yêu cầu gửi bill thanh toán cho HR (chị Hương Nguyễn). Đã lưu trong Theo-Doi-Chi-Tieu.md.

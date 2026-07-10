@@ -1,4 +1,4 @@
-﻿---
+---
 name: production-finance-ops
 description: Finance operations for Dukick Film — cronjob reminders, PPW tracking, Discord tagging, job cashflow, tax deadlines.
 triggers:
@@ -24,11 +24,13 @@ Bảng **QUẢN TRỊ PPW - THU - CHI** được duy trì trực tiếp trên **
 
 | Vai trò | Tên | Discord ID | Trạng thái |
 |---------|-----|------------|-----------|
-| Kế toán | Yến | `885170747797032991` | ✅ Đã có |
-| PM | Huyền | `1338069800240549898` | ✅ Đã có |
-| PM/SX | Thái | TBD | ⏳ Chờ |
-| PM/SX | Hoàng | TBD | ⏳ Chờ |
-| GĐTC | Chị Nhật Phương | TBD | ⏳ Chờ |
+| Kế toán | Yến | `885170747797032991` | ✅ |
+| Kế toán | Hương | `880750919304749096` | ✅ |
+| PM | Huyền | `1338069800240549898` | ✅ |
+| PM/SX | Thái | `1406146356006879313` | ✅ |
+| PM/SX | Hoàng | `765590233601015849` | ✅ |
+| GĐTC | Chị Leo (Nhật Phương) | `1091125381421072425` | ✅ |
+| GĐSX | Anh Gia Nam | TBD | ⏳ Chờ |
 
 Khi chưa có ID, ghi rõ tên thay vì tag chung chung.
 
@@ -89,6 +91,34 @@ Tạo cronjob chạy **mỗi ngày 9:00 sáng** (`0 9 * * *`), deliver về kên
 - **Ngoại lệ 7 ngày:** Runner, Diễn viên, Art support (xem xét riêng)
 - **Phát sinh lớn hoặc thanh toán bất thường:** Báo trước ít nhất 7 ngày
 
+## Quy trình nghiệm thu job (Bắt buộc)
+
+Khi bàn giao job, PM phải cung cấp đủ deliverable theo checklist từng loại:
+
+### Nghiệm thu tổng quan (mọi job)
+| # | Nội dung | Ghi chú |
+|---|----------|---------|
+| 1 | File final đúng format + brief | Theo timeline đã duyệt |
+| 2 | Shot list / storyboard hoàn chỉnh | Ghi rõ phát sinh nếu có |
+| 3 | BBNT có chữ ký KH | Bản mềm → KH confirm → bản cứng |
+| 4 | Hóa đơn VAT chính thức | Theo tiến độ HĐ |
+| 5 | Lưu trữ tài liệu đầy đủ trên Drive | Có quyền truy cập cho KT |
+
+### Riêng mảng AI dùng cho sản xuất job
+Khi job sử dụng công cụ AI hoặc mua credit AI, PM **bắt buộc** cung cấp:
+
+| Giai đoạn | Minh chứng |
+|-----------|------------|
+| **Mua / nạp credit** | Ảnh chụp màn hình tài khoản AI lúc vừa mua/nạp (hiển thị rõ số dư credit ban đầu, ngày giao dịch, tên tài khoản) |
+| **Sau khi hoàn thành job** | Ảnh chụp màn hình tài khoản AI còn lại (số credit còn, đối chiếu lượng tiêu thụ) |
+
+> Lưu ảnh vào folder dự án trên Drive ngay khi chụp, đặt tên rõ ràng.
+
+**Chế tài nếu thiếu minh chứng AI:**
+- Công ty **không thanh toán** các khoản chi phí AI của job.
+- Yêu cầu **hoàn lại toàn bộ con số tạm ứng** đã chi trước đó (nếu có).
+- Trường hợp đặc biệt: có văn bản giải trình + phê duyệt từ Giám đốc.
+
 ## Pitfalls
 
 1. **Đừng dùng file `.md` local làm nguồn đúng** — luôn hỏi link Google Sheets.
@@ -96,11 +126,14 @@ Tạo cronjob chạy **mỗi ngày 9:00 sáng** (`0 9 * * *`), deliver về kên
 3. **Đừng tự suy luận deadline** — chỉ đọc từ bảng, không đoán.
 4. **Chưa đủ chứng từ = chưa ghi nhận chi** — không tự ý thêm khoản chi khi thiếu HĐ/BBNT/Hóa đơn.
 5. **Job xong 5 ngày = phải quyết toán** — nhắc PM/SX ngay sau onset.
+6. **Không ghi số tiền cố định trong chế tài** — mỗi job có con số tạm ứng khác nhau, ghi "hoàn lại toàn bộ con số tạm ứng" thay vì ghi số cụ thể (ví dụ "4 triệu").
+7. **Tránh nội dung thừa thãi** — khi user yêu cầu ghi quy trình, chỉ ghi đúng nội dung bắt buộc. Không tự thêm phần "đề xuất bổ sung", "khuyến nghị", hay bảng mở rộng nếu user không yêu cầu. Tập trung vào yêu cầu cốt lõi.
 
 ## References
 
 - `references/ppw-column-guide.md` — Giải thích chi tiết từng cột trong bảng PPW
 - `references/discord-id-mapping.md` — Bảng mapping Discord ID nhân sự (update liên tục)
+- `references/ai-job-acceptance-checklist.md` — Minh chứng AI cho nghiệm thu job (session-specific, 26/06/2026)
 - `templates/daily-reminder-message.md` — Template message nhắc việc hàng ngày
 
 ## When to Update This Skill
@@ -108,3 +141,4 @@ Tạo cronjob chạy **mỗi ngày 9:00 sáng** (`0 9 * * *`), deliver về kên
 - Khi có thêm Discord ID nhân sự mới → cập nhật `references/discord-id-mapping.md`
 - Khi bảng PPW thêm cột mới hoặc đổi format → cập nhật `references/ppw-column-guide.md`
 - Khi quy trình tạm ứng / thanh toán thay đổi → patch SKILL.md
+- Khi có thêm quy định nghiệm thu job mới → patch SKILL.md

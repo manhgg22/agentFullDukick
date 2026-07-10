@@ -113,6 +113,13 @@ When asked for a campaign, return:
 - posting order only if it helps execution
 - gaps that must be filled before publishing
 
+## Document & Asset Delivery Pitfalls
+
+When the user asks for a specific delivery format or platform (e.g., "put this in Google Docs and send the link", "export as PDF", "push to Notion"):
+- Do not silently substitute a different format (e.g., sending a `.docx` file when a Google Docs link was requested).
+- If the requested platform requires authentication or setup that is not available, state the blocker and ask the user for the preferred fallback rather than guessing.
+- If the user says "gg docs" or "Google Docs link", they expect a cloud-hosted, shareable link — not a local file attachment.
+
 ## Quality Gate
 
 Before delivering:
@@ -122,6 +129,7 @@ Before delivering:
 - no fake engagement bait remains
 - no duplicated copy across platforms unless requested
 - any CTA is earned and user-approved
+- the delivery format matches the user's explicit request, or the user was asked before a substitution was made
 
 ## Related Skills
 

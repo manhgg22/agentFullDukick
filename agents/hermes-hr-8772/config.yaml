@@ -1,12 +1,10 @@
 name: hermes_DukickHR
 port: 8772
-
 discord:
   require_mention: true
   auto_thread: false
-  status: "online"
-  activity: "Hỗ trợ HR | @tag để hỏi"
-
+  status: online
+  activity: Hỗ trợ HR | @tag để hỏi
 model: kimi-k2.6
 provider: openai-api
 fallback:
@@ -14,25 +12,31 @@ fallback:
   provider: openai-api
   api_key: ***REMOVED***
   base_url: https://ollama.com/v1
-
 toolsets:
-  - core
-  - files
-  - web
-  - browser
-
+- core
+- files
+- web
+- browser
 hooks:
   pre_gateway_dispatch:
-    - command: "C:/DuKickAgent/venv/Scripts/python.exe C:/DuKickAgent/save_to_obsidian.py"
-      timeout: 5
-
+  - command: C:/DuKickAgent/venv/Scripts/python.exe C:/DuKickAgent/save_to_obsidian.py
+    timeout: 5
 obsidian:
-  vault: "C:\\Users\\Admin\\Documents\\Obsidian Vault\\Dukick-HR"
-
+  vault: C:\Users\Admin\Documents\Obsidian Vault\Dukick-HR
 memory:
   enabled: true
-  path: "./memories"
-
+  path: ./memories
 logging:
   level: info
-  file: "./logs/agent.log"
+  file: ./logs/agent.log
+onboarding:
+  seen:
+    busy_input_prompt: true
+mcp_servers:
+  markitdown:
+    command: C:/DukickAgent/venv/Scripts/python.exe
+    args:
+    - C:/DuKickAgent/tools/markitdown_mcp_server.py
+    env:
+      PYTHONIOENCODING: utf-8
+    timeout: 120

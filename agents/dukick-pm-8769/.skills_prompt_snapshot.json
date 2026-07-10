@@ -1,121 +1,81 @@
 {
   "version": 1,
   "manifest": {
-    "agent-introspection-debugging\\SKILL.md": [
-      1780372040060313700,
-      5669
-    ],
-    "agent-sort\\SKILL.md": [
-      1780372040062304800,
-      6112
-    ],
-    "api-design\\SKILL.md": [
-      1780372040064310500,
-      13620
-    ],
-    "apikey-image-gen\\SKILL.md": [
-      1780544129446841400,
-      6276
+    "agent-workflow\\internal-knowledge-query\\SKILL.md": [
+      1782398297900735700,
+      3225
     ],
     "article-writing\\SKILL.md": [
       1780372040065304700,
       2980
     ],
-    "backend-patterns\\SKILL.md": [
-      1780372040067306100,
-      14422
-    ],
     "brand-voice\\SKILL.md": [
       1780372040069320000,
       3720
+    ],
+    "branding\\hateco-intercentral\\SKILL.md": [
+      1783567464258244300,
+      5872
     ],
     "bun-runtime\\SKILL.md": [
       1780372040071308500,
       2667
     ],
-    "coding-standards\\SKILL.md": [
-      1780372040073305600,
-      13233
-    ],
     "content-engine\\SKILL.md": [
-      1780372040074306000,
-      4476
+      1782725130983839800,
+      8983
     ],
-    "crosspost\\SKILL.md": [
-      1780372040076303800,
-      3533
+    "content\\obsidian-toolkit\\SKILL.md": [
+      1782724646461571600,
+      6479
     ],
-    "deep-research\\SKILL.md": [
-      1780372040077304400,
-      4724
+    "creative\\ai-video-production\\SKILL.md": [
+      1782724878294115000,
+      6545
     ],
-    "defuddle\\SKILL.md": [
-      1780135643847678100,
-      1128
+    "creative\\audio-processing\\SKILL.md": [
+      1783653744217791000,
+      3688
     ],
-    "dmux-workflows\\SKILL.md": [
-      1780372040079303800,
-      4849
+    "creative\\brand-film-scripting\\SKILL.md": [
+      1783569592983388800,
+      7999
     ],
-    "documentation-lookup\\SKILL.md": [
-      1780372040081309000,
-      4977
+    "creative\\film-reference-research\\SKILL.md": [
+      1782794987060066400,
+      4452
+    ],
+    "creative\\media-generation\\SKILL.md": [
+      1782724752641003800,
+      4807
+    ],
+    "devops\\quality-assurance\\SKILL.md": [
+      1782725504624851200,
+      5430
+    ],
+    "devops\\research-methods\\SKILL.md": [
+      1782725561569568100,
+      5532
+    ],
+    "devops\\software-engineering\\SKILL.md": [
+      1782725451635445200,
+      7258
     ],
     "e2e-testing\\SKILL.md": [
       1780372040082303600,
       8378
     ],
-    "eval-harness\\SKILL.md": [
-      1780372040084304900,
-      5746
-    ],
     "everything-claude-code\\SKILL.md": [
       1780372040085303700,
       11778
-    ],
-    "exa-search\\SKILL.md": [
-      1780372040087303400,
-      4972
-    ],
-    "fal-ai-media\\SKILL.md": [
-      1780372040088304700,
-      7120
-    ],
-    "frontend-patterns\\SKILL.md": [
-      1780372040090304200,
-      16046
     ],
     "frontend-slides\\SKILL.md": [
       1780372040091304400,
       6729
     ],
-    "grok-image-to-video\\SKILL.md": [
-      1780544129446841400,
-      4270
-    ],
-    "hyperframes\\SKILL.md": [
-      1780544129447840500,
-      3558
-    ],
-    "investor-materials\\SKILL.md": [
-      1780372040094307100,
-      2806
-    ],
-    "investor-outreach\\SKILL.md": [
-      1780372040095307900,
-      2721
-    ],
-    "json-canvas\\SKILL.md": [
-      1780135643843668200,
-      7629
-    ],
     "markdown-viewer\\SKILL.md": [
       1780544129448843800,
       5162
-    ],
-    "market-research\\SKILL.md": [
-      1780372040097304400,
-      2288
     ],
     "mcp-server-patterns\\SKILL.md": [
       1780372040098304800,
@@ -129,29 +89,25 @@
       1780372040101305500,
       2193
     ],
-    "obsidian-bases\\SKILL.md": [
-      1780135643841671200,
-      12908
+    "operations\\agent-workflow\\SKILL.md": [
+      1782725160597393300,
+      5306
     ],
-    "obsidian-cli\\SKILL.md": [
-      1780135643845669200,
-      3188
-    ],
-    "obsidian-markdown\\SKILL.md": [
-      1780135643839674000,
-      5372
+    "operations\\discord-ops\\SKILL.md": [
+      1782724574525846100,
+      3843
     ],
     "product-capability\\SKILL.md": [
       1780372040103305300,
       4552
     ],
-    "remotion\\SKILL.md": [
-      1780544129449842900,
-      4411
+    "product-capability\\dukick-workflow\\SKILL.md": [
+      1783567556589507600,
+      15297
     ],
-    "sales\\dukick-account\\SKILL.md": [
-      1781068215591772500,
-      18945
+    "sales\\investor-relations\\SKILL.md": [
+      1782725231034876900,
+      6122
     ],
     "security-review\\SKILL.md": [
       1780372040104304100,
@@ -160,22 +116,6 @@
     "strategic-compact\\SKILL.md": [
       1780372040106302900,
       4133
-    ],
-    "tdd-workflow\\SKILL.md": [
-      1780372040108302500,
-      10184
-    ],
-    "verification-loop\\SKILL.md": [
-      1780372040109302500,
-      2604
-    ],
-    "video-editing\\SKILL.md": [
-      1780372040111304700,
-      9986
-    ],
-    "x-api\\SKILL.md": [
-      1780372040112303400,
-      6675
     ],
     "apple\\DESCRIPTION.md": [
       1780132277138075400,
@@ -284,55 +224,11 @@
   },
   "skills": [
     {
-      "skill_name": "agent-introspection-debugging",
-      "category": "agent-introspection-debugging",
-      "frontmatter_name": "agent-introspection-debugging",
-      "description": "Structured self-debugging workflow for AI agent failures ...",
+      "skill_name": "internal-knowledge-query",
+      "category": "agent-workflow",
+      "frontmatter_name": "internal-knowledge-query",
+      "description": "When user references internal knowledge repositories (Obs...",
       "platforms": [],
-      "conditions": {
-        "fallback_for_toolsets": [],
-        "requires_toolsets": [],
-        "fallback_for_tools": [],
-        "requires_tools": []
-      }
-    },
-    {
-      "skill_name": "agent-sort",
-      "category": "agent-sort",
-      "frontmatter_name": "agent-sort",
-      "description": "Build an evidence-backed ECC install plan for a specific ...",
-      "platforms": [],
-      "conditions": {
-        "fallback_for_toolsets": [],
-        "requires_toolsets": [],
-        "fallback_for_tools": [],
-        "requires_tools": []
-      }
-    },
-    {
-      "skill_name": "api-design",
-      "category": "api-design",
-      "frontmatter_name": "api-design",
-      "description": "REST API design patterns including resource naming, statu...",
-      "platforms": [],
-      "conditions": {
-        "fallback_for_toolsets": [],
-        "requires_toolsets": [],
-        "fallback_for_tools": [],
-        "requires_tools": []
-      }
-    },
-    {
-      "skill_name": "apikey-image-gen",
-      "category": "apikey-image-gen",
-      "frontmatter_name": "apikey-image-gen",
-      "description": "Generate or edit images through Hermes Web UI using the s...",
-      "platforms": [
-        "linux",
-        "macos",
-        "windows",
-        "termux"
-      ],
       "conditions": {
         "fallback_for_toolsets": [],
         "requires_toolsets": [],
@@ -345,19 +241,6 @@
       "category": "article-writing",
       "frontmatter_name": "article-writing",
       "description": "Write articles, guides, blog posts, tutorials, newsletter...",
-      "platforms": [],
-      "conditions": {
-        "fallback_for_toolsets": [],
-        "requires_toolsets": [],
-        "fallback_for_tools": [],
-        "requires_tools": []
-      }
-    },
-    {
-      "skill_name": "backend-patterns",
-      "category": "backend-patterns",
-      "frontmatter_name": "backend-patterns",
-      "description": "Backend architecture patterns, API design, database optim...",
       "platforms": [],
       "conditions": {
         "fallback_for_toolsets": [],
@@ -380,10 +263,10 @@
       }
     },
     {
-      "skill_name": "bun-runtime",
-      "category": "bun-runtime",
-      "frontmatter_name": "bun-runtime",
-      "description": "Bun as runtime, package manager, bundler, and test runner...",
+      "skill_name": "hateco-intercentral",
+      "category": "branding",
+      "frontmatter_name": "hateco-intercentral",
+      "description": "Kiến thức định vị thương hiệu và tài liệu dự án HATECO In...",
       "platforms": [],
       "conditions": {
         "fallback_for_toolsets": [],
@@ -393,10 +276,10 @@
       }
     },
     {
-      "skill_name": "coding-standards",
-      "category": "coding-standards",
-      "frontmatter_name": "coding-standards",
-      "description": "Baseline cross-project coding conventions for naming, rea...",
+      "skill_name": "bun-runtime",
+      "category": "bun-runtime",
+      "frontmatter_name": "bun-runtime",
+      "description": "Bun as runtime, package manager, bundler, and test runner...",
       "platforms": [],
       "conditions": {
         "fallback_for_toolsets": [],
@@ -419,10 +302,10 @@
       }
     },
     {
-      "skill_name": "crosspost",
-      "category": "crosspost",
-      "frontmatter_name": "crosspost",
-      "description": "Multi-platform content distribution across X, LinkedIn, T...",
+      "skill_name": "obsidian-toolkit",
+      "category": "content",
+      "frontmatter_name": "obsidian-toolkit",
+      "description": "Complete Obsidian vault toolkit — Flavored Markdown synta...",
       "platforms": [],
       "conditions": {
         "fallback_for_toolsets": [],
@@ -432,10 +315,10 @@
       }
     },
     {
-      "skill_name": "deep-research",
-      "category": "deep-research",
-      "frontmatter_name": "deep-research",
-      "description": "Multi-source deep research using firecrawl and exa MCPs. ...",
+      "skill_name": "ai-video-production",
+      "category": "creative",
+      "frontmatter_name": "ai-video-production",
+      "description": "AI-assisted and code-based video production — from editab...",
       "platforms": [],
       "conditions": {
         "fallback_for_toolsets": [],
@@ -445,10 +328,10 @@
       }
     },
     {
-      "skill_name": "defuddle",
-      "category": "defuddle",
-      "frontmatter_name": "defuddle",
-      "description": "",
+      "skill_name": "audio-processing",
+      "category": "creative",
+      "frontmatter_name": "audio-processing",
+      "description": "Transcribe, convert, and segment audio files using OpenAI...",
       "platforms": [],
       "conditions": {
         "fallback_for_toolsets": [],
@@ -458,10 +341,10 @@
       }
     },
     {
-      "skill_name": "dmux-workflows",
-      "category": "dmux-workflows",
-      "frontmatter_name": "dmux-workflows",
-      "description": "Multi-agent orchestration using dmux (tmux pane manager f...",
+      "skill_name": "brand-film-scripting",
+      "category": "creative",
+      "frontmatter_name": "brand-film-scripting",
+      "description": "Expand a creative concept or idea into a full production-...",
       "platforms": [],
       "conditions": {
         "fallback_for_toolsets": [],
@@ -471,10 +354,62 @@
       }
     },
     {
-      "skill_name": "documentation-lookup",
-      "category": "documentation-lookup",
-      "frontmatter_name": "documentation-lookup",
-      "description": "Use up-to-date library and framework docs via Context7 MC...",
+      "skill_name": "film-reference-research",
+      "category": "creative",
+      "frontmatter_name": "film-reference-research",
+      "description": "Research and compile film/video references (TVC, brand fi...",
+      "platforms": [],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    },
+    {
+      "skill_name": "media-generation",
+      "category": "creative",
+      "frontmatter_name": "media-generation",
+      "description": "AI-powered media generation — images, videos, and audio —...",
+      "platforms": [],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    },
+    {
+      "skill_name": "quality-assurance",
+      "category": "devops",
+      "frontmatter_name": "quality-assurance",
+      "description": "Quality assurance workflows — test-driven development, fo...",
+      "platforms": [],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    },
+    {
+      "skill_name": "research-methods",
+      "category": "devops",
+      "frontmatter_name": "research-methods",
+      "description": "Multi-source deep research using firecrawl, exa neural se...",
+      "platforms": [],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    },
+    {
+      "skill_name": "software-engineering",
+      "category": "devops",
+      "frontmatter_name": "software-engineering",
+      "description": "Full-stack software engineering patterns — frontend (Reac...",
       "platforms": [],
       "conditions": {
         "fallback_for_toolsets": [],
@@ -497,62 +432,10 @@
       }
     },
     {
-      "skill_name": "eval-harness",
-      "category": "eval-harness",
-      "frontmatter_name": "eval-harness",
-      "description": "Formal evaluation framework for Claude Code sessions impl...",
-      "platforms": [],
-      "conditions": {
-        "fallback_for_toolsets": [],
-        "requires_toolsets": [],
-        "fallback_for_tools": [],
-        "requires_tools": []
-      }
-    },
-    {
       "skill_name": "everything-claude-code",
       "category": "everything-claude-code",
       "frontmatter_name": "everything-claude-code",
       "description": "Development conventions and patterns for everything-claud...",
-      "platforms": [],
-      "conditions": {
-        "fallback_for_toolsets": [],
-        "requires_toolsets": [],
-        "fallback_for_tools": [],
-        "requires_tools": []
-      }
-    },
-    {
-      "skill_name": "exa-search",
-      "category": "exa-search",
-      "frontmatter_name": "exa-search",
-      "description": "Neural search via Exa MCP for web, code, and company rese...",
-      "platforms": [],
-      "conditions": {
-        "fallback_for_toolsets": [],
-        "requires_toolsets": [],
-        "fallback_for_tools": [],
-        "requires_tools": []
-      }
-    },
-    {
-      "skill_name": "fal-ai-media",
-      "category": "fal-ai-media",
-      "frontmatter_name": "fal-ai-media",
-      "description": "Unified media generation via fal.ai MCP — image, video, a...",
-      "platforms": [],
-      "conditions": {
-        "fallback_for_toolsets": [],
-        "requires_toolsets": [],
-        "fallback_for_tools": [],
-        "requires_tools": []
-      }
-    },
-    {
-      "skill_name": "frontend-patterns",
-      "category": "frontend-patterns",
-      "frontmatter_name": "frontend-patterns",
-      "description": "Frontend development patterns for React, Next.js, state m...",
       "platforms": [],
       "conditions": {
         "fallback_for_toolsets": [],
@@ -575,79 +458,6 @@
       }
     },
     {
-      "skill_name": "grok-image-to-video",
-      "category": "grok-image-to-video",
-      "frontmatter_name": "grok-image-to-video",
-      "description": "Animate a local image into a short mp4 video through Herm...",
-      "platforms": [
-        "linux",
-        "macos",
-        "windows"
-      ],
-      "conditions": {
-        "fallback_for_toolsets": [],
-        "requires_toolsets": [],
-        "fallback_for_tools": [],
-        "requires_tools": []
-      }
-    },
-    {
-      "skill_name": "hyperframes",
-      "category": "hyperframes",
-      "frontmatter_name": "hyperframes",
-      "description": "Create AI videos with HyperFrames in Hermes using HTML, C...",
-      "platforms": [
-        "linux",
-        "macos",
-        "windows"
-      ],
-      "conditions": {
-        "fallback_for_toolsets": [],
-        "requires_toolsets": [],
-        "fallback_for_tools": [],
-        "requires_tools": []
-      }
-    },
-    {
-      "skill_name": "investor-materials",
-      "category": "investor-materials",
-      "frontmatter_name": "investor-materials",
-      "description": "Create and update pitch decks, one-pagers, investor memos...",
-      "platforms": [],
-      "conditions": {
-        "fallback_for_toolsets": [],
-        "requires_toolsets": [],
-        "fallback_for_tools": [],
-        "requires_tools": []
-      }
-    },
-    {
-      "skill_name": "investor-outreach",
-      "category": "investor-outreach",
-      "frontmatter_name": "investor-outreach",
-      "description": "Draft cold emails, warm intro blurbs, follow-ups, update ...",
-      "platforms": [],
-      "conditions": {
-        "fallback_for_toolsets": [],
-        "requires_toolsets": [],
-        "fallback_for_tools": [],
-        "requires_tools": []
-      }
-    },
-    {
-      "skill_name": "json-canvas",
-      "category": "json-canvas",
-      "frontmatter_name": "json-canvas",
-      "description": "",
-      "platforms": [],
-      "conditions": {
-        "fallback_for_toolsets": [],
-        "requires_toolsets": [],
-        "fallback_for_tools": [],
-        "requires_tools": []
-      }
-    },
-    {
       "skill_name": "markdown-viewer",
       "category": "markdown-viewer",
       "frontmatter_name": "markdown-viewer",
@@ -657,19 +467,6 @@
         "macos",
         "windows"
       ],
-      "conditions": {
-        "fallback_for_toolsets": [],
-        "requires_toolsets": [],
-        "fallback_for_tools": [],
-        "requires_tools": []
-      }
-    },
-    {
-      "skill_name": "market-research",
-      "category": "market-research",
-      "frontmatter_name": "market-research",
-      "description": "Conduct market research, competitive analysis, investor d...",
-      "platforms": [],
       "conditions": {
         "fallback_for_toolsets": [],
         "requires_toolsets": [],
@@ -717,10 +514,10 @@
       }
     },
     {
-      "skill_name": "obsidian-bases",
-      "category": "obsidian-bases",
-      "frontmatter_name": "obsidian-bases",
-      "description": "",
+      "skill_name": "agent-workflow",
+      "category": "operations",
+      "frontmatter_name": "agent-workflow",
+      "description": "Agent orchestration, debugging, and multi-pane terminal w...",
       "platforms": [],
       "conditions": {
         "fallback_for_toolsets": [],
@@ -730,23 +527,10 @@
       }
     },
     {
-      "skill_name": "obsidian-cli",
-      "category": "obsidian-cli",
-      "frontmatter_name": "obsidian-cli",
-      "description": "",
-      "platforms": [],
-      "conditions": {
-        "fallback_for_toolsets": [],
-        "requires_toolsets": [],
-        "fallback_for_tools": [],
-        "requires_tools": []
-      }
-    },
-    {
-      "skill_name": "obsidian-markdown",
-      "category": "obsidian-markdown",
-      "frontmatter_name": "obsidian-markdown",
-      "description": "",
+      "skill_name": "discord-ops",
+      "category": "operations",
+      "frontmatter_name": "discord-ops",
+      "description": "Discord server management, automation, bot API operations...",
       "platforms": [],
       "conditions": {
         "fallback_for_toolsets": [],
@@ -769,15 +553,11 @@
       }
     },
     {
-      "skill_name": "remotion",
-      "category": "remotion",
-      "frontmatter_name": "remotion",
-      "description": "Create editable AI video projects with Remotion and React...",
-      "platforms": [
-        "linux",
-        "macos",
-        "windows"
-      ],
+      "skill_name": "dukick-workflow",
+      "category": "product-capability",
+      "frontmatter_name": "dukick-workflow",
+      "description": "Dukick agency PM/Account workflows — from brief intake an...",
+      "platforms": [],
       "conditions": {
         "fallback_for_toolsets": [],
         "requires_toolsets": [],
@@ -786,10 +566,10 @@
       }
     },
     {
-      "skill_name": "dukick-account",
+      "skill_name": "investor-relations",
       "category": "sales",
-      "frontmatter_name": "dukick-account",
-      "description": "",
+      "frontmatter_name": "investor-relations",
+      "description": "End-to-end investor relations workflow — market research,...",
       "platforms": [],
       "conditions": {
         "fallback_for_toolsets": [],
@@ -816,58 +596,6 @@
       "category": "strategic-compact",
       "frontmatter_name": "strategic-compact",
       "description": "Suggests manual context compaction at logical intervals t...",
-      "platforms": [],
-      "conditions": {
-        "fallback_for_toolsets": [],
-        "requires_toolsets": [],
-        "fallback_for_tools": [],
-        "requires_tools": []
-      }
-    },
-    {
-      "skill_name": "tdd-workflow",
-      "category": "tdd-workflow",
-      "frontmatter_name": "tdd-workflow",
-      "description": "Use this skill when writing new features, fixing bugs, or...",
-      "platforms": [],
-      "conditions": {
-        "fallback_for_toolsets": [],
-        "requires_toolsets": [],
-        "fallback_for_tools": [],
-        "requires_tools": []
-      }
-    },
-    {
-      "skill_name": "verification-loop",
-      "category": "verification-loop",
-      "frontmatter_name": "verification-loop",
-      "description": "A comprehensive verification system for Claude Code sessi...",
-      "platforms": [],
-      "conditions": {
-        "fallback_for_toolsets": [],
-        "requires_toolsets": [],
-        "fallback_for_tools": [],
-        "requires_tools": []
-      }
-    },
-    {
-      "skill_name": "video-editing",
-      "category": "video-editing",
-      "frontmatter_name": "video-editing",
-      "description": "AI-assisted video editing workflows for cutting, structur...",
-      "platforms": [],
-      "conditions": {
-        "fallback_for_toolsets": [],
-        "requires_toolsets": [],
-        "fallback_for_tools": [],
-        "requires_tools": []
-      }
-    },
-    {
-      "skill_name": "x-api",
-      "category": "x-api",
-      "frontmatter_name": "x-api",
-      "description": "X/Twitter API integration for posting tweets, threads, re...",
       "platforms": [],
       "conditions": {
         "fallback_for_toolsets": [],

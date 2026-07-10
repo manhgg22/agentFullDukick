@@ -1,0 +1,230 @@
+{
+  "jobs": [
+    {
+      "id": "2bc055dfbf14",
+      "name": "nhac-pm-hoi-dinh-huong-sales",
+      "prompt": "B\u1ea1n l\u00e0 tr\u1ee3 l\u00fd PM cho DUKICK. Nhi\u1ec7m v\u1ee5 c\u1ee7a b\u1ea1n l\u00e0 m\u1ed7i ng\u00e0y nh\u1eafc 3 b\u1ea1n PM (\u0110\u1ed7 Ng\u1ecdc Th\u00e1i, Thu Huy\u1ec1n, Ho\u00e0ng) v\u00e0o h\u1ecfi agent pm tri\u1ec7t \u0111\u1ec3 c\u00e1c \u0111\u1ecbnh h\u01b0\u1edbng, m\u1eb9o v\u00e0 chi\u00eau th\u1ee9c v\u1ec1 sales & account.\n\nH\u00e3y vi\u1ebft tin nh\u1eafn nh\u1eafc nh\u1edf v\u00e0 **xu\u1ea5t ra n\u1ed9i dung tin nh\u1eafn** (kh\u00f4ng d\u00f9ng c\u00f4ng c\u1ee5 Discord). N\u1ed9i dung s\u1ebd \u0111\u01b0\u1ee3c t\u1ef1 \u0111\u1ed9ng g\u1eedi v\u00e0o k\u00eanh #pm-dukick.\n\nN\u1ed9i dung tin nh\u1eafn m\u1eabu (vi\u1ebft b\u1eb1ng ti\u1ebfng Vi\u1ec7t thu\u1ea7n):\n\"@Th\u00e1i @Huy\u1ec1n @Ho\u00e0ng\n\nH\u00f4m nay \u0111\u1eebng qu\u00ean v\u00e0o h\u1ecfi agent pm v\u1ec1 \u0111\u1ecbnh h\u01b0\u1edbng, m\u1eb9o v\u00e0 chi\u00eau th\u1ee9c sales & account nh\u00e9! Nh\u1eefng th\u00f4ng tin chi\u1ebfn l\u01b0\u1ee3c m\u1edbi c\u1eadp nh\u1eadt s\u1ebd gi\u00fap b\u1ea1n b\u00e1n h\u00e0ng hi\u1ec7u qu\u1ea3 h\u01a1n \u0111\u1ea5y.\n\nH\u00e3y h\u1ecfi trong thread ri\u00eang c\u1ee7a b\u1ea1n \u1edf k\u00eanh #pm-dukick nh\u00e9!\"\n\nL\u01b0u \u00fd: \n- D\u00f9ng ti\u1ebfng Vi\u1ec7t thu\u1ea7n, kh\u00f4ng l\u1ea1m d\u1ee5ng ti\u1ebfng Anh.\n- Ch\u1ec9 vi\u1ebft n\u1ed9i dung tin nh\u1eafn, kh\u00f4ng gi\u1ea3i th\u00edch th\u00eam.\n- Tag \u0111\u00fang 3 ng\u01b0\u1eddi: @Th\u00e1i @Huy\u1ec1n @Ho\u00e0ng",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 17 * * 2,5",
+        "display": "30 17 * * 2,5"
+      },
+      "schedule_display": "30 17 * * 2,5",
+      "repeat": {
+        "times": null,
+        "completed": 6
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-06-25T19:22:38.860996+07:00",
+      "next_run_at": "2026-07-10T17:30:00+07:00",
+      "last_run_at": "2026-07-07T17:30:16.344844+07:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "discord",
+        "chat_id": "1093083512837521448",
+        "chat_name": "\ud83d\udd25 DUKICK / #pm-dukick",
+        "thread_id": null
+      },
+      "enabled_toolsets": [
+        "discord"
+      ],
+      "workdir": null,
+      "profile": null
+    },
+    {
+      "id": "70242795bfa7",
+      "name": "theo-doi-doi-thu-tvc-ai-huyen",
+      "prompt": "B\u1ea1n l\u00e0 tr\u1ee3 l\u00fd PM cho DUKICK. Nhi\u1ec7m v\u1ee5 c\u1ee7a b\u1ea1n l\u00e0 theo d\u00f5i \u0111\u1ed1i th\u1ee7 th\u1ecb tr\u01b0\u1eddng s\u1ea3n xu\u1ea5t TVC AI (AI thu\u1ea7n v\u00e0 AI Hybrid) t\u1ea1i Vi\u1ec7t Nam trong window th\u1eddi gian c\u1ee5 th\u1ec3.\n\n**Logic l\u1ecbch qu\u00e9t:**\n- N\u1ebfu h\u00f4m nay l\u00e0 **th\u1ee9 Hai**: qu\u00e9t t\u1eeb **10:00 th\u1ee9 N\u0103m tu\u1ea7n tr\u01b0\u1edbc \u2192 10:00 th\u1ee9 Hai hi\u1ec7n t\u1ea1i**.\n- N\u1ebfu h\u00f4m nay l\u00e0 **th\u1ee9 N\u0103m**: qu\u00e9t t\u1eeb **10:00 th\u1ee9 Hai hi\u1ec7n t\u1ea1i \u2192 10:00 th\u1ee9 N\u0103m hi\u1ec7n t\u1ea1i**.\n\n**Nguy\u00ean t\u1eafc:** B\u1ea3n tin t\u00ecnh b\u00e1o th\u1ecb tr\u01b0\u1eddng ng\u1eafn, \u0111\u1ec1u, c\u00f3 b\u1ea3ng theo d\u00f5i \u0111\u1ed1i th\u1ee7. Kh\u00f4ng vi\u1ebft d\u00e0i nh\u01b0 report nghi\u00ean c\u1ee9u. M\u1ee5c ti\u00eau l\u00e0 \u0111\u1ec3 b\u1ea1n m\u1edf ra trong 5-10 ph\u00fat l\u00e0 bi\u1ebft: ai \u0111ang l\u00e0m g\u00ec, h\u1ecd b\u00e1n nh\u01b0 th\u1ebf n\u00e0o, c\u00f3 g\u00ec \u0111\u00e1ng lo, Dukick n\u00ean ph\u1ea3n \u1ee9ng ra sao.\n\n**T\u1ef7 l\u1ec7 ph\u00e2n b\u1ed5 n\u1ed7 l\u1ef1c t\u00ecm ki\u1ebfm (QUAN TR\u1eccNG):**\n- **Facebook \u2014 40%** (quan tr\u1ecdng nh\u1ea5t, k\u00eanh r\u1ea5t s\u00f4i \u0111\u1ed9ng):\n  - T\u00ecm c\u00e1c trang Facebook public c\u1ee7a \u0111\u1ed1i th\u1ee7: site:facebook.com + [t\u00ean c\u00f4ng ty] + \"TVC AI\"\n  - T\u00ecm c\u00e1c group Facebook c\u00f4ng khai: \"TVC AI Vi\u1ec7t Nam\", \"AI Video\", \"S\u1ea3n xu\u1ea5t video AI\"\n  - T\u00ecm c\u00e1c b\u00e0i post public v\u1ec1 TVC AI: site:facebook.com + \"TVC AI\" + \"video\" + date filter\n  - Theo d\u00f5i page c\u1ee7a: ME Group, MAY Production, ECHO, ColorMedia, GiaPh\u00e1i, c\u00e1c freelancer AI video\n  - T\u00ecm c\u00e1c post b\u00e1n h\u00e0ng/d\u1ecbch v\u1ee5 TVC AI tr\u00ean Facebook Marketplace/groups\n  - \u01afu ti\u00ean t\u00ecm c\u00e1c b\u00e0i post t\u1eeb 3-7 ng\u00e0y g\u1ea7n nh\u1ea5t\n\n- **Website c\u00f4ng ty \u2014 20%**: Portfolio, landing page, blog, case study\n- **B\u00e1o ch\u00ed/ng\u00e0nh \u2014 20%**: D\u00e2n tr\u00ed, B\u00e1o \u0110\u1ea7u T\u01b0, Ph\u00e1p Lu\u1eadt TP.HCM, CafeF, Vietnamnet...\n- **YouTube/Vimeo/Behance \u2014 10%**: Demo reel, case study video, portfolio motion\n- **LinkedIn/TikTok \u2014 10%**: Company updates, viral content, behind-the-scenes\n\n**C\u00e1c b\u01b0\u1edbc th\u1ef1c hi\u1ec7n:**\n1. D\u00e0nh 40% th\u1eddi gian t\u00ecm ki\u1ebfm tr\u00ean Facebook tr\u01b0\u1edbc ti\u00ean\n2. Sau \u0111\u00f3 m\u1edf r\u1ed9ng ra c\u00e1c k\u00eanh kh\u00e1c theo t\u1ef7 l\u1ec7 tr\u00ean\n3. Ph\u00e2n bi\u1ec7t r\u00f5: **\u0111\u00e3 x\u00e1c nh\u1eadn t\u1eeb ngu\u1ed3n** vs **nh\u1eadn \u0111\u1ecbnh/suy lu\u1eadn**\n4. N\u1ebfu kh\u00f4ng c\u00f3 tin m\u1edbi, v\u1eabn c\u1eadp nh\u1eadt \"kh\u00f4ng th\u1ea5y bi\u1ebfn \u0111\u1ed9ng l\u1edbn\" v\u00e0 n\u00eau c\u00e1c ngu\u1ed3n \u0111\u00e3 ki\u1ec3m tra\n5. Ch\u1ea5m m\u1ee9c \u1ea3nh h\u01b0\u1edfng v\u1edbi Dukick cho t\u1eebng \u0111\u1ed1i th\u1ee7\n\n**B\u1ed1 c\u1ee5c b\u00e1o c\u00e1o (vi\u1ebft b\u1eb1ng ti\u1ebfng Vi\u1ec7t thu\u1ea7n, ch\u1ec9 d\u00f9ng t\u1eeb ti\u1ebfng Anh khi th\u1ef1c s\u1ef1 c\u1ea7n):**\n\n### 1. T\u00d3M T\u1eaeT NHANH\n5-7 g\u1ea1ch \u0111\u1ea7u d\u00f2ng quan tr\u1ecdng nh\u1ea5t:\n- \u0110\u1ed1i th\u1ee7 n\u00e0o m\u1edbi xu\u1ea5t hi\u1ec7n\n- Ai v\u1eeba ra s\u1ea3n ph\u1ea9m/case m\u1edbi\n- Th\u1ecb tr\u01b0\u1eddng \u0111ang n\u00f3i g\u00ec v\u1ec1 TVC AI/AI Hybrid\n\n### 2. B\u1ea2NG \u0110\u1ed0I TH\u1ee6 / C\u00d4NG TY \u0110\u00c1NG CH\u00da \u00dd\n| T\u00ean \u0111\u01a1n v\u1ecb | Lo\u1ea1i h\u00ecnh | D\u1ecbch v\u1ee5 AI/TVC | Case study/N\u1ed9i dung m\u1edbi | Kh\u00e1ch h\u00e0ng/Brand | \u0110i\u1ec3m m\u1ea1nh \u0111ang claim | M\u1ee9c \u0111\u1ed9 \u0111e d\u1ecda v\u1edbi Dukick | Link ngu\u1ed3n |\n\nLo\u1ea1i h\u00ecnh: production house, agency, freelancer team, AI studio, post/VFX, animation, marketing agency\n\n### 3. T\u00cdN HI\u1ec6U TH\u1eca TR\u01af\u1edcNG\n- TVC AI gi\u00e1 r\u1ebb \u0111ang \u0111\u01b0\u1ee3c qu\u1ea3ng c\u00e1o nhi\u1ec1u h\u01a1n?\n- AI Hybrid \u0111ang \u0111\u01b0\u1ee3c d\u00f9ng cho storyboard, animatic, mockup hay final output?\n- Kh\u00e1ch h\u00e0ng SME, startup, brand l\u1edbn hay agency \u0111ang quan t\u00e2m?\n- C\u00f3 b\u00ean n\u00e0o d\u00f9ng \"AI TVC trong 24h/48h/gi\u00e1 r\u1ebb\" l\u00e0m th\u00f4ng \u0111i\u1ec7p b\u00e1n h\u00e0ng kh\u00f4ng?\n\n### 4. CASE / CHI\u1ebeN D\u1ecaCH N\u1ed4I B\u1eacT TRONG TU\u1ea6N\nCh\u1ecdn 1-3 case n\u1ebfu c\u00f3:\n- N\u1ed9i dung/campaign l\u00e0 g\u00ec\n- M\u1ee9c \u0111\u1ed9 AI c\u00f3 v\u1ebb \u0111\u01b0\u1ee3c d\u00f9ng \u1edf \u0111\u00e2u: concept, visual, motion, voice, edit, VFX, full AI\n- Ch\u1ea5t l\u01b0\u1ee3ng c\u1ea3m nh\u1eadn\n- B\u00e0i h\u1ecdc cho Dukick\n\n### 5. TH\u00d4NG \u0110I\u1ec6P B\u00c1N H\u00c0NG C\u1ee6A \u0110\u1ed0I TH\u1ee6\nTheo d\u00f5i c\u00e1ch h\u1ecd ch\u00e0o b\u00e1n:\n- \"Nhanh h\u01a1n\"\n- \"R\u1ebb h\u01a1n\"\n- \"Kh\u00f4ng c\u1ea7n quay\"\n- \"AI + production team\"\n- \"TVC viral/social-first\"\n- \"AI storyboard/AI previsualization\"\n\nM\u1ee5c n\u00e0y quan tr\u1ecdng \u0111\u1ec3 Dukick bi\u1ebft th\u1ecb tr\u01b0\u1eddng \u0111ang b\u1ecb educate theo h\u01b0\u1edbng n\u00e0o.\n\n### 6. C\u01a0 H\u1ed8I CHO DUKICK\n3-5 g\u1ee3i \u00fd h\u00e0nh \u0111\u1ed9ng:\n- N\u00ean l\u00e0m content g\u00ec\n- N\u00ean \u0111\u00f3ng g\u00f3i d\u1ecbch v\u1ee5 AI Hybrid ra sao\n- N\u00ean follow kh\u00e1ch h\u00e0ng/sector n\u00e0o\n- C\u00f3 n\u00ean ph\u1ea3n \u1ee9ng v\u1edbi claim c\u1ee7a \u0111\u1ed1i th\u1ee7 kh\u00f4ng\n\n### 7. R\u1ee6I RO C\u1ea6N THEO D\u00d5I\n- \u0110\u1ed1i th\u1ee7 ph\u00e1 gi\u00e1\n- Ch\u1ea5t l\u01b0\u1ee3ng AI th\u1ea5p nh\u01b0ng b\u00e1n r\u1ea5t m\u1ea1nh\n- Agency t\u1ef1 build in-house AI production\n- Client hi\u1ec3u nh\u1ea7m \"AI TVC = kh\u00f4ng c\u1ea7n production\"\n- V\u1ea5n \u0111\u1ec1 b\u1ea3n quy\u1ec1n/gi\u1ecdng n\u00f3i/h\u00ecnh \u1ea3nh ng\u01b0\u1eddi th\u1eadt\n\n### 8. DANH S\u00c1CH NGU\u1ed2N \u0110\u00c3 QU\u00c9T\nN\u00ean g\u1ed3m link tr\u1ef1c ti\u1ebfp t\u1eeb:\n- Website c\u00f4ng ty\n- Facebook/LinkedIn/TikTok/YouTube/Vimeo/Behance\n- B\u00e1o ch\u00ed/ng\u00e0nh qu\u1ea3ng c\u00e1o\n- Google search k\u1ebft qu\u1ea3 m\u1edbi\n- Marketplace/freelancer n\u1ebfu th\u1ea5y li\u00ean quan\n\nG\u1eedi b\u00e1o c\u00e1o v\u00e0o thread n\u00e0y. D\u00f9ng ti\u1ebfng Vi\u1ec7t thu\u1ea7n. Ph\u00e2n bi\u1ec7t r\u00f5 \u0111\u00e3 x\u00e1c nh\u1eadn vs suy lu\u1eadn. \u01afu ti\u00ean t\u00ecm ki\u1ebfm tr\u00ean Facebook (40% th\u1eddi gian).",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 10 * * 1,4",
+        "display": "0 10 * * 1,4"
+      },
+      "schedule_display": "0 10 * * 1,4",
+      "repeat": {
+        "times": null,
+        "completed": 4
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-06-26T14:41:33.649348+07:00",
+      "next_run_at": "2026-07-13T10:00:00+07:00",
+      "last_run_at": "2026-07-09T10:01:32.738044+07:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "discord:1093083512837521448:1511955929615040573",
+      "origin": {
+        "platform": "discord",
+        "chat_id": "1093083512837521448",
+        "chat_name": "\ud83d\udd25 DUKICK / #pm-dukick",
+        "thread_id": null
+      },
+      "enabled_toolsets": [
+        "web",
+        "search",
+        "discord"
+      ],
+      "workdir": null,
+      "profile": null
+    },
+    {
+      "id": "ba5be1e95b64",
+      "name": "theo-doi-doi-thu-tvc-ai-hoang",
+      "prompt": "B\u1ea1n l\u00e0 tr\u1ee3 l\u00fd PM cho DUKICK. Nhi\u1ec7m v\u1ee5 c\u1ee7a b\u1ea1n l\u00e0 theo d\u00f5i \u0111\u1ed1i th\u1ee7 th\u1ecb tr\u01b0\u1eddng s\u1ea3n xu\u1ea5t TVC AI (AI thu\u1ea7n v\u00e0 AI Hybrid) t\u1ea1i Vi\u1ec7t Nam trong window th\u1eddi gian c\u1ee5 th\u1ec3.\n\n**Logic l\u1ecbch qu\u00e9t:**\n- N\u1ebfu h\u00f4m nay l\u00e0 **th\u1ee9 Hai**: qu\u00e9t t\u1eeb **10:00 th\u1ee9 N\u0103m tu\u1ea7n tr\u01b0\u1edbc \u2192 10:00 th\u1ee9 Hai hi\u1ec7n t\u1ea1i**.\n- N\u1ebfu h\u00f4m nay l\u00e0 **th\u1ee9 N\u0103m**: qu\u00e9t t\u1eeb **10:00 th\u1ee9 Hai hi\u1ec7n t\u1ea1i \u2192 10:00 th\u1ee9 N\u0103m hi\u1ec7n t\u1ea1i**.\n\n**Nguy\u00ean t\u1eafc:** B\u1ea3n tin t\u00ecnh b\u00e1o th\u1ecb tr\u01b0\u1eddng ng\u1eafn, \u0111\u1ec1u, c\u00f3 b\u1ea3ng theo d\u00f5i \u0111\u1ed1i th\u1ee7. Kh\u00f4ng vi\u1ebft d\u00e0i nh\u01b0 report nghi\u00ean c\u1ee9u. M\u1ee5c ti\u00eau l\u00e0 \u0111\u1ec3 b\u1ea1n m\u1edf ra trong 5-10 ph\u00fat l\u00e0 bi\u1ebft: ai \u0111ang l\u00e0m g\u00ec, h\u1ecd b\u00e1n nh\u01b0 th\u1ebf n\u00e0o, c\u00f3 g\u00ec \u0111\u00e1ng lo, Dukick n\u00ean ph\u1ea3n \u1ee9ng ra sao.\n\n**T\u1ef7 l\u1ec7 ph\u00e2n b\u1ed5 n\u1ed7 l\u1ef1c t\u00ecm ki\u1ebfm (QUAN TR\u1eccNG):**\n- **Facebook \u2014 40%** (quan tr\u1ecdng nh\u1ea5t, k\u00eanh r\u1ea5t s\u00f4i \u0111\u1ed9ng):\n  - T\u00ecm c\u00e1c trang Facebook public c\u1ee7a \u0111\u1ed1i th\u1ee7: site:facebook.com + [t\u00ean c\u00f4ng ty] + \"TVC AI\"\n  - T\u00ecm c\u00e1c group Facebook c\u00f4ng khai: \"TVC AI Vi\u1ec7t Nam\", \"AI Video\", \"S\u1ea3n xu\u1ea5t video AI\"\n  - T\u00ecm c\u00e1c b\u00e0i post public v\u1ec1 TVC AI: site:facebook.com + \"TVC AI\" + \"video\" + date filter\n  - Theo d\u00f5i page c\u1ee7a: ME Group, MAY Production, ECHO, ColorMedia, GiaPh\u00e1i, c\u00e1c freelancer AI video\n  - T\u00ecm c\u00e1c post b\u00e1n h\u00e0ng/d\u1ecbch v\u1ee5 TVC AI tr\u00ean Facebook Marketplace/groups\n  - \u01afu ti\u00ean t\u00ecm c\u00e1c b\u00e0i post t\u1eeb 3-7 ng\u00e0y g\u1ea7n nh\u1ea5t\n\n- **Website c\u00f4ng ty \u2014 20%**: Portfolio, landing page, blog, case study\n- **B\u00e1o ch\u00ed/ng\u00e0nh \u2014 20%**: D\u00e2n tr\u00ed, B\u00e1o \u0110\u1ea7u T\u01b0, Ph\u00e1p Lu\u1eadt TP.HCM, CafeF, Vietnamnet...\n- **YouTube/Vimeo/Behance \u2014 10%**: Demo reel, case study video, portfolio motion\n- **LinkedIn/TikTok \u2014 10%**: Company updates, viral content, behind-the-scenes\n\n**C\u00e1c b\u01b0\u1edbc th\u1ef1c hi\u1ec7n:**\n1. D\u00e0nh 40% th\u1eddi gian t\u00ecm ki\u1ebfm tr\u00ean Facebook tr\u01b0\u1edbc ti\u00ean\n2. Sau \u0111\u00f3 m\u1edf r\u1ed9ng ra c\u00e1c k\u00eanh kh\u00e1c theo t\u1ef7 l\u1ec7 tr\u00ean\n3. Ph\u00e2n bi\u1ec7t r\u00f5: **\u0111\u00e3 x\u00e1c nh\u1eadn t\u1eeb ngu\u1ed3n** vs **nh\u1eadn \u0111\u1ecbnh/suy lu\u1eadn**\n4. N\u1ebfu kh\u00f4ng c\u00f3 tin m\u1edbi, v\u1eabn c\u1eadp nh\u1eadt \"kh\u00f4ng th\u1ea5y bi\u1ebfn \u0111\u1ed9ng l\u1edbn\" v\u00e0 n\u00eau c\u00e1c ngu\u1ed3n \u0111\u00e3 ki\u1ec3m tra\n5. Ch\u1ea5m m\u1ee9c \u1ea3nh h\u01b0\u1edfng v\u1edbi Dukick cho t\u1eebng \u0111\u1ed1i th\u1ee7\n\n**B\u1ed1 c\u1ee5c b\u00e1o c\u00e1o (vi\u1ebft b\u1eb1ng ti\u1ebfng Vi\u1ec7t thu\u1ea7n, ch\u1ec9 d\u00f9ng t\u1eeb ti\u1ebfng Anh khi th\u1ef1c s\u1ef1 c\u1ea7n):**\n\n### 1. T\u00d3M T\u1eaeT NHANH\n5-7 g\u1ea1ch \u0111\u1ea7u d\u00f2ng quan tr\u1ecdng nh\u1ea5t:\n- \u0110\u1ed1i th\u1ee7 n\u00e0o m\u1edbi xu\u1ea5t hi\u1ec7n\n- Ai v\u1eeba ra s\u1ea3n ph\u1ea9m/case m\u1edbi\n- Th\u1ecb tr\u01b0\u1eddng \u0111ang n\u00f3i g\u00ec v\u1ec1 TVC AI/AI Hybrid\n\n### 2. B\u1ea2NG \u0110\u1ed0I TH\u1ee6 / C\u00d4NG TY \u0110\u00c1NG CH\u00da \u00dd\n| T\u00ean \u0111\u01a1n v\u1ecb | Lo\u1ea1i h\u00ecnh | D\u1ecbch v\u1ee5 AI/TVC | Case study/N\u1ed9i dung m\u1edbi | Kh\u00e1ch h\u00e0ng/Brand | \u0110i\u1ec3m m\u1ea1nh \u0111ang claim | M\u1ee9c \u0111\u1ed9 \u0111e d\u1ecda v\u1edbi Dukick | Link ngu\u1ed3n |\n\nLo\u1ea1i h\u00ecnh: production house, agency, freelancer team, AI studio, post/VFX, animation, marketing agency\n\n### 3. T\u00cdN HI\u1ec6U TH\u1eca TR\u01af\u1edcNG\n- TVC AI gi\u00e1 r\u1ebb \u0111ang \u0111\u01b0\u1ee3c qu\u1ea3ng c\u00e1o nhi\u1ec1u h\u01a1n?\n- AI Hybrid \u0111ang \u0111\u01b0\u1ee3c d\u00f9ng cho storyboard, animatic, mockup hay final output?\n- Kh\u00e1ch h\u00e0ng SME, startup, brand l\u1edbn hay agency \u0111ang quan t\u00e2m?\n- C\u00f3 b\u00ean n\u00e0o d\u00f9ng \"AI TVC trong 24h/48h/gi\u00e1 r\u1ebb\" l\u00e0m th\u00f4ng \u0111i\u1ec7p b\u00e1n h\u00e0ng kh\u00f4ng?\n\n### 4. CASE / CHI\u1ebeN D\u1ecaCH N\u1ed4I B\u1eacT TRONG TU\u1ea6N\nCh\u1ecdn 1-3 case n\u1ebfu c\u00f3:\n- N\u1ed9i dung/campaign l\u00e0 g\u00ec\n- M\u1ee9c \u0111\u1ed9 AI c\u00f3 v\u1ebb \u0111\u01b0\u1ee3c d\u00f9ng \u1edf \u0111\u00e2u: concept, visual, motion, voice, edit, VFX, full AI\n- Ch\u1ea5t l\u01b0\u1ee3ng c\u1ea3m nh\u1eadn\n- B\u00e0i h\u1ecdc cho Dukick\n\n### 5. TH\u00d4NG \u0110I\u1ec6P B\u00c1N H\u00c0NG C\u1ee6A \u0110\u1ed0I TH\u1ee6\nTheo d\u00f5i c\u00e1ch h\u1ecd ch\u00e0o b\u00e1n:\n- \"Nhanh h\u01a1n\"\n- \"R\u1ebb h\u01a1n\"\n- \"Kh\u00f4ng c\u1ea7n quay\"\n- \"AI + production team\"\n- \"TVC viral/social-first\"\n- \"AI storyboard/AI previsualization\"\n\nM\u1ee5c n\u00e0y quan tr\u1ecdng \u0111\u1ec3 Dukick bi\u1ebft th\u1ecb tr\u01b0\u1eddng \u0111ang b\u1ecb educate theo h\u01b0\u1edbng n\u00e0o.\n\n### 6. C\u01a0 H\u1ed8I CHO DUKICK\n3-5 g\u1ee3i \u00fd h\u00e0nh \u0111\u1ed9ng:\n- N\u00ean l\u00e0m content g\u00ec\n- N\u00ean \u0111\u00f3ng g\u00f3i d\u1ecbch v\u1ee5 AI Hybrid ra sao\n- N\u00ean follow kh\u00e1ch h\u00e0ng/sector n\u00e0o\n- C\u00f3 n\u00ean ph\u1ea3n \u1ee9ng v\u1edbi claim c\u1ee7a \u0111\u1ed1i th\u1ee7 kh\u00f4ng\n\n### 7. R\u1ee6I RO C\u1ea6N THEO D\u00d5I\n- \u0110\u1ed1i th\u1ee7 ph\u00e1 gi\u00e1\n- Ch\u1ea5t l\u01b0\u1ee3ng AI th\u1ea5p nh\u01b0ng b\u00e1n r\u1ea5t m\u1ea1nh\n- Agency t\u1ef1 build in-house AI production\n- Client hi\u1ec3u nh\u1ea7m \"AI TVC = kh\u00f4ng c\u1ea7n production\"\n- V\u1ea5n \u0111\u1ec1 b\u1ea3n quy\u1ec1n/gi\u1ecdng n\u00f3i/h\u00ecnh \u1ea3nh ng\u01b0\u1eddi th\u1eadt\n\n### 8. DANH S\u00c1CH NGU\u1ed2N \u0110\u00c3 QU\u00c9T\nN\u00ean g\u1ed3m link tr\u1ef1c ti\u1ebfp t\u1eeb:\n- Website c\u00f4ng ty\n- Facebook/LinkedIn/TikTok/YouTube/Vimeo/Behance\n- B\u00e1o ch\u00ed/ng\u00e0nh qu\u1ea3ng c\u00e1o\n- Google search k\u1ebft qu\u1ea3 m\u1edbi\n- Marketplace/freelancer n\u1ebfu th\u1ea5y li\u00ean quan\n\nG\u1eedi b\u00e1o c\u00e1o v\u00e0o thread n\u00e0y. D\u00f9ng ti\u1ebfng Vi\u1ec7t thu\u1ea7n. Ph\u00e2n bi\u1ec7t r\u00f5 \u0111\u00e3 x\u00e1c nh\u1eadn vs suy lu\u1eadn. \u01afu ti\u00ean t\u00ecm ki\u1ebfm tr\u00ean Facebook (40% th\u1eddi gian).",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 10 * * 1,4",
+        "display": "0 10 * * 1,4"
+      },
+      "schedule_display": "0 10 * * 1,4",
+      "repeat": {
+        "times": null,
+        "completed": 4
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-06-26T14:41:41.555477+07:00",
+      "next_run_at": "2026-07-13T10:00:00+07:00",
+      "last_run_at": "2026-07-09T10:02:09.273378+07:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "discord:1093083512837521448:1349587719424180294",
+      "origin": {
+        "platform": "discord",
+        "chat_id": "1093083512837521448",
+        "chat_name": "\ud83d\udd25 DUKICK / #pm-dukick",
+        "thread_id": null
+      },
+      "enabled_toolsets": [
+        "web",
+        "search",
+        "discord"
+      ],
+      "workdir": null,
+      "profile": null
+    },
+    {
+      "id": "cd27fc07e504",
+      "name": "hateco-proposal-deadline-reminder-v2",
+      "prompt": "B\u1ea1n l\u00e0 reminder bot. Ki\u1ec3m tra th\u1eddi gian hi\u1ec7n t\u1ea1i.\n\n1. N\u1ebfu th\u1eddi gian hi\u1ec7n t\u1ea1i \u0111\u00e3 qu\u00e1 17:00 ng\u00e0y 03/07/2026, ho\u1eb7c tr\u01b0\u1edbc 08:00 ng\u00e0y 02/07/2026, ho\u1eb7c ngo\u00e0i khung 08:00\u201322:00 \u2192 in ra chu\u1ed7i r\u1ed7ng (kh\u00f4ng g\u1eedi g\u00ec c\u1ea3).\n\n2. N\u1ebfu \u0111ang trong khung gi\u1edd l\u00e0m vi\u1ec7c v\u00e0 ch\u01b0a qu\u00e1 deadline cu\u1ed1i, h\u00e3y t\u1ea1o tin nh\u1eafn nh\u1eafc nh\u1edf ph\u00f9 h\u1ee3p v\u1edbi t\u1eebng m\u1ed1c:\n   - Tr\u01b0\u1edbc 10:00 ng\u00e0y 03/07/2026: nh\u1eafc v\u1ec1 m\u1ed1c **10h s\u00e1ng 3/7** \u2014 done ph\u1ea7n text.\n   - T\u1eeb 10:00 \u0111\u1ebfn tr\u01b0\u1edbc 16:00 ng\u00e0y 03/07/2026: nh\u1eafc v\u1ec1 m\u1ed1c **16h ng\u00e0y 3/7** \u2014 done ph\u1ea7n tr\u00ecnh bay.\n   - T\u1eeb 16:00 \u0111\u1ebfn 17:00 ng\u00e0y 03/07/2026: nh\u1eafc v\u1ec1 m\u1ed1c **17h ng\u00e0y 3/7** \u2014 g\u1eedi kh\u00e1ch.\n   - Trong ng\u00e0y 02/07/2026 (tr\u01b0\u1edbc 22:00): nh\u1eafc chu\u1ea9n b\u1ecb cho c\u00e1c m\u1ed1c ng\u00e0y mai.\n\n3. Output ch\u00ednh x\u00e1c d\u1ea1ng Discord message, tag 2 ng\u01b0\u1eddi d\u00f9ng: <@948828130213236766> v\u00e0 <@1425767974421266442>. D\u00f9ng ti\u1ebfng Vi\u1ec7t, gi\u1ecdng nh\u1eafc nh\u1edf ng\u1eafn g\u1ecdn, r\u00f5 r\u00e0ng, c\u00f3 emoji c\u1ea3nh b\u00e1o \u23f0.\n\nV\u00ed d\u1ee5 format:\n\u23f0 **Nh\u1eafc nh\u1edf deadline Proposal HATECO Intercentral**\n<@948828130213236766> <@1425767974421266442>\n- M\u1ed1c ti\u1ebfp theo: 10h s\u00e1ng 3/7 \u2014 Done ph\u1ea7n text\n- Sau \u0111\u00f3: 16h tr\u00ecnh bay | 17h g\u1eedi kh\u00e1ch\n\nCh\u1ec9 xu\u1ea5t ra n\u1ed9i dung tin nh\u1eafn, kh\u00f4ng th\u00eam gi\u1ea3i th\u00edch n\u00e0o kh\u00e1c.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "interval",
+        "minutes": 120,
+        "display": "every 120m"
+      },
+      "schedule_display": "every 120m",
+      "repeat": {
+        "times": null,
+        "completed": 95
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-07-02T12:07:26.518399+07:00",
+      "next_run_at": "2026-07-10T12:46:04.883884+07:00",
+      "last_run_at": "2026-07-10T10:46:04.883884+07:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "discord",
+        "chat_id": "1484749547702845480",
+        "chat_name": "[HATECO] Intercentral / #idea",
+        "thread_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "profile": null
+    },
+    {
+      "id": "1c3b9114b764",
+      "name": "fisv-deadline-reminder",
+      "prompt": "Ch\u1ea1y script fisv_deadline_reminder.py m\u1ed7i ng\u00e0y l\u00fac 8h s\u00e1ng, k\u00e9o timeline t\u1eeb Google Sheets v\u00e0 g\u1eedi nh\u1eafc deadline v\u1ec1 channel.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "fisv_deadline_reminder.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 9 * * *",
+        "display": "30 9 * * *"
+      },
+      "schedule_display": "30 9 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 2
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-07-08T16:32:23.777900+07:00",
+      "next_run_at": "2026-07-11T09:30:00+07:00",
+      "last_run_at": "2026-07-10T09:30:48.723206+07:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "discord",
+        "chat_id": "1522071719786057728",
+        "chat_name": "FISV - G\u00f3i video & \u1ea3nh ch\u1ee5p / #timeline",
+        "thread_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "profile": null
+    }
+  ],
+  "updated_at": "2026-07-10T10:46:04.884563+07:00"
+}

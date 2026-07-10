@@ -1,9 +1,9 @@
 {
-  "last_report_path": "C:\\DukickAgent\\Dukick-tong-8767\\logs\\curator\\20260622-075806",
-  "last_run_at": "2026-06-22T07:58:06.014318+00:00",
-  "last_run_duration_seconds": 0.241509,
-  "last_run_summary": "auto: no changes; llm: skipped (no candidates)",
+  "last_report_path": "C:\\DuKickAgent\\agents\\dukick-tong-8767\\logs\\curator\\20260706-091126",
+  "last_run_at": "2026-07-06T09:11:26.161604+00:00",
+  "last_run_duration_seconds": 7.666738,
+  "last_run_summary": "auto: no changes; llm: no change",
   "last_run_summary_shown_at": null,
   "paused": false,
-  "run_count": 3
+  "run_count": 5
 }

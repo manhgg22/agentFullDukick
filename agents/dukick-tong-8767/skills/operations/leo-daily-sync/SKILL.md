@@ -7,6 +7,7 @@ triggers:
   - Chị Leo cần nắm toàn bộ việc phải làm
   - Team cần đưa việc cho chị duyệt
   - Báo cáo tổng hợp cuối ngày cho leader
+  - Leader đã hẹn review/quyết định về policy, bảo mật, hoặc quy trình nhưng chưa chốt
 ---
 
 # 🔄 Leo Daily Sync — Workflow Gom Việc Cho Leader
@@ -60,6 +61,11 @@ Không có việc → react ✅
 • Deadline: ...
 • Mức độ khẩn: ...
 ```
+
+### 2b. Nhắc chị Leo về quyết định / review chưa chốt
+- Khi chị đã hẹn review một topic (bảo mật, phân quyền, policy) nhưng chưa chốt → gửi reminder ngắn gọn theo template `templates/reminder-security-review.md`
+- Cấu trúc: Xác nhận lại topic → liệt kê tối đa 3 câu hỏi A/B → deadline → CTA
+- Ví dụ đã dùng: nhắc review bảo mật DM agent + phân quyền Obsidian vault
 
 ### 3. Tổng hợp cho chị
 - Cuối mỗi đợt ping → gom tất cả reply **có chứa `CẦN CHỊ LEO DUYỆT`** và đã được react like
@@ -138,11 +144,14 @@ Khi chị Leo chỉ đạo *"quan sát cách chị duyệt >> update vault để
 
 Chi tiết và ví dụ thực tế: `references/leader-approval-patterns.md`
 
-## Nhắc nhở cá nhân tăng độ nghiêm trọng (Escalating Reminder)
+## Nhắc nhở cá nhân — 2 kiểu
 
-Khi chị Leo hoặc leader giao việc cho **1 cá nhân cụ thể** và cần theo dõi đến khi xong, dùng pattern này thay vì gom việc định kỳ.
+Khi chị Leo hoặc leader giao việc cho **1 cá nhân/bộ phận cụ thể** và cần theo dõi đến khi xong, có 2 kiểu follow-up. Chọn đúng kiểu theo mức độ khẩn và tính chất công việc.
 
-### Đặc điểm
+### Kiểu A — Escalating Reminder (Tăng độ nghiêm trọng)
+
+Dùng khi: Việc **đang cháy**, cần phản hồi ngay lập tức, hoặc cá nhân đang ì ạch không trả lời.
+
 | Điểm | Mô tả |
 |------|-------|
 | Đối tượng | 1 người cụ thể (tag Discord ID) |
@@ -171,11 +180,98 @@ Khi chị Leo hoặc leader giao việc cho **1 cá nhân cụ thể** và cần
 3. **Tạo cronjob `no_agent=True`** chạy mỗi 2 tiếng, script output đi thẳng vào Discord
 4. **Cơ chế dừng**: Khi agent nhận reply chứa từ `xong` từ người được nhắc → sửa file theo dõi thành `Trạng thái: Đã xong` → cronjob tự silent exit
 
-### Script mẫu + hướng dẫn chi tiết
+### Kiểu B — Periodic Reminder (Nhắc định kỳ, không leo thang)
+
+Dùng khi: Công việc **có deadline rõ ràng**, đang tiến triển bình thường, không cần ép buộc ngay lập tức. Chỉ cần nhắc nhẹ nhàng để người làm không quên.
+
+| Điểm | Mô tả |
+|------|-------|
+| Đối tượng | 1–2 người cụ thể (tag Discord ID) hoặc 1 bộ phận |
+| Tần suất | Theo yêu cầu — ví dụ: mỗi 2 ngày một lần |
+| Mức độ | Không leo thang — luôn giọng nhẹ nhàng, mang tính nhắc nhở |
+| Dừng | Khi người được nhắc báo "xong" hoặc deadline đã qua |
+| Deliver | Vào kênh leader đang chat (hoặc kênh chỉ định) |
+
+#### Cách triển khai
+
+1. **Tạo cronjob LLM-driven** (không dùng `no_agent=True`)  
+   - Vì nội dung nhắc thay đổi theo ngữ cảnh (mention deadline, hỏi tiến độ), cần LLM soạn tin nhắn
+2. **Prompt tự chứa đầy đủ context**:
+   - Tên công việc
+   - Người làm (tag Discord ID)
+   - Deadline
+   - Mục đích (để tuần sau công bố, v.v.)
+   - Kênh gửi
+3. **Không cần file theo dõi phức tạp** — agent tự kiểm tra trong vault xem công việc đã hoàn thành chưa (tìm file, check tiến độ) rồi quyết định nhắc hay dừng
+4. **Ví dụ prompt mẫu**:
+   ```
+   Hỏi tiến độ công việc của @Duck Mẹn và @Hương Nguyễn:
+   "Chị Leo giao việc: Quy trình & HDSD agent chuyên môn + agent cá nhân
+   và Hướng dẫn phân quyền & bảo mật từng agent — deadline hết tuần này (28/06)
+   để tuần sau công bố.
+   @Duck Mẹn @Hương Nguyễn 2 em update tiến độ giúp chị nhé!"
+
+   Nếu công việc đã hoàn thành từ lần follow-up trước → báo "✅ Công việc đã hoàn thành, dừng follow-up." và kết thúc.
+   Nếu chưa xong → gửi tin nhắn follow-up như trên.
+   ```
+
+#### So sánh 2 kiểu
+
+| Tiêu chí | Escalating (Kiểu A) | Periodic (Kiểu B) |
+|----------|---------------------|-------------------|
+| Mục đích | Ép buộc phản hồi ngay | Nhắc nhẹ, giữ tiến độ |
+| Tần suất | Mỗi 2 tiếng | Mỗi 2 ngày (tùy chỉnh) |
+| Mức độ | Tăng dần 1→6 | Không leo thang |
+| `no_agent` | Có (script chạy thẳng) | Không (LLM soạn tin) |
+| File theo dõi | Cần (`AgentMe-Reminder-Status.md`) | Không cần, agent tự check vault |
+| Dùng khi | Việc cháy / cá nhân ì ạch | Việc có deadline, tiến triển bình thường |
+
+> **Quy tắc chọn kiểu:** Nếu chị Leo nói "follow hỏi... mỗi 2 ngày cho tới khi xong" → đó là **Periodic Reminder (Kiểu B)**, không phải Escalating.
+
+### Tài liệu tham khảo
 - Script sẵn sàng chạy: `scripts/escalating-reminder.py`
 - Hướng dẫn setup + cách dừng: `references/escalating-reminder-setup.md`
 
+## 💰 Theo dõi chi tiêu & Nhắc nộp bill
+
+Theo yêu cầu HR (chị Hương Nguyễn), khi có nhân sự xin duyệt chi phí và được duyệt + chuyển khoản thành công, Agent Tổng phải tự động nhắc người đó nộp bill thanh toán cho HR vào ngày hôm sau.
+
+### Quy trình
+
+1. **Ghi nhận:** Khi phát hiện tin nhắn xin duyệt chi trên Discord → ghi vào file tracking trong vault.
+2. **Theo dõi trạng thái:**
+   - ⏳ Chờ duyệt
+   - ✅ Đã duyệt / Chờ CK
+   - 💰 Đã CK / Chờ bill
+3. **Nhắc bill:** Ngày hôm sau sau khi xác nhận CK thành công → tag người xin chi yêu cầu gửi bill.
+
+### File tracking
+
+File: `Theo-Doi-Chi-Tieu.md` trong vault `Dukick-Tong`.
+Cấu trúc bảng 3 giai đoạn: Chờ duyệt | Đã duyệt/CK | Đã CK chờ bill.
+
+### Format nhắc nộp bill
+
+```
+@<người xin chi> Khoản chi [mục đích] — [số tiền] đã được chuyển khoản.
+Vui lòng gửi bill thanh toán cho chị Hương Nguyễn (HR) để lưu chứng từ nhé.
+```
+
+### Lưu ý
+
+- Tin nhắn xin duyệt chi vẫn phải tuân thủ **quy tắc tag chị Leo** (tag + `CẦN CHỊ LEO DUYỆT` + like).
+- Nếu chị Leo duyệt bằng cách reply `ok` / `ck rồi nhé` → agent cập nhật trạng thái sang "Đã duyệt".
+- Nếu người xin chi hoặc HR báo `đã chuyển` / `ck thành công` → agent cập nhật sang "Đã CK" và lên lịch nhắc bill ngày hôm sau.
+
 ## Xử lý lỗi
+
+### Lỗi gửi tin nhắn `Unknown platform: origin`
+
+`send_message(action='send')` yêu cầu `target` phải là **tên kênh/thread từ `send_message(action='list')`**.
+
+- ❌ Không dùng `target='origin'` — bị lỗi `"Unknown platform: origin"`.
+- ✅ Luôn gọi `send_message(action='list')` trước, sau đó copy tên kênh/thread chính xác.
+- Ví dụ đúng: `target="discord:🔥 DUKICK / #🧬neolab / chi tiêu / topic 1492791191362732062"`
 
 ### Cron database bị corrupt do BOM
 Nếu `cronjob(action='list')` trả về lỗi `Unexpected UTF-8 BOM`:

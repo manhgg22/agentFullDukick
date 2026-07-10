@@ -1,9 +1,9 @@
 {
   "agent:main:discord:group:1507218623742083142:761569966620409867": {
     "session_key": "agent:main:discord:group:1507218623742083142:761569966620409867",
-    "session_id": "20260602_182329_5194ec8f",
-    "created_at": "2026-06-02T18:23:29.714510",
-    "updated_at": "2026-06-02T18:23:38.365263",
+    "session_id": "20260630_191717_6a541145",
+    "created_at": "2026-06-30T19:17:17.881988",
+    "updated_at": "2026-06-30T19:18:27.422224",
     "display_name": "\ud83d\udd25 DUKICK / #truy\u1ec1n-th\u00f4ng",
     "platform": "discord",
     "chat_type": "group",
@@ -12,7 +12,7 @@
     "cache_read_tokens": 0,
     "cache_write_tokens": 0,
     "total_tokens": 0,
-    "last_prompt_tokens": 11641,
+    "last_prompt_tokens": 16309,
     "estimated_cost_usd": 0.0,
     "cost_status": "unknown",
     "expiry_finalized": true,
@@ -34,7 +34,7 @@
       "thread_id": null,
       "chat_topic": null,
       "guild_id": "1092673756457074760",
-      "message_id": "1511329375218434149"
+      "message_id": "1521489774618349631"
     }
   },
   "agent:main:discord:group:1507218623742083142:880750919304749096": {
@@ -115,9 +115,9 @@
   },
   "agent:main:discord:group:1507218623742083142:1091125381421072425": {
     "session_key": "agent:main:discord:group:1507218623742083142:1091125381421072425",
-    "session_id": "20260617_102625_e19197e3",
-    "created_at": "2026-06-17T10:26:25.442754",
-    "updated_at": "2026-06-17T12:02:38.342910",
+    "session_id": "20260707_145259_4bfbc161",
+    "created_at": "2026-07-07T14:52:59.223121",
+    "updated_at": "2026-07-07T14:55:02.815254",
     "display_name": "\ud83d\udd25 DUKICK / #truy\u1ec1n-th\u00f4ng",
     "platform": "discord",
     "chat_type": "group",
@@ -126,7 +126,7 @@
     "cache_read_tokens": 0,
     "cache_write_tokens": 0,
     "total_tokens": 0,
-    "last_prompt_tokens": 14644,
+    "last_prompt_tokens": 15309,
     "estimated_cost_usd": 0.0,
     "cost_status": "unknown",
     "expiry_finalized": true,
@@ -148,7 +148,7 @@
       "thread_id": null,
       "chat_topic": null,
       "guild_id": "1092673756457074760",
-      "message_id": "1516645133871874079"
+      "message_id": "1523959962567704659"
     }
   },
   "agent:main:discord:group:1515994966047064154:761569966620409867": {
@@ -225,6 +225,43 @@
       "chat_topic": null,
       "guild_id": "1092673756457074760",
       "message_id": "1517867474694045746"
+    }
+  },
+  "agent:main:discord:dm:1519616272718102549": {
+    "session_key": "agent:main:discord:dm:1519616272718102549",
+    "session_id": "20260703_113245_d57025",
+    "created_at": "2026-07-01T10:03:12.853039",
+    "updated_at": "2026-07-07T14:56:17.885920",
+    "display_name": "leducmanh2907",
+    "platform": "discord",
+    "chat_type": "dm",
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "total_tokens": 0,
+    "last_prompt_tokens": 41202,
+    "estimated_cost_usd": 0.0,
+    "cost_status": "unknown",
+    "expiry_finalized": false,
+    "suspended": false,
+    "resume_pending": false,
+    "resume_reason": null,
+    "last_resume_marked_at": null,
+    "is_fresh_reset": false,
+    "was_auto_reset": false,
+    "auto_reset_reason": null,
+    "reset_had_activity": false,
+    "origin": {
+      "platform": "discord",
+      "chat_id": "1519616272718102549",
+      "chat_name": "leducmanh2907",
+      "chat_type": "dm",
+      "user_id": "761569966620409867",
+      "user_name": "Duck M\u1eb9n",
+      "thread_id": null,
+      "chat_topic": null,
+      "message_id": "1521712725863039077"
     }
   }
 }

@@ -20,15 +20,15 @@
       "schedule_display": "every 120m",
       "repeat": {
         "times": null,
-        "completed": 132
+        "completed": 306
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-06-10T10:15:04.354893+07:00",
-      "next_run_at": "2026-06-24T10:59:48.637788+07:00",
-      "last_run_at": "2026-06-24T08:59:48.637788+07:00",
+      "next_run_at": "2026-07-10T12:15:17.205994+07:00",
+      "last_run_at": "2026-07-10T10:15:17.205994+07:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -42,7 +42,131 @@
       "enabled_toolsets": null,
       "workdir": null,
       "profile": null
+    },
+    {
+      "id": "28fdc649f8b5",
+      "name": "Follow-up HDSD Agent + Ph\u00e2n quy\u1ec1n/B\u1ea3o m\u1eadt",
+      "prompt": "H\u1ecfi ti\u1ebfn \u0111\u1ed9 c\u00f4ng vi\u1ec7c c\u1ee7a @Duck M\u1eb9n v\u00e0 @H\u01b0\u01a1ng Nguy\u1ec5n:\n\n\"Ch\u1ecb Leo giao vi\u1ec7c: **Quy tr\u00ecnh & HDSD agent chuy\u00ean m\u00f4n + agent c\u00e1 nh\u00e2n** v\u00e0 **H\u01b0\u1edbng d\u1eabn ph\u00e2n quy\u1ec1n & b\u1ea3o m\u1eadt t\u1eebng agent** \u2014 deadline h\u1ebft tu\u1ea7n n\u00e0y (28/06) \u0111\u1ec3 tu\u1ea7n sau c\u00f4ng b\u1ed1.\n\n@Duck M\u1eb9n @H\u01b0\u01a1ng Nguy\u1ec5n 2 em update ti\u1ebfn \u0111\u1ed9 gi\u00fap ch\u1ecb nh\u00e9! \u0110\u00e3 l\u00e0m t\u1edbi \u0111\u00e2u, c\u00f3 g\u00ec c\u1ea7n ch\u1ecb h\u1ed7 tr\u1ee3 kh\u00f4ng?\"\n\nN\u1ebfu c\u00f4ng vi\u1ec7c \u0111\u00e3 ho\u00e0n th\u00e0nh t\u1eeb l\u1ea7n follow-up tr\u01b0\u1edbc \u2192 b\u00e1o \"\u2705 C\u00f4ng vi\u1ec7c \u0111\u00e3 ho\u00e0n th\u00e0nh, d\u1eebng follow-up.\" v\u00e0 k\u1ebft th\u00fac.\nN\u1ebfu ch\u01b0a xong \u2192 g\u1eedi tin nh\u1eafn follow-up nh\u01b0 tr\u00ean.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 */2 * *",
+        "display": "0 9 */2 * *"
+      },
+      "schedule_display": "0 9 */2 * *",
+      "repeat": {
+        "times": null,
+        "completed": 6
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-06-26T21:41:58.276673+07:00",
+      "next_run_at": "2026-07-11T09:00:00+07:00",
+      "last_run_at": "2026-07-09T09:01:40.969719+07:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "discord",
+        "chat_id": "1513463364733501532",
+        "chat_name": "\ud83d\udd25 DUKICK / #agent-nh\u00e2n-s\u1ef1",
+        "thread_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "profile": null
+    },
+    {
+      "id": "70c6e9654408",
+      "name": "Nhac chi Leo duyet AI agent",
+      "prompt": "",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "leo_reminder_ai_agent.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * *",
+        "display": "0 9 * * *"
+      },
+      "schedule_display": "0 9 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "enabled": false,
+      "state": "paused",
+      "paused_at": "2026-06-29T15:13:44.229657+07:00",
+      "paused_reason": null,
+      "created_at": "2026-06-29T14:06:28.424667+07:00",
+      "next_run_at": "2026-06-30T09:00:00+07:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "discord:agent-nhan-su",
+      "origin": null,
+      "enabled_toolsets": null,
+      "workdir": null,
+      "profile": null
+    },
+    {
+      "id": "379830f9f6a8",
+      "name": "Nh\u1eafc vi\u1ec7c Agent Zalo qu\u1ea3n tr\u1ecb c\u00f4ng n\u1ee3",
+      "prompt": "B\u1ea1n l\u00e0 Agent T\u1ed5ng (Tr\u1ee3 l\u00fd CEO Dukick). \u0110\u00e2y l\u00e0 nh\u1eafc nh\u1edf \u0111\u1ecbnh k\u1ef3 v\u1ec1 vi\u1ec7c: **\u0110\u01b0a Agent v\u00e0o Zalo \u0111\u1ec3 l\u00e0m Agent qu\u1ea3n tr\u1ecb c\u00f4ng n\u1ee3 (\u0111\u00f2i ti\u1ec1n)**.\n\nNhi\u1ec7m v\u1ee5:\n1. \u0110\u1ecdc file ph\u00e2n t\u00edch t\u1ea1i vault Dukick-Tong: `Ph\u00e2n t\u00edch/Agent-Zalo-Qu\u1ea3n-tr\u1ecb-C\u00f4ng-n\u1ee3-2026-06-30.md`\n2. T\u00f3m t\u1eaft ng\u1eafn g\u1ecdn (3\u20134 d\u00f2ng) cho ch\u1ecb Leo\ud83c\udf37: tr\u1ea1ng th\u00e1i hi\u1ec7n t\u1ea1i, b\u01b0\u1edbc n\u00e0o \u0111ang blocker, c\u1ea7n ch\u1ecb quy\u1ebft g\u00ec.\n3. H\u1ecfi ch\u1ecb Leo: \"C\u00f3 ti\u1ebfn \u0111\u1ed9 m\u1edbi kh\u00f4ng? C\u1ea7n em h\u1ed7 tr\u1ee3 g\u00ec th\u00eam?\"\n\nL\u01b0u \u00fd: D\u00f9ng ti\u1ebfng Vi\u1ec7t, gi\u1ecdng \u0111i\u1ec7u l\u1ecbch s\u1ef1, x\u01b0ng em.\n",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 */2 * *",
+        "display": "0 9 */2 * *"
+      },
+      "schedule_display": "0 9 */2 * *",
+      "repeat": {
+        "times": null,
+        "completed": 5
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-06-30T09:59:25.693530+07:00",
+      "next_run_at": "2026-07-11T09:00:00+07:00",
+      "last_run_at": "2026-07-09T09:00:58.572655+07:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "discord",
+        "chat_id": "1513463364733501532",
+        "chat_name": "\ud83d\udd25 DUKICK / #agent-nh\u00e2n-s\u1ef1",
+        "thread_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "profile": null
     }
   ],
-  "updated_at": "2026-06-24T08:59:48.638397+07:00"
+  "updated_at": "2026-07-10T10:15:17.207295+07:00"
 }

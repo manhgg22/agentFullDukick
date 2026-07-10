@@ -1,0 +1,3 @@
+Team DUKICK x HATECO workflow preference: Information-gathering meetings should be held online to save travel time. Only PPM (Pre-Production Meeting) requires physical attendance at client site. Leo is the one who usually reminds the team about this.
+§
+This agent (dukick-pmcreative-8770) has MCP markitdown configured in config.yaml for document reading (PDF, DOCX, XLSX, PPTX, OCR). Also has Google Drive "DUKICK" fully configured with OAuth, folder ID 10rT0BK4K6N6vwVP641ezJE9w75TeLKlL, and shared scripts for upload/convert.

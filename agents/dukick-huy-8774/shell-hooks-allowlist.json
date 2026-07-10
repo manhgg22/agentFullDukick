@@ -1,0 +1,16 @@
+{
+  "approvals": [
+    {
+      "approved_at": "2026-06-12T07:56:32.518612Z",
+      "command": "C:/DuKickAgent/venv/Scripts/python.exe C:/DuKickAgent/save_to_obsidian.py",
+      "event": "pre_gateway_dispatch",
+      "script_mtime_at_approval": "2026-06-10T05:10:17.372426Z"
+    },
+    {
+      "approved_at": "2026-07-09T03:15:24.025385Z",
+      "command": "C:/DukickAgent/venv/Scripts/python.exe C:/DukickAgent/save_to_obsidian.py",
+      "event": "pre_gateway_dispatch",
+      "script_mtime_at_approval": "2026-07-09T03:11:46.268503Z"
+    }
+  ]
+}

@@ -1,7 +1,16 @@
-﻿{
+{
   "permissions": {
     "allow": [
       "PowerShell(Get-Content \"C:\\\\DukickAgent\\\\Dukick-truyenthong-8768\\\\channel_directory.json\" | ConvertFrom-Json | Select-Object -ExpandProperty platforms | Select-Object -ExpandProperty discord | Where-Object { $_.name -match \"pm|truyen|creative|truyenthong\" } | Select-Object id, name | Format-Table -AutoSize)"
     ]
-  }
+  },
+  "enabledMcpjsonServers": [
+    "github",
+    "context7",
+    "exa",
+    "memory",
+    "playwright",
+    "sequential-thinking",
+    "markitdown"
+  ]
 }

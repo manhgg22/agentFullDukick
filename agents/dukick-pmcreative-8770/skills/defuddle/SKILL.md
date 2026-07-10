@@ -1,6 +1,6 @@
-﻿---
+---
 name: defuddle
-description: Extract clean markdown content from web pages using Defuddle CLI, removing clutter and navigation to save tokens. Use instead of WebFetch when the user provides a URL to read or analyze, for online documentation, articles, blog posts, or any standard web page. Do NOT use for URLs ending in .md — those are already markdown, use WebFetch directly.
+description: Extract clean markdown content from web pages using Defuddle CLI, removing clutter and navigation to save tokens. Use instead of WebFetch when the user provides a URL to read or analyze, for online documentation, articles, blog posts, or any standard web page. Do NOT use URLs ending in .md — those are already markdown, use WebFetch directly.
 ---
 
 # Defuddle
@@ -40,3 +40,8 @@ defuddle parse <url> -p domain
 | (none) | HTML |
 | `-p <name>` | Specific metadata property |
 
+## Pitfalls
+
+- **Google Docs URLs (`docs.google.com`) cannot be read by Defuddle.** Google Docs requires OAuth/API access (Docs API v1). Use Hermes `execute_code` with the environment's `shared/gauth.py` module (see `google-drive-workflow` skill) or download via "File → Download → Plain Text" and read the local file instead.
+- Some JavaScript-heavy SPAs may not render fully for extraction.
+- URLs behind login walls (social media, private wikis) will return empty or partial content.

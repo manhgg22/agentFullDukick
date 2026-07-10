@@ -5,10 +5,11 @@ Updated: 2026-06-04
 | Vai trò | Tên | Discord ID | Discord Username | Trạng thái | Nhắc việc liên quan |
 |---------|-----|------------|------------------|-----------|---------------------|
 | Kế toán | Yến | `885170747797032991` | @yentrinhkt | ✅ | Hóa đơn, thanh toán, ĐNTT, quyết toán, chứng từ |
+| Kế toán | Hương | `880750919304749096` | @Hương Nguyễn | ✅ | Hóa đơn, thanh toán, ĐNTT, quyết toán, chứng từ |
 | PM | Huyền | `1338069800240549898` | @ThuHuyen | ✅ | Shooting day, BBNT, final delivery, milestone SX |
-| PM/SX | Thái | TBD | @Đỗ Ngọc Thái | ⏳ | Shooting, BBNT, đề xuất thanh toán |
-| PM/SX | Hoàng | TBD | @Hoàng | ⏳ | Shooting, BBNT, đề xuất thanh toán |
-| GĐTC | Chị Nhật Phương | TBD | TBD | ⏳ | Duyệt budget, ký HĐ, phê duyệt thanh toán |
+| PM/SX | Thái | `1406146356006879313` | @Đỗ Ngọc Thái | ✅ | Shooting, BBNT, đề xuất thanh toán |
+| PM/SX | Hoàng | `765590233601015849` | @Hoàng | ✅ | Shooting, BBNT, đề xuất thanh toán |
+| GĐTC | Chị Leo (Nhật Phương) | `1091125381421072425` | TBD | ✅ | Duyệt budget, ký HĐ, phê duyệt thanh toán |
 | GĐSX | Anh Gia Nam | TBD | @phamgianam | ⏳ | Leader SX inhouse, duyệt trước khi lên EP |
 
 ## Cách dùng trong cronjob / message
