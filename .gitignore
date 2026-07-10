@@ -99,6 +99,10 @@ server-out.txt
 # Stray dirs
 agents$agent/
 downloaded_files/
+node_modules/
+**/node_modules/
+services/
+dukick-obsidian-web/
 
 # Debt/financial data + Zalo bot creds (live secrets) — KHÔNG commit
 **/debt_data/
